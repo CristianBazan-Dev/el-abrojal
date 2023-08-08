@@ -5,6 +5,7 @@ import { DataProvider } from "./GlobalState";
 import Header from "./components/header/Header";
 import MainPages from "./components/mainPages/MainPages";
 import Footer from "./components/footer/Footer";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <article className="app">
           <Header />
           <MainPages />
+          <Contact />
           <Footer />
         </article>
       </Router>
