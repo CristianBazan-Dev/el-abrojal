@@ -1,13 +1,15 @@
 import {useState, useEffect, createContext} from 'react';
+    
+import CategoriesAPI from './api/CategoriesAPI';
 
 export const GlobalState = createContext(); 
 
 export const DataProvider = ({ children }) => {
 
-    const [hola, setHola] = useState("Hola, desde el contexto")
+    
 
     const state = {
-        hola: [hola, setHola]
+        categories: CategoriesAPI()
     }
 
     return <GlobalState.Provider value={state}>{children}</GlobalState.Provider>

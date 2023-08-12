@@ -1,0 +1,23 @@
+.banner-section{
+    max-height: 124px;
+    height: 124px;
+    background-color: var(--main);
+    margin: 0 -1em;
+
+}
+
+.banner-text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 1em;
+}
+
+.banner-text h2, h3{
+    color: var(--light);
+}
+
+.banner-item{
+    display: flex;
+    align-items: center;
+}

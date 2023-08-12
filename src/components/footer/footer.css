@@ -1,0 +1,59 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo  */
+
+.logo-container {
+  margin-left: var(--m);
+}
+
+.social-icon {
+  fill: var(--third-dark);
+  margin-right: 1.25em;
+}
+
+/* Sections in footer  */
+
+.sections {
+  display: flex;
+  justify-content: center;
+  margin-right: var;
+}
+
+.section {
+  text-align: justify;
+  margin-right: 6em;
+}
+
+.section.last {
+  margin-right: 0;
+}
+
+.section ul li {
+  margin-bottom: 0.8em;
+  display: flex;
+}
+
+/* Contact element  */
+
+.contact-element {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8em;
+}
+
+.contact-element-icon {
+  fill: var(--dark);
+  max-width: 20px;
+  max-height: 15px;
+  margin-right: 1em;
+}
+
+/* Footer of footer  */
+.credits {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}

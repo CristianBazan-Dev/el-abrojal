@@ -14,7 +14,7 @@ function App() {
         <article className="app">
           <Header />
           <MainPages />
-          <Contact />
+          <Contact id="contact" className="contact-section"/>
           <Footer />
         </article>
       </Router>

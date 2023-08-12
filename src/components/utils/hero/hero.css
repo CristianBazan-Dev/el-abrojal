@@ -1,0 +1,67 @@
+/* .hero-section img {
+  width: 120%;
+  max-height: 700px;
+  z-index: 1;
+  margin: -1em;
+}
+
+.hero-section img::after{
+    content: "";
+    width: 120%;
+    max-height: 700px;
+    background: red;
+    z-index: 2;
+    margin: -1em;
+} */
+
+.hero-section {
+  background-image: url("https://res.cloudinary.com/dhbvri4ni/image/upload/v1691604226/test-el-abrojal/Hero/hero-banner_dsgumz.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-height: 650px;
+  height: 650px;
+  margin: -1em;
+  margin-bottom: 0;
+  z-index: 0;
+  animation: in 2s;
+}
+
+@keyframes in {
+  0% {
+    opacity: 0;
+    margin-left: -100em;
+  }
+  100% {
+    opacity: 1;
+    margin-left: -1em;
+  }
+}
+
+.hero-section::before {
+  /* content: "";
+  width: 100%;
+  max-height: 650px;
+  height: 650px;
+  background-color: var(--light-lowOp);
+  z-index: 5;
+  position: absolute;
+  left: 0; */
+}
+
+.hero-presentation{
+    background-color: var(--light-lowOp);
+    max-height: 650px;
+    height: 650px;
+}
+
+.hero-presentation  .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-presentation h1{
+    color: var(--main);
+}
+

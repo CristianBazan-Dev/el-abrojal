@@ -1,4 +1,3 @@
-Structure of the web page 
+- Structure of the web page 
 
-Color palette: 
-
+- TomTom API (later, google maps api)
