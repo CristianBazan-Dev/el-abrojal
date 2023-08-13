@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: justify;
-  text-align: justify; 
+  text-align: justify;
   margin-left: 10em;
 }
 
@@ -23,8 +23,14 @@
   margin: 1em;
 }
 
-.categories-selection ul p{
+.categories-selection ul p {
   text-transform: initial;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.categories-selection ul p:hover {
+  font-weight: bold;
 }
 
 /* Cat item  */
@@ -46,14 +52,14 @@
   fill: var(--main);
 }
 
-.selection-icon{
-    display: flex;
-    align-items: center;
+.selection-icon {
+  display: flex;
+  align-items: center;
 }
 
-.selection-icon.active{
+.selection-icon.active {
   transform: rotate(180deg);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .bar-1,
@@ -79,14 +85,103 @@
   background: var(--gray);
 }
 
-.details{
+/* Products title  */
+
+.products .container {
+  margin: 1em;
+}
+
+.products .title {
+  display: flex;
+  align-items: baseline;
+}
+
+.products .title h2 {
+  margin-right: 0.5em;
+}
+
+/* Gallery  */
+
+.gallery {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.main-img {
+  width: 70%;
+}
+
+.main-img img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.galleries-imgs {
+}
+
+.galleries-imgs .card-img {
+  max-width: 130px;
+  max-height: 100px;
+  width: 130px;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 15px;
+  margin: 2em;
+  cursor: pointer;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.galleries-imgs .card-img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.details {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
+.details .description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: justify;
+  margin-bottom: 1em;
+}
 
-.separator{
+/* Treatment  */
+
+.details .treatments .treatment-container .treatment-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details .treatments .treatment-container .treatment-info .treatment-img {
+  max-width: 130px;
+  max-height: 100px;
+  width: 130px;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 15px;
+  margin: 2em;
+  cursor: pointer;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.details h4 {
+  margin: 1em 0 1em 0;
+}
+
+.separator {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./products.css";
 import { categories } from "../../../api/Categories.js";
 import { subcategories } from "../../../api/Subcategories.js";
 
 function Products(props) {
   const [showSubcategories, setShowSubcategories] = useState(false);
+  const [subcategorySelected, setSubcategorySelected] = useState([]);
+
+  console.log("Subcat selected info: ", subcategorySelected);
 
   return (
     <section>
@@ -24,7 +27,14 @@ function Products(props) {
                     }}
                   >
                     <img src={data.icon} className="cat-icon" />
-                    <p className="cat-title">{data.category}</p>
+                    <p
+                      className="cat-title"
+                      onClick={() => {
+                        setSubcategorySelected(data);
+                      }}
+                    >
+                      {data.category}
+                    </p>
 
                     <div
                       className={
@@ -42,7 +52,16 @@ function Products(props) {
                     <ul>
                       {subcategories.map((subcategory) => {
                         if (subcategory.catId == data.id) {
-                          return <p>- {subcategory.titulo}</p>;
+                          return (
+                            <p
+                              key={subcategory.id}
+                              onClick={() => {
+                                setSubcategorySelected(subcategory);
+                              }}
+                            >
+                              - {subcategory.title}
+                            </p>
+                          );
                         }
                       })}
                     </ul>
@@ -54,29 +73,66 @@ function Products(props) {
         </div>
 
         <div className="products">
-          <h2>Productos</h2>
-
-          <div className="gallery">
-            <div className="main-img">
-              <img src="" alt="" />
-            </div>
-          </div>
-
-          <div className="details">
-            <div className="description">
-              <h4>Descripción</h4>
+          <div className="container">
+            <div className="title">
+              <h2> {subcategorySelected.category}</h2>
+              <h5>{subcategorySelected.title}</h5>
             </div>
 
-            <div className="separator"></div>
+            <div className="gallery">
+              <div className="main-img">
+                {subcategorySelected.imgs && (
+                  <img src={subcategorySelected.imgs[0]} alt="" />
+                )}
+              </div>
 
-            <div className="treatments">
-              <h4>Tratamientos</h4>
+              <div className="galleries-imgs">
+                {subcategorySelected.imgs &&
+                  subcategorySelected.imgs.map((imgs) => {
+                    return (
+                      <div
+                        className="card-img"
+                        style={{ backgroundImage: `url(${imgs})` }}
+                      ></div>
+                    );
+                  })}
+              </div>
             </div>
 
-            <div className="separator"></div>
+            <div className="details">
+              <div className="description">
+                <h4>Descripción</h4>
+                <p>{subcategorySelected.description}</p>
+              </div>
 
-            <div className="measures">
-              <h4>Medidas</h4>
+              <div className="separator"></div>
+
+              <div className="treatments">
+                <h4>Tratamientos</h4>
+
+                {subcategorySelected.treatments &&
+                  subcategorySelected.treatments.map((treatment) => {
+                    return (
+                      <div className="treatment-container">
+                        <h5>{treatment.title}</h5>
+
+                        <div className="treatment-info">
+                          <div
+                            className="treatment-img"
+                            style={{ backgroundImage: `url(${treatment.img})` }}
+                          ></div>
+                          <p>{treatment.description}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
+              </div>
+
+              <div className="separator"></div>
+
+              <div className="measures">
+                <h4>Medidas</h4>
+              </div>
             </div>
           </div>
         </div>
