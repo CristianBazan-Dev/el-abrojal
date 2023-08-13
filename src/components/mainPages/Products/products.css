@@ -89,6 +89,7 @@
 
 .products .container {
   margin: 1em;
+  margin-right: var(--m);
 }
 
 .products .title {
@@ -156,17 +157,20 @@
 }
 
 /* Treatment  */
-
-.details .treatments .treatment-container .treatment-info {
+.treatment-container .title {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
 }
 
-.details .treatments .treatment-container .treatment-info .treatment-img {
-  max-width: 130px;
-  max-height: 100px;
-  width: 130px;
+.treatment-container .treatment-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.treatment-container .treatment-info .treatment-img {
+  width: 20%;
   height: 100px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 15px;
@@ -175,6 +179,14 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.details .treatments .treatment-container .treatment-info .paragraph {
+  width: 50%;
+}
+
+.details .treatments .treatment-container .treatment-info .paragraph p {
+  text-align: justify;
 }
 
 .details h4 {

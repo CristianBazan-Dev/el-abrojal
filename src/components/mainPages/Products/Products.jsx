@@ -110,22 +110,31 @@ function Products(props) {
               <div className="treatments">
                 <h4>Tratamientos</h4>
 
-                {subcategorySelected.treatments &&
-                  subcategorySelected.treatments.map((treatment) => {
-                    return (
-                      <div className="treatment-container">
-                        <h5>{treatment.title}</h5>
+                <div className="treatments-container">
+                  {subcategorySelected.treatments &&
+                    subcategorySelected.treatments.map((treatment) => {
+                      return (
+                        <div className="treatment-container">
+                          <div className="title">
+                            <h5>{treatment.title}</h5>
+                          </div>
 
-                        <div className="treatment-info">
-                          <div
-                            className="treatment-img"
-                            style={{ backgroundImage: `url(${treatment.img})` }}
-                          ></div>
-                          <p>{treatment.description}</p>
+                          <div className="treatment-info">
+                            <div
+                              className="treatment-img"
+                              style={{
+                                backgroundImage: `url(${treatment.img})`,
+                              }}
+                            ></div>
+
+                            <div className="paragraph">
+                              <p>{treatment.description}</p>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
+                </div>
               </div>
 
               <div className="separator"></div>
