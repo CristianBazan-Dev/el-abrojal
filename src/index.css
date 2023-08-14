@@ -187,6 +187,21 @@ li {
   text-transform: uppercase;
 }
 
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th{
+  margin: 1em;
+  padding: .5em;
+}
+
+
 /* Components css  */
 
 /* Header */

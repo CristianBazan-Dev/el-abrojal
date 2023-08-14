@@ -20,7 +20,7 @@ function ProductsCards(props) {
         <div className="categories-container">
           {categories.map((data, index) => {
             return (
-              <Link to={`/products`}>
+              <Link to={`/products`} key={index}>
                 <div
                   className="product-card"
                   style={{ backgroundImage: `url(${data.categoryImg})` }}

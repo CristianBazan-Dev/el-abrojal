@@ -189,6 +189,10 @@
   text-align: justify;
 }
 
+.treatment-container:nth-child(even){
+  flex-direction: co;
+}
+
 .details h4 {
   margin: 1em 0 1em 0;
 }
