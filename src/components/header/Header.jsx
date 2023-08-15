@@ -25,7 +25,7 @@ function Header(props) {
             <Link to="/about">Sobre nosotros</Link>
           </li>
           <li>
-            <Link to="/#contact">Contacto</Link>
+            <a href="#contact">Contacto</a>
           </li>
         </ul>
       </nav>

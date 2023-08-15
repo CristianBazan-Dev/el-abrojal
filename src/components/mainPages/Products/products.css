@@ -89,6 +89,7 @@
 
 .products .container {
   margin: 1em;
+  margin-left: 2.3em;
   margin-right: var(--m);
 }
 
@@ -148,7 +149,9 @@
   align-items: start;
 }
 
-.details .description {
+.details .description,
+.details .treatments,
+.details .measures {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -157,40 +160,58 @@
 }
 
 /* Treatment  */
+
+.treatment-container .title h5 {
+  color: var(--secondary);
+}
+
 .treatment-container .title {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.treatment-container .treatment-info {
+.treatment-info {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  margin: auto;
 }
 
-.treatment-container .treatment-info .treatment-img {
-  width: 20%;
-  height: 100px;
+.treatment-info > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.treatment-info img {
+  max-width: 250px;
+  width: 250px;
+  height: 150px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 15px;
   margin: 2em;
+  margin-left: 0;
   cursor: pointer;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.details .treatments .treatment-container .treatment-info .paragraph {
+.treatment-container .treatment-info .paragraph {
   width: 50%;
+  height: 153px;
 }
 
-.details .treatments .treatment-container .treatment-info .paragraph p {
+.treatment-container .treatment-info .paragraph p {
   text-align: justify;
+  line-height: 25px;
 }
 
-.treatment-container:nth-child(even){
-  flex-direction: co;
+.treatment-container:nth-child(even) .treatment-info {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
 .details h4 {
@@ -205,4 +226,26 @@
   width: 50%;
   height: 2px;
   background-color: var(--dark);
+}
+
+/* Measures  */
+
+.measures {
+  margin: auto;
+}
+
+.measures .center-table {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  border: 2px solid var(--secondary);
+}
+
+.measures .center-table thead {
+  background: var(--secondary);
+  color: var(--light);
+}
+
+.measures .center-table td {
+  padding: 0.5em;
 }

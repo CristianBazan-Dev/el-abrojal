@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 function Contact(props) {
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <div className="contact-info">
         <div className="text">
           <h2>¿Dónde encontrarnos?</h2>
@@ -28,14 +28,14 @@ function Contact(props) {
             <Link>
               <div className="contact-element">
                 <Mail />
-                <p>panebianco@gmail.com</p>
+                <p>metalurgicaelabrojal@gmail.com</p>
               </div>
             </Link>
 
             <Link>
               <div className="contact-element">
                 <Phone />
-                <p>3537 342323</p>
+                <p>+54 9 3537 494202</p>
               </div>
             </Link>
 

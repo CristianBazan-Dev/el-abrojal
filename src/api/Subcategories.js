@@ -476,7 +476,7 @@ export const subcategories = [
       },
       {
         denominacion: '4"',
-      },
+      }
     ],
   },
   // Torniquetes
@@ -484,7 +484,7 @@ export const subcategories = [
     id: "tor01",
     catId: "tor",
     category: "Torniquetes",
-    title: "Punta París",
+
     imgs: [
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014592/test-el-abrojal/Productos/Productos/Torniquetes/tor_-_nro._6_-_1-removebg-preview_zyrsfo.png",
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014591/test-el-abrojal/Productos/Productos/Torniquetes/tor_-_doble_-_1-removebg-preview_re773q.png",

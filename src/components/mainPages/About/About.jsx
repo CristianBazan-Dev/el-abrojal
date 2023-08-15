@@ -1,9 +1,12 @@
 import React from 'react';
+import WhyUs from '../../utils/whyUs/WhyUs';
+import History from '../../utils/history/History';
 
 function About(props) {
     return (
         <section>
-            About
+            <WhyUs/>
+            <History/>
         </section>
     );
 }

@@ -3,18 +3,30 @@ import "./products.css";
 import { categories } from "../../../api/Categories.js";
 import { subcategories } from "../../../api/Subcategories.js";
 import { GlobalState } from "../../../GlobalState";
+import Modal from "../../utils/modal/Modal";
 
 function Products(props) {
   const state = useContext(GlobalState);
-  const [showSubcategories, setShowSubcategories] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+
+  const [showModal, setShowModal] = state.showModal;
+  const [imgModal, setImgModal] = state.imgModal;
+
+  const [categorySelected, setCategorySelected] =
+    state.categories.categorySelected;
   const [subcategorySelected, setSubcategorySelected] =
     state.categories.subcategorySelected;
 
   const [haveSubcategory, setHaveSubcategory] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState("");
+
+  const [toggleButton, setToggleButton] = useState("");
+
+  useEffect(() => {}, []);
 
   const firstCategorySelected = (cat) => {
+    setCategorySelected(cat.id);
     setHaveSubcategory(cat.haveSubcat);
-    setShowSubcategories(!showSubcategories);
 
     subcategories.filter((subcat) => {
       if (cat.id == subcat.catId && `${cat.id}01` == subcat.id) {
@@ -23,7 +35,10 @@ function Products(props) {
     });
   };
 
-  console.log(subcategorySelected.id);
+  const handleGallery = (img) => {
+    setImgModal(img);
+    setShowModal(!showModal);
+  };
 
   return (
     <section>
@@ -40,6 +55,7 @@ function Products(props) {
                     key={index}
                     onClick={() => {
                       firstCategorySelected(data);
+                      setIsActive(!isActive);
                     }}
                   >
                     <img src={data.icon} className="cat-icon" />
@@ -55,10 +71,12 @@ function Products(props) {
                     {data.haveSubcat && (
                       <div
                         className={
-                          showSubcategories
-                            ? "selection-icon active"
-                            : "selection-icon"
+                          isActive ? "selection-icon active" : "selection-icon"
                         }
+                        id={data.id}
+                        onClick={(e) => {
+                          setToggleButton(e.target.id);
+                        }}
                       >
                         <div className="bar-1"></div>
                         <div className="bar-2"></div>
@@ -66,7 +84,7 @@ function Products(props) {
                     )}
                   </div>
 
-                  {showSubcategories && (
+                  {isActive && (
                     <ul>
                       {subcategories.map((subcategory) => {
                         if (subcategory.catId == data.id) {
@@ -77,7 +95,9 @@ function Products(props) {
                                 setSubcategorySelected(subcategory);
                               }}
                             >
-                              - {subcategory.title}
+                              {subcategory.title
+                                ? `- ${subcategory.title}`
+                                : ""}
                             </p>
                           );
                         }
@@ -112,10 +132,15 @@ function Products(props) {
                         className="card-img"
                         style={{ backgroundImage: `url(${imgs})` }}
                         key={index}
+                        onClick={() => {
+                          handleGallery(imgs);
+                        }}
                       ></div>
                     );
                   })}
               </div>
+
+              <Modal />
             </div>
 
             <div className="details">
@@ -135,19 +160,17 @@ function Products(props) {
                       return (
                         <div className="treatment-container" key={index}>
                           <div className="title">
-                            <h5>{treatment.title}</h5>
+                            {" "}
+                            <h5>{treatment.title}</h5>{" "}
                           </div>
 
                           <div className="treatment-info">
-                            <div
-                              className="treatment-img"
-                              style={{
-                                backgroundImage: `url(${treatment.img})`,
-                              }}
-                            ></div>
+                            <div>
+                              <img src={treatment.img} alt="" />
 
-                            <div className="paragraph">
-                              <p>{treatment.description}</p>
+                              <div className="paragraph">
+                                <p>{treatment.description}</p>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -159,147 +182,151 @@ function Products(props) {
                 ""
               )}
 
-              <div className="separator"></div>
+              <div className="separator" />
+
+              <div className="measurement">
+                <h4>Medidas</h4>
+              </div>
 
               <div className="measures">
-                <h4>Medidas</h4>
+                <div className="center-table">
+                  <table>
+                    <thead>
+                      {subcategorySelected.columns ? (
+                        <tr>
+                          {subcategorySelected.columns.map((column, index) => {
+                            return <th key={index}>{column}</th>;
+                          })}
+                        </tr>
+                      ) : (
+                        ""
+                      )}
+                    </thead>
 
-                <table>
-                  <thead>
-                    {subcategorySelected.columns ? (
-                      <tr>
-                        {subcategorySelected.columns.map((column, index) => {
-                          return <th key={index}>{column}</th>;
+                    {subcategorySelected.rows ? (
+                      <tbody>
+                        {subcategorySelected.rows.map((row, index) => {
+                          if (
+                            subcategorySelected.id == "cad01" ||
+                            subcategorySelected.id == "cad02" 
+                      
+                          ) {
+                            return (
+                              <tr key={index}>
+                                <td>{row.denominacion}</td>
+                                <td>{row.diametro}</td>
+                                <td>{row.anchoInt}</td>
+                                <td>{row.largoInt}</td>
+                                <td>{row.kgxmt}</td>
+                                <td>{row.mtxkg}</td>
+                                <td>{row.carga}</td>
+                              </tr>
+                            );
+                          } else if (subcategorySelected.id == "cad04") {
+                            return (
+                              <tr key={index}>
+                                <td>{row.cadena}</td>
+                                <td>{row.largo}</td>
+                                <td>{row.punta}</td>
+                              </tr>
+                            );
+                          } else if (subcategorySelected.id == "clav01" || subcategorySelected.id == "cad03") {
+                            return (
+                              <tr key={index}>
+                                <td>{row.denominacion}</td>
+                              </tr>
+                            );
+                          } else if (subcategorySelected.id == "tor01") {
+                            return (
+                              <tr key={index}>
+                                <td>{row.descripcion}</td>
+                                <td>{row.plancha}mm</td>
+                                <td>{row.perno}mm</td>
+                              </tr>
+                            );
+                          } else if (subcategorySelected.id == "gan01") {
+                            return (
+                              <tr key={index}>
+                                <td>{row.descripcion}</td>
+                              </tr>
+                            );
+                          } else if (subcategorySelected.id == "gan02") {
+                            return (
+                              <tr key={index}>
+                                <td>{row.espesor}</td>
+                                <td>{row.largo}</td>
+                              </tr>
+                            );
+                          } else if (subcategorySelected.id == "arg01") {
+                            return (
+                              <tr key={index}>
+                                <td>
+                                  {row.espesor}x{row.diametroInt}
+                                </td>
+                              </tr>
+                            );
+                          } else if (subcategorySelected.id == "arg01") {
+                            return (
+                              <tr key={index}>
+                                <td>
+                                  {row.espesor}x{row.diametroInt}
+                                </td>
+                              </tr>
+                            );
+                          } else if (
+                            subcategorySelected.id == "mosq01" ||
+                            subcategorySelected.id == "mosq02" ||
+                            subcategorySelected.id == "mosq03"
+                          ) {
+                            return (
+                              <tr key={index}>
+                                <td>{row.n}</td>
+                                <td>{row.largo}</td>
+                                <td>{row.giratorio ? "✓" : "✗"}</td>
+                              </tr>
+                            );
+                          } else if (
+                            subcategorySelected.id == "mosq04" ||
+                            subcategorySelected.id == "mosq05"
+                          ) {
+                            return (
+                              <tr key={index}>
+                                <td>{row.largo}</td>
+                                <td>{row.giratorio ? "✓" : "✗"}</td>
+                              </tr>
+                            );
+                          } else if (
+                            subcategorySelected.id == "mosq06" ||
+                            subcategorySelected.id == "mosq07"
+                          ) {
+                            return (
+                              <tr key={index}>
+                                <td>{row.largo}</td>
+                                <td>{row.espesor}</td>
+                              </tr>
+                            );
+                          } else if (subcategorySelected.id == "mosq08") {
+                            return (
+                              <tr key={index}>
+                                <td>{row.n}</td>
+                                <td>{row.eslabon ? "✓" : "✗"}</td>
+                              </tr>
+                            );
+                          } else {
+                            return (
+                              <p>
+                                No hay información sobre este producto.
+                                Contactese con la empresa{" "}
+                              </p>
+                            );
+                          }
                         })}
-                      </tr>
+                      </tbody>
                     ) : (
                       ""
                     )}
-                  </thead>
-
-                  {subcategorySelected.rows ? (
-                    <tbody>
-                      {subcategorySelected.rows.map((row, index) => {
-                        if (
-                          subcategorySelected.id == "cad01" ||
-                          subcategorySelected.id == "cad02" ||
-                          subcategorySelected.id == "cad03"
-                        ) {
-                          return (
-                            <tr key={index}>
-                              <td>{row.denominacion}</td>
-                              <td>{row.diametro}</td>
-                              <td>{row.anchoInt}</td>
-                              <td>{row.largoInt}</td>
-                              <td>{row.kgxmt}</td>
-                              <td>{row.mtxkg}</td>
-                              <td>{row.carga}</td>
-                            </tr>
-                          );
-                        } else if (subcategorySelected.id == "cad04") {
-                          return (
-                            <tr key={index}>
-                              <td>{row.cadena}</td>
-                              <td>{row.largo}</td>
-                              <td>{row.punta}</td>
-                            </tr>
-                          );
-                        } else if (subcategorySelected.id == "clav01") {
-                          return (
-                            <tr key={index}>
-                              <td>{row.denominacion}</td>
-                              <td>{row.largo}</td>
-                            </tr>
-                          );
-                        } else if (subcategorySelected.id == "tor01") {
-                          return (
-                            <tr key={index}>
-                              <td>{row.descripcion}</td>
-                              <td>{row.plancha}mm</td>
-                              <td>{row.perno}mm</td>
-                            </tr>
-                          );
-                        } else if (subcategorySelected.id == "gan01") {
-                          return (
-                            <tr key={index}>
-                              <td>{row.descripcion}</td>
-                            </tr>
-                          );
-                        } else if (subcategorySelected.id == "gan02") {
-                          return (
-                            <tr key={index}>
-                              <td>{row.espesor}</td>
-                              <td>{row.largo}</td>
-                            </tr>
-                          );
-                        } else if (subcategorySelected.id == "arg01") {
-                          return (
-                            <tr key={index}>
-                              <td>
-                                {row.espesor}x{row.diametroInt}
-                              </td>
-                            </tr>
-                          );
-                        } else if (subcategorySelected.id == "arg01") {
-                          return (
-                            <tr key={index}>
-                              <td>
-                                {row.espesor}x{row.diametroInt}
-                              </td>
-                            </tr>
-                          );
-                        } else if (
-                          subcategorySelected.id == "mosq01" ||
-                          subcategorySelected.id == "mosq02" ||
-                          subcategorySelected.id == "mosq03"
-                        ) {
-                          return (
-                            <tr key={index}>
-                              <td>{row.n}</td>
-                              <td>{row.largo}</td>
-                              <td>{row.giratorio ? "✓" : "✗"}</td>
-                            </tr>
-                          );
-                        } else if (
-                          subcategorySelected.id == "mosq04" ||
-                          subcategorySelected.id == "mosq05"
-                        ) {
-                          return (
-                            <tr key={index}>
-                              <td>{row.largo}</td>
-                              <td>{row.giratorio ? "✓" : "✗"}</td>
-                            </tr>
-                          );
-                        } else if (
-                          subcategorySelected.id == "mosq06" ||
-                          subcategorySelected.id == "mosq07"
-                        ) {
-                          return (
-                            <tr key={index}>
-                              <td>{row.largo}</td>
-                              <td>{row.espesor}</td>
-                        
-                            </tr>
-                          );
-                        }else if (
-                          subcategorySelected.id == "mosq08" 
-                        ) {
-                          return (
-                            <tr key={index}>
-                              <td>{row.n}</td>
-                              <td>{row.eslabon ? "✓" : "✗"}</td>
-                        
-                            </tr>
-                          );
-                        } else {
-                          return <p>No hay información sobre este producto. Contactese con la empresa </p>
-                        }
-                      })}
-                    </tbody>
-                  ) : (
-                    ""
-                  )}
-                </table>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
