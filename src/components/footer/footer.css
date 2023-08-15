@@ -14,6 +14,12 @@
   margin-right: 1.25em;
 }
 
+.social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Sections in footer  */
 
 .sections {
@@ -56,4 +62,47 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2em;
+}
+
+/* Responsive  */
+@media only screen and (max-width: 480px) {
+  .sections{
+    display: none;
+  }
+
+  .logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: row-reverse;
+    margin-bottom: 3em;
+  }
+
+  .social-icons{
+    display: flex;
+    flex-direction: column;
+    margin: .3em;
+    margin-left: -1em;
+  }
+
+  .social-icons .social-icon{
+    width: 30px;
+    margin-bottom: .3em;
+  }
+
+  .credits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+
+  }
+
+  .copyright{
+    width: 100%;
+    margin-bottom: .1em;
+  }
+
 }

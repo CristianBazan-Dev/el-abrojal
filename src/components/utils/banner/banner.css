@@ -1,23 +1,66 @@
-.banner-section{
-    max-height: 124px;
-    height: 124px;
+.banner-section {
+  max-height: 124px;
+  height: 124px;
+  background-color: var(--main);
+  margin: 0 -1em;
+}
+
+.banner-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+
+.banner-text h2,
+h3 {
+  color: var(--light);
+}
+
+.banner-item {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner-section {
+    max-height: 200px;
+    height: 200px;
     background-color: var(--main);
     margin: 0 -1em;
-
-}
-
-.banner-text{
     display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    padding: 1em;
-}
+    flex-direction: column;
+    z-index: 6;
+  }
 
-.banner-text h2, h3{
-    color: var(--light);
-}
+  .banner-text {
+    justify-content: center;
+    flex-direction: column;
+  }
 
-.banner-item{
+  .banner-item {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+  }
+
+  .text-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .text-item h2,
+  .text-item h3 {
+    font-size: 10px;
+    color: var(--light);
+    margin-right: .5em;
+  }
+
+  .truck-icon,
+  .variety-icon {
+    width: 20px;
+  }
 }

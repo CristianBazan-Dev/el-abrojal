@@ -50,3 +50,26 @@
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   transition: 1s;
 }
+
+
+@media only screen and (max-width: 480px) {
+  .productsCards-section{
+    margin-bottom: 10em;
+  }
+
+
+  .categories-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+  }
+
+  .product-card{
+    width: 300px;
+    height: 600px;
+
+  }
+
+
+}

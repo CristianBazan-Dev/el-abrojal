@@ -11,7 +11,7 @@ function Banner(props) {
         <h2>Garantía de calidad</h2>
 
         <div className="banner-item">
-          <Truck />
+          <Truck className="truck-icon" />
           <div className="text-item">
             <h2>Envíos</h2>
             <h3>a todo el país</h3>
@@ -19,7 +19,7 @@ function Banner(props) {
         </div>
 
         <div className="banner-item">
-          <Variety />
+          <Variety className="variety-icon" />
           <div className="text-item">
             <h2>Variedad</h2>
             <h3>de productos</h3>

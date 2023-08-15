@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 header .logo-container img {
@@ -20,16 +19,27 @@ header ul li {
   margin-left: 20px;
 }
 
-
 /* Responsive actions  */
 
-.hamburger-menu{
-    display: none;
-    opacity: 0;
-    cursor: pointer
+.hamburger-menu {
+  display: none;
+  opacity: 0;
+  cursor: pointer;
 }
 
+.whatsapp-icon {
+  fill: var(--main);
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+  cursor: pointer;
+}
 
+.responsive-nav {
+  display: none;
+}
 
 /* Responsive */
 @media only screen and (max-width: 900px) {
@@ -37,29 +47,86 @@ header ul li {
     display: none;
   }
 
-  header {
+  .whatsapp-icon {
+    display: none;
+  }
+
+  .responsive-nav {
+    display: flex;
+
+    position: fixed;
+    bottom: 3em;
+    width: 80%;
+    height: 60px;
+    background: var(--gradient);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: var(--hard-b-sw);
+  }
+
+  .logo-resp-menu {
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+  }
+
+  .logo-resp-menu img {
+    height: 60px;
+  }
+
+  .responsive-nav .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .responsive-nav .icons .icon {
+    width: 20px;
+    fill: var(--light);
+  }
+
+  .responsive-nav .icons .icon-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em;
+  }
+
+  .responsive-nav .icons p {
+    color: var(--light);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
   }
 
   .header-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
-  .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+  header .logo-container {
+    margin: 0;
   }
 
-  .hamburger-menu{
+  header .logo-container img {
+    margin-left: 0;
+  }
+
+  .hamburger-menu {
     display: block;
     opacity: 1;
     margin: 3em;
+    margin-left: 0;
+    position: absolute;
+    top: -1em;
+    left: 1em;
   }
-
 }

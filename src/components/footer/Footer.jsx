@@ -27,15 +27,15 @@ function Footer(props) {
 
           <div className="social-icons">
             <Link to="/">
-              <Facebook />
+              <Facebook className="social-icon"/>
             </Link>
 
             <Link to="/">
-              <LinkedIn />
+              <LinkedIn className="social-icon"/>
             </Link>
 
             <Link to="/">
-              <Whatsapp />
+              <Whatsapp className="social-icon"/>
             </Link>
           </div>
         </div>
@@ -139,7 +139,15 @@ function Footer(props) {
         </div>
 
         <div className="developer">
-          <p>Sitio web desarrollado por CristianBazanDev</p>
+          <p>
+            Sitio web desarrollado por{" "}
+            <Link
+              to="https://cristianbazan-dev.github.io/portfolio/"
+              target="_blank"
+            >
+              CristianBazanDev
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

@@ -24,7 +24,9 @@
   --light-lowOp: #ffffff4b;
 
   --gradient: linear-gradient(138deg, #6b85a8 28.45%, #001f60 100%);
+  --gradientLowOp: linear-gradient(138deg, #6b85a8 28.45%, #001f60 50%);
 
+  
   --light-b-sw: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --medium-b-sw: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --hard-b-sw: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -105,7 +107,7 @@ footer {
 /* Typography */
 
 h1 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -114,7 +116,7 @@ h1 {
 }
 
 h2 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -123,7 +125,7 @@ h2 {
 }
 
 h3 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -132,7 +134,7 @@ h3 {
 }
 
 h4 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -141,7 +143,7 @@ h4 {
 }
 
 h5 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -219,8 +221,59 @@ th {
 
     justify-content: center;
   }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px; /* 117.188% */
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 20px; /* 117.188% */
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 10px;
+  }
+
+  h5 {
+    font-family: Montserrat;
+    font-size: 5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    text-transform: uppercase;
+  }
+
+  .lead-p {
+    font-family: "Barlow", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+  }
+
+  p {
+    font-family: "Barlow", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 138.889% */
+    text-transform: none;
+  }
+
+
+
 }
 
+@media only screen and (max-width: 480px) {
+
+}
 /* Components css  */
 
 /* Header */
