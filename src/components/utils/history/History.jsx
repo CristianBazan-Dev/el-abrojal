@@ -31,7 +31,7 @@ function History(props) {
             </h2>
             <img
               src="https://www.perfectionchain.com/wp-content/uploads/2019/03/Plant_01_web1.jpg"
-              alt=""
+              alt="foto de la empresa"
             />
           </div>
 
@@ -70,7 +70,7 @@ function History(props) {
 
         <div className="gallery-section">
           <CarouselGallery />
-          <Gallery/>
+          <Gallery />
         </div>
       </div>
     </section>

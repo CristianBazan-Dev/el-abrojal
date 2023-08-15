@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
 
 import Logo from "../../assets/logo.png";
+import { ReactComponent as Hamburger } from "../../assets/icons/utils/hamburger.svg";
 
 function Header(props) {
+  const [hamburgerMenu, setHamburgerMenu] = useState(false);
+
   return (
     <header>
       <div className="logo-container">
@@ -29,6 +32,17 @@ function Header(props) {
           </li>
         </ul>
       </nav>
+
+      <Hamburger
+        className="hamburger-menu"
+        onClick={() => {
+          setHamburgerMenu(!hamburgerMenu);
+        }}
+      />
+
+      <div
+        className={hamburgerMenu ? "responsive-nav active" : "responsive-nav"}
+      ></div>
     </header>
   );
 }

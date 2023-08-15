@@ -8,6 +8,9 @@ function CategoriesAPI(props) {
   );
   const [categorySelected, setCategorySelected] = useState(categories[0]);
 
+
+
+
   return {
     subcategorySelected: [subcategorySelected, setSubcategorySelected],
     categorySelected: [categorySelected, setCategorySelected],

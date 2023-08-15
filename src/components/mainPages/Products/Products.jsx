@@ -22,18 +22,24 @@ function Products(props) {
 
   const [toggleButton, setToggleButton] = useState("");
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    subcategories.filter((subcat) => {
+      if (
+        categorySelected == subcat.catId &&
+        `${categorySelected}01` == subcat.id
+      ) {
+        setSubcategorySelected(subcat);
+      }
+    });
+  }, []);
 
   const firstCategorySelected = (cat) => {
     setCategorySelected(cat.id);
     setHaveSubcategory(cat.haveSubcat);
-
-    subcategories.filter((subcat) => {
-      if (cat.id == subcat.catId && `${cat.id}01` == subcat.id) {
-        setSubcategorySelected(subcat);
-      }
-    });
   };
+
+  console.log(categorySelected, subcategorySelected);
 
   const handleGallery = (img) => {
     setImgModal(img);
@@ -208,8 +214,7 @@ function Products(props) {
                         {subcategorySelected.rows.map((row, index) => {
                           if (
                             subcategorySelected.id == "cad01" ||
-                            subcategorySelected.id == "cad02" 
-                      
+                            subcategorySelected.id == "cad02"
                           ) {
                             return (
                               <tr key={index}>
@@ -230,7 +235,10 @@ function Products(props) {
                                 <td>{row.punta}</td>
                               </tr>
                             );
-                          } else if (subcategorySelected.id == "clav01" || subcategorySelected.id == "cad03") {
+                          } else if (
+                            subcategorySelected.id == "clav01" ||
+                            subcategorySelected.id == "cad03"
+                          ) {
                             return (
                               <tr key={index}>
                                 <td>{row.denominacion}</td>

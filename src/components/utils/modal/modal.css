@@ -28,10 +28,9 @@
 
 .modal img {
   max-width: 200px;
-  filter: drop-shadow(310px 10px 4px var(--main));
   cursor: pointer;
   transition: 1s;
-  animation: imgFloating 10s infinite alternate;
+  /* animation: imgFloating 10s infinite alternate; */
 }
 
 .modal img:hover {

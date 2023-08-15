@@ -9,18 +9,15 @@ function Modal() {
   const [showModal, setShowModal] = state.showModal;
   const [imgModal, setImgModal] = state.imgModal;
 
-
-
   useEffect(() => {
     const handleEsc = (e) => {
-      if(e.key === 'Escape'){
-        setShowModal(false); 
+      if (e.key === "Escape") {
+        setShowModal(false);
       }
-    }
+    };
 
-    window.addEventListener('keydown', handleEsc)
-
-  }, [] )
+    window.addEventListener("keydown", handleEsc);
+  }, []);
 
   return (
     <div className={showModal ? "modal-container active" : "modal-container"}>
