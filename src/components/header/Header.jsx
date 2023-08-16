@@ -24,11 +24,9 @@ function Header(props) {
         <Whatsapp className="whatsapp-icon" />
       </Link>
 
-      <div className="logo-container">
-        <Link to="/">
-          <img src={Logo} alt="logo de la empresa metalúrgica 'el abrojal' " />
-        </Link>
-      </div>
+      <Link to="/">
+        <img src={Logo} alt="logo de la empresa metalúrgica 'el abrojal' " />
+      </Link>
 
       <nav>
         <ul>
@@ -54,20 +52,55 @@ function Header(props) {
         }}
       />
 
-      <div className={hamburgerMenu ? "responsive-menu active" : "responsive-menu"}>
-        <Close className="close-icon" onClick={() =>{setHamburgerMenu(false)}}/>
+      <div
+        className={hamburgerMenu ? "responsive-menu active" : "responsive-menu"}
+      >
+        <Close
+          className="close-icon"
+          onClick={() => {
+            setHamburgerMenu(false);
+          }}
+        />
         <ul>
           <li>
-            <Link to="/">Inicio</Link>
+            <Link
+              to="/"
+              onClick={() => {
+                setHamburgerMenu(false);
+              }}
+            >
+              Inicio
+            </Link>
           </li>
           <li>
-            <Link to="/products">Productos</Link>
+            <Link
+              to="/products"
+              onClick={() => {
+                setHamburgerMenu(false);
+              }}
+            >
+              Productos
+            </Link>
           </li>
           <li>
-            <Link to="/about">Sobre nosotros</Link>
+            <Link
+              to="/about"
+              onClick={() => {
+                setHamburgerMenu(false);
+              }}
+            >
+              Sobre nosotros
+            </Link>
           </li>
           <li>
-            <a href="#contact">Contacto</a>
+            <a
+              href="#contact"
+              onClick={() => {
+                setHamburgerMenu(false);
+              }}
+            >
+              Contacto
+            </a>
           </li>
         </ul>
 
@@ -110,21 +143,36 @@ function Header(props) {
         </div>   */}
 
         <div className="icons">
-          <Link to="/products">
+          <Link
+            to="/products"
+            onClick={() => {
+              setHamburgerMenu(false);
+            }}
+          >
             <div className="icon-item">
               <Products className="icon" />
               <p>Productos</p>
             </div>
           </Link>
 
-          <a href="#contact">
+          <a
+            href="#contact"
+            onClick={() => {
+              setHamburgerMenu(false);
+            }}
+          >
             <div className="icon-item">
               <Contact className="icon" />
               <p>Contacto</p>
             </div>
           </a>
 
-          <Link to="/about">
+          <Link
+            to="/about"
+            onClick={() => {
+              setHamburgerMenu(false);
+            }}
+          >
             <div className="icon-item">
               <Us className="icon" />
               <p>Nosotros</p>

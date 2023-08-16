@@ -16,12 +16,33 @@
   box-shadow: var(--light-b-sw);
 }
 
-.gallery-element:hover{
-    box-shadow: var(--hard-b-sw);
-    transform: scale(1.1);
-    transition: 1s;
+.gallery-element:hover {
+  box-shadow: var(--hard-b-sw);
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 .gallery-element img {
   max-width: 500px;
+}
+
+/* Responsive  */
+@media only screen and (max-width: 430px) {
+  .gallery-about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+    row-gap: 0;
+  }
+
+  .gallery-element {
+    width: 200px;
+    height: 100px;
+    background-size: contain;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: var(--light-b-sw);
+    margin-bottom: 2em;
+  }
 }

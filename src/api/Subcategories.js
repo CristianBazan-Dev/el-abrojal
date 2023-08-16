@@ -230,7 +230,7 @@ export const subcategories = [
     ],
     rows: [
       {
-        denominacion: "Cadena derecha n° 35",
+        denominacion: "Cadena torcida n° 35",
         diametro: 3.5,
         anchoInt: 5.9,
         largoInt: 20.5,
@@ -239,7 +239,7 @@ export const subcategories = [
         carga: 110,
       },
       {
-        denominacion: "Cadena derecha n° 40",
+        denominacion: "Cadena torcida n° 40",
         diametro: 4,
         anchoInt: 6.8,
         largoInt: 22.5,
@@ -248,7 +248,7 @@ export const subcategories = [
         carga: 140,
       },
       {
-        denominacion: "Cadena derecha n° 45",
+        denominacion: "Cadena torcida n° 45",
         diametro: 4.5,
         anchoInt: 7.5,
         largoInt: 24.5,
@@ -257,7 +257,7 @@ export const subcategories = [
         carga: 180,
       },
       {
-        denominacion: "Cadena derecha n° 50",
+        denominacion: "Cadena torcida n° 50",
         diametro: 5,
         anchoInt: 8.5,
         largoInt: 26.5,
@@ -266,7 +266,7 @@ export const subcategories = [
         carga: 220,
       },
       {
-        denominacion: "Cadena derecha n° 55",
+        denominacion: "Cadena torcida n° 55",
         diametro: 5.5,
         anchoInt: 9.3,
         largoInt: 28.5,
@@ -275,7 +275,7 @@ export const subcategories = [
         carga: 270,
       },
       {
-        denominacion: "Cadena derecha n° 60",
+        denominacion: "Cadena torcida n° 60",
         diametro: 6,
         anchoInt: 10.2,
         largoInt: 31,
@@ -284,7 +284,7 @@ export const subcategories = [
         carga: 320,
       },
       {
-        denominacion: "Cadena derecha n° 70",
+        denominacion: "Cadena torcida n° 70",
         diametro: 7,
         anchoInt: 11.5,
         largoInt: 33.5,
@@ -293,7 +293,7 @@ export const subcategories = [
         carga: 440,
       },
       {
-        denominacion: "Cadena derecha n° 80",
+        denominacion: "Cadena torcida n° 80",
         diametro: 8,
         anchoInt: 13,
         largoInt: 36.5,
@@ -302,7 +302,7 @@ export const subcategories = [
         carga: 570,
       },
       {
-        denominacion: "Cadena derecha n° 90",
+        denominacion: "Cadena torcida n° 90",
         diametro: 9,
         anchoInt: 14.8,
         largoInt: 39.5,
@@ -311,7 +311,7 @@ export const subcategories = [
         carga: 720,
       },
       {
-        denominacion: "Cadena derecha n° 100",
+        denominacion: "Cadena torcida n° 100",
         diametro: 10,
         anchoInt: 16.6,
         largoInt: 43,
@@ -320,7 +320,7 @@ export const subcategories = [
         carga: 900,
       },
       {
-        denominacion: "Cadena derecha n° 110",
+        denominacion: "Cadena torcida n° 110",
         diametro: 11,
         anchoInt: 18.5,
         largoInt: 46.5,
@@ -329,7 +329,7 @@ export const subcategories = [
         carga: 1080,
       },
       {
-        denominacion: "Cadena derecha n° 120",
+        denominacion: "Cadena torcida n° 120",
         diametro: 12,
         anchoInt: 20.5,
         largoInt: 50.5,
@@ -369,7 +369,7 @@ export const subcategories = [
     columns: ["Denominación"],
     rows: [
       {
-        denominacion: "60x1 mt",
+        denominacion: "60 x 1 mt",
       },
       {
         denominacion: "70 x 1,10 mts",
@@ -484,7 +484,6 @@ export const subcategories = [
     id: "tor01",
     catId: "tor",
     category: "Torniquetes",
-
     imgs: [
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014592/test-el-abrojal/Productos/Productos/Torniquetes/tor_-_nro._6_-_1-removebg-preview_zyrsfo.png",
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014591/test-el-abrojal/Productos/Productos/Torniquetes/tor_-_doble_-_1-removebg-preview_re773q.png",
@@ -845,17 +844,17 @@ export const subcategories = [
     rows: [
       {
         n: 2,
-        largo: 5.5,
+        largo: 55,
         giratorio: true,
       },
       {
         n: 3,
-        largo: 7,
+        largo: 70,
         giratorio: true,
       },
       {
         n: 4,
-        largo: 9,
+        largo: 90,
         giratorio: true,
       },
     ],
@@ -936,15 +935,15 @@ export const subcategories = [
     columns: ["largo", "espesor"],
     rows: [
       {
-        largo: 6.6,
+        largo: 66,
         espesor: 6.5,
       },
       {
-        largo: 8,
+        largo: 80,
         espesor: 8,
       },
       {
-        largo: 6.6,
+        largo: 66,
         espesor: 6.5,
       },
     ],

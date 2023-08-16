@@ -1,6 +1,7 @@
 import React from "react";
 // Initialization for ES Users
 import { Carousel, initTE } from "tw-elements";
+import './carousel.css'
 
 initTE({ Carousel });
 function CarouselGallery(props) {
