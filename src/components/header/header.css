@@ -41,6 +41,78 @@ header ul li {
   display: none;
 }
 
+.responsive-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: var(--gradient);
+  z-index: 10;
+  box-shadow: var(--hard-b-sw);
+  animation: menu 1s;
+}
+
+.responsive-menu.active {
+  display: flex;
+
+  transition: 1s;
+}
+
+@keyframes menu {
+  0% {
+    margin-left: -100%;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+.responsive-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  z-index: 20;
+}
+
+.responsive-menu ul li {
+  color: var(--light);
+  margin: 0;
+}
+
+.responsive-menu .close-icon {
+  fill: var(--light);
+}
+
+.responsive-menu .social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.responsive-menu .social-icons a {
+  margin-left: 1em;
+}
+
+.responsive-menu .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-menu .logo img {
+  width: 200px;
+  height: 200;
+}
+
 /* Responsive */
 @media only screen and (max-width: 900px) {
   header nav {
@@ -53,7 +125,6 @@ header ul li {
 
   .responsive-nav {
     display: flex;
-
     position: fixed;
     bottom: 3em;
     width: 80%;
@@ -89,7 +160,7 @@ header ul li {
     fill: var(--light);
   }
 
-  .responsive-nav .icons .icon-item{
+  .responsive-nav .icons .icon-item {
     display: flex;
     flex-direction: column;
     align-items: center;

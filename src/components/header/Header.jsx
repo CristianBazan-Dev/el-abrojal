@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 
 import Logo from "../../assets/logo.png";
 import { ReactComponent as Hamburger } from "../../assets/icons/utils/hamburger.svg";
+import { ReactComponent as Close } from "../../assets/icons/utils/close.svg";
 import { ReactComponent as Whatsapp } from "../../assets/icons/social/whatsapp.svg";
+
+import { ReactComponent as Facebook } from "../../assets/icons/social/fb.svg";
+import { ReactComponent as LinkedIn } from "../../assets/icons/social/in.svg";
+import { ReactComponent as WhatsappIcon } from "../../assets/icons/social/wpp.svg";
 
 import { ReactComponent as Products } from "../../assets/icons/banner/variety.svg";
 import { ReactComponent as Us } from "../../assets/icons/whyUs/why-1.svg";
@@ -48,6 +53,56 @@ function Header(props) {
           setHamburgerMenu(!hamburgerMenu);
         }}
       />
+
+      <div className={hamburgerMenu ? "responsive-menu active" : "responsive-menu"}>
+        <Close className="close-icon" onClick={() =>{setHamburgerMenu(false)}}/>
+        <ul>
+          <li>
+            <Link to="/">Inicio</Link>
+          </li>
+          <li>
+            <Link to="/products">Productos</Link>
+          </li>
+          <li>
+            <Link to="/about">Sobre nosotros</Link>
+          </li>
+          <li>
+            <a href="#contact">Contacto</a>
+          </li>
+        </ul>
+
+        <div className="logo">
+          <img src={Logo} alt="" />
+        </div>
+
+        <div className="social-icons">
+          <Link to="/">
+            <Facebook className="social-icon" />
+          </Link>
+
+          <Link to="/">
+            <LinkedIn className="social-icon" />
+          </Link>
+
+          <Link to="/">
+            <WhatsappIcon className="social-icon" />
+          </Link>
+        </div>
+
+        <div className="credits">
+          <div className="copyright">
+            <p>
+              Página web desarrollada por{" "}
+              <Link
+                to="https://cristianbazan-dev.github.io/portfolio/"
+                target="_blank"
+              >
+                CristianBazanDev
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
 
       <div className="responsive-nav">
         {/* <div className="logo-resp-menu">

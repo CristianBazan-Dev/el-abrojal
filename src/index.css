@@ -8,7 +8,9 @@
 :root {
   /* Color palette  */
   --main: #001f60;
+  --main-lowOp: #001e60c5;
   --secondary: #6b85a8;
+  --secondary-lowOp: #6b85a86c;
 
   --third-light: #fbebc9;
   --third-dark: #dbdac5;
