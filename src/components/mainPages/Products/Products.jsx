@@ -26,6 +26,14 @@ function Products(props) {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+
+  }, []);
+
+  const firstCategorySelected = (cat) => {
+    setCategorySelected(cat.id);
+
+    setHaveSubcategory(cat.haveSubcat);
+
     subcategories.filter((subcat) => {
       if (
         categorySelected == subcat.catId &&
@@ -34,11 +42,6 @@ function Products(props) {
         setSubcategorySelected(subcat);
       }
     });
-  }, []);
-
-  const firstCategorySelected = (cat) => {
-    setCategorySelected(cat.id);
-    setHaveSubcategory(cat.haveSubcat);
   };
 
 
@@ -55,7 +58,7 @@ function Products(props) {
     });
   };
 
-  console.log(showModal);
+  console.log("Cat:", categorySelected, "SubCat:", subcategorySelected);
 
   return (
     <section>
