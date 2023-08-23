@@ -24,9 +24,19 @@ function Header(props) {
         <Whatsapp className="whatsapp-icon" />
       </Link>
 
-      <Link to="/">
+
+      {/* FOr development  */}
+
+      {/* <Link to="/">
+        <img src={Logo} alt="logo de la empresa metalúrgica 'el abrojal' " />
+      </Link> */}
+
+
+      {/* For production  */}
+      <Link to="/el-abrojal">
         <img src={Logo} alt="logo de la empresa metalúrgica 'el abrojal' " />
       </Link>
+
 
       <nav>
         <ul>

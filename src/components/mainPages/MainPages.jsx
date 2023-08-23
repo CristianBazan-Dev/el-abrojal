@@ -11,6 +11,11 @@ function MainPages(props) {
     return (
         <main>
             <Routes>
+                {/* For development */}
+                {/* <Route path="/" element={<Home/>}/> */}
+
+
+                {/* For production  */}
                 <Route path="/el-abrojal" element={<Home/>}/>
                 <Route path="/products" element={<Products/>}/>
                 <Route path="/about" element={<About/>}/>
