@@ -41,7 +41,6 @@ function Products(props) {
     setHaveSubcategory(cat.haveSubcat);
   };
 
-  console.log(categorySelected, subcategorySelected);
 
   const handleGallery = (img) => {
     setImgModal(img);
@@ -56,9 +55,11 @@ function Products(props) {
     });
   };
 
+  console.log(showModal);
+
   return (
     <section>
-      <div className="products-page">
+      <div className={showModal ? "products-page blurred" : "products-page"}>
         <div className="categories">
           <h2>Categorías</h2>
 

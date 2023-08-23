@@ -28,7 +28,6 @@
   --gradient: linear-gradient(138deg, #6b85a8 28.45%, #001f60 100%);
   --gradientLowOp: linear-gradient(138deg, #6b85a8 28.45%, #001f60 50%);
 
-  
   --light-b-sw: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --medium-b-sw: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --hard-b-sw: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -99,6 +98,10 @@ main {
   background: whitesmoke;
   color: #444;
   padding: 1rem;
+}
+
+.blurred {
+  backdrop-filter: blur(100px);
 }
 
 footer {
@@ -268,13 +271,9 @@ th {
     line-height: 25px; /* 138.889% */
     text-transform: none;
   }
-
-
-
 }
 
 @media only screen and (max-width: 480px) {
-
 }
 /* Components css  */
 

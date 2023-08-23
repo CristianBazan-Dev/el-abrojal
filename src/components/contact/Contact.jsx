@@ -6,6 +6,7 @@ import { ReactComponent as Mail } from "../../assets/icons/contact/mail.svg";
 import { ReactComponent as Phone } from "../../assets/icons/contact/phone.svg";
 import { ReactComponent as Facebook } from "../../assets/icons/contact/fb-round.svg";
 import { Link } from "react-router-dom";
+import Map from "../utils/map/Map";
 
 function Contact(props) {
   return (
@@ -48,7 +49,7 @@ function Contact(props) {
           </ul>
         </div>
 
-        <div className="map">Mapa</div>
+        <Map/>
       </div>
     </section>
   );
