@@ -11,7 +11,7 @@ function MainPages(props) {
     return (
         <main>
             <Routes>
-                <Route path="/" element={<Home/>}/>
+                <Route path="/el-abrojal" element={<Home/>}/>
                 <Route path="/products" element={<Products/>}/>
                 <Route path="/about" element={<About/>}/>
             </Routes>
