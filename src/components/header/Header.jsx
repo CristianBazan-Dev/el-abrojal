@@ -41,7 +41,7 @@ function Header(props) {
       <nav>
         <ul>
           <li>
-            <Link to="/">Inicio</Link>
+            <Link to="/el-abrojal">Inicio</Link>
           </li>
           <li>
             <Link to="/products">Productos</Link>
