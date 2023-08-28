@@ -1,7 +1,7 @@
 header img {
   max-width: 100px;
   max-height: 75px;
-  margin-right: var(--m);
+  margin-left: var(--m);
 }
 
 header ul {
@@ -21,14 +21,62 @@ header ul li {
   cursor: pointer;
 }
 
-.whatsapp-icon {
-  fill: var(--main);
-  width: 50px;
-  height: 50px;
+.whatsapp-icon-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
   position: fixed;
-  bottom: 3em;
-  right: 3em;
+  bottom: 2em;
+  right: var(--m);
+}
+
+.whatsapp-icon-container svg {
+  fill: var(--main);
+  /* fill: var(--wpp-green); */
+  width: 80px;
+  height: 80px;
   cursor: pointer;
+  z-index: 300;
+}
+
+.whatsapp-icon-container:hover svg {
+  fill: var(--wpp-green);
+  stroke-width: 0.3;
+  stroke: var(--light);
+  transition: 0.5s;
+}
+
+.whatsapp-icon-container:hover .deploy-msg-wpp {
+  display: flex;
+  transition: 1s;
+  animation: wpp-msg 0.5s;
+}
+
+.whatsapp-icon-container .deploy-msg-wpp {
+  background: var(--wpp-green);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  z-index: 299;
+  color: var(--light);
+  padding: 10px;
+  border-radius: 15px 0 0 15px;
+  margin-right: -0.8em;
+  outline: 0.3px solid var(--light);
+}
+
+@keyframes wpp-msg {
+  0% {
+    margin-right: -3em;
+    opacity: 0;
+  }
+
+  100% {
+    margin-right: -0.8em;
+    opacity: 1;
+  }
 }
 
 .responsive-nav {

@@ -25,8 +25,12 @@
   --light: #ffffff;
   --light-lowOp: #ffffff4b;
 
+  --wpp-green: #25d366;
+
   --gradient: linear-gradient(138deg, #6b85a8 28.45%, #001f60 100%);
   --gradientLowOp: linear-gradient(138deg, #6b85a8 28.45%, #001f60 50%);
+
+  --gradientAlt: linear-gradient(-138deg, #6b85a8 28.45%, #001f60 100%);
 
   --light-b-sw: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --medium-b-sw: rgba(0, 0, 0, 0.24) 0px 3px 8px;

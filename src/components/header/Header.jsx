@@ -18,12 +18,26 @@ import { ReactComponent as Contact } from "../../assets/icons/contact/phone.svg"
 function Header(props) {
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
 
+  const whatsappRedirection = () => {};
+
   return (
     <header>
-      <Link to="https://wa.link/2s3t1s" target="_blank">
-        <Whatsapp className="whatsapp-icon" />
+      <Link
+        to="https://wa.link/2s3t1s"
+        target="_blank"
+        className="whatsapp-icon-container"
+      >
+        <Whatsapp />
+
+        <div className="deploy-msg-wpp">
+          <p>Contáctenos a través de Whatsapp</p>
+        </div>
+        <i class="fab fa-whatsapp"></i>
+
+        
       </Link>
 
+      
 
       {/* FOr development  */}
 
@@ -31,12 +45,10 @@ function Header(props) {
         <img src={Logo} alt="logo de la empresa metalúrgica 'el abrojal' " />
       </Link> */}
 
-
       {/* For production  */}
       <Link to="/el-abrojal">
         <img src={Logo} alt="logo de la empresa metalúrgica 'el abrojal' " />
       </Link>
-
 
       <nav>
         <ul>

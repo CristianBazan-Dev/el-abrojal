@@ -22,11 +22,10 @@ function Products(props) {
 
   const [toggleButton, setToggleButton] = useState("");
 
-  console.log(subcategorySelected);
+  console.log(subcategorySelected.id);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-
   }, []);
 
   const firstCategorySelected = (cat) => {
@@ -43,7 +42,6 @@ function Products(props) {
       }
     });
   };
-
 
   const handleGallery = (img) => {
     setImgModal(img);
@@ -186,37 +184,40 @@ function Products(props) {
 
           <div className="details">
             <div className="description">
-              <h4>Descripción</h4>
-              <p>{subcategorySelected.description}</p>
+              <div className="text">
+                <h4>Descripción</h4>
+                <p>{subcategorySelected.description}</p>
+              </div>
             </div>
 
             <div className="separator"></div>
 
             {subcategorySelected.treatments ? (
               <div className="treatments">
-                <h4>Tratamientos</h4>
+                <div className="text">
+                  <h4>Tratamientos</h4>
+                  <div className="treatments-container">
+                    {subcategorySelected.treatments.map((treatment, index) => {
+                      return (
+                        <div className="treatment-container" key={index}>
+                          <div className="title">
+                            {" "}
+                            <h5>{treatment.title}</h5>{" "}
+                          </div>
 
-                <div className="treatments-container">
-                  {subcategorySelected.treatments.map((treatment, index) => {
-                    return (
-                      <div className="treatment-container" key={index}>
-                        <div className="title">
-                          {" "}
-                          <h5>{treatment.title}</h5>{" "}
-                        </div>
+                          <div className="treatment-info">
+                            <div>
+                              <img src={treatment.img} alt="" />
 
-                        <div className="treatment-info">
-                          <div>
-                            <img src={treatment.img} alt="" />
-
-                            <div className="paragraph">
-                              <p>{treatment.description}</p>
+                              <div className="paragraph">
+                                <p>{treatment.description}</p>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             ) : (
@@ -270,8 +271,15 @@ function Products(props) {
                               <td>{row.punta}</td>
                             </tr>
                           );
+                        } else if (subcategorySelected.id == "cad05") {
+                          return (
+                            <ul key={index}>
+                              <td>{row.descripcion}</td>
+                            </ul>
+                          );
                         } else if (
                           subcategorySelected.id == "clav01" ||
+                          subcategorySelected.id == "clav02" ||
                           subcategorySelected.id == "cad03"
                         ) {
                           return (
@@ -285,12 +293,6 @@ function Products(props) {
                               <td>{row.descripcion}</td>
                               <td>{row.plancha}mm</td>
                               <td>{row.perno}mm</td>
-                            </tr>
-                          );
-                        } else if (subcategorySelected.id == "gan01") {
-                          return (
-                            <tr key={index}>
-                              <td>{row.descripcion}</td>
                             </tr>
                           );
                         } else if (subcategorySelected.id == "gan02") {
@@ -414,8 +416,15 @@ function Products(props) {
                         </li>
                       </ul>
                     );
+                  } else if (subcategorySelected.id == "cad05") {
+                    return (
+                      <ul key={index}>
+                        <h4>{row.descripcion}</h4>
+                      </ul>
+                    );
                   } else if (
                     subcategorySelected.id == "clav01" ||
+                    subcategorySelected.id == "clav02" ||
                     subcategorySelected.id == "cad03"
                   ) {
                     return (
@@ -434,12 +443,6 @@ function Products(props) {
                         <li>
                           - Perno: <p>{row.perno}mm</p>
                         </li>
-                      </ul>
-                    );
-                  } else if (subcategorySelected.id == "gan01") {
-                    return (
-                      <ul key={index}>
-                        <h4>{row.descripcion}</h4>
                       </ul>
                     );
                   } else if (subcategorySelected.id == "gan02") {

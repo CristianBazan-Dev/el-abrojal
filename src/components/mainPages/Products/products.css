@@ -3,7 +3,7 @@
   justify-content: space-between;
 }
 
-.products-page.blurred{
+.products-page.blurred {
   backdrop-filter: blur(10px);
 }
 
@@ -159,17 +159,25 @@
   align-items: start;
   text-align: justify;
   margin-bottom: 1em;
-  margin-left: 2em;
+  margin-left: 0;
 }
 
-.details .measurement {
-  margin-left: 2em;
+.details .description .text,
+.details .treatments .text {
+  margin-left: 1em;
+}
+
+.details .measurement, .details .measures{
+
+  background-color: var(--darker-gray);
 }
 
 /* Description  */
 
 .details .description {
   width: 100%;
+  background-color: var(--darker-gray);
+
 }
 
 .details .description p {
@@ -314,7 +322,7 @@
 
   .products {
     width: 100%;
-    margin: ;
+    /* margin: ; */
     margin-right: 0;
     background: var(--gray);
   }

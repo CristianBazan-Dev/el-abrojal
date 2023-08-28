@@ -1,29 +1,14 @@
-/* .hero-section img {
-  width: 120%;
-  max-height: 700px;
-  z-index: 1;
-  margin: -1em;
-}
-
-.hero-section img::after{
-    content: "";
-    width: 120%;
-    max-height: 700px;
-    background: red;
-    z-index: 2;
-    margin: -1em;
-} */
-
 .hero-section {
   background-image: url("https://res.cloudinary.com/dhbvri4ni/image/upload/v1691604226/test-el-abrojal/Hero/hero-banner_dsgumz.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: 10% 30%;
   max-height: 650px;
   height: 650px;
   margin: -1em;
-  margin-bottom: 0;
   z-index: 0;
   animation: in 2s;
+
 }
 
 @keyframes in {
@@ -37,32 +22,17 @@
   }
 }
 
-.hero-section::before {
-   content: "";
-  width: 100%;
-  max-height: 650px;
-  height: 650px;
-  background-color: var(--light-lowOp);
-  z-index: 5;
-  position: absolute;
-  left: 0; 
-}
 
 .hero-presentation{
-    background-color: var(--light-lowOp);
-    max-height: 650px;
-    height: 650px;
-}
-
-.hero-presentation  .text{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 5;
-    position: relative;
-   
-   
+}
+
+
+
+.hero-presentation  .text{
+  margin-top: 3em;
 }
 
 .hero-presentation h1{
@@ -82,17 +52,7 @@
     height: 195px;
   }
 
-  .hero-section::before {
-    content: "";
-   width: 100%;
-   max-height: 200px;
-   height: 200px;
-   background-color: var(--light-lowOp);
-   z-index: 5;
-   position: relative;
-   left: 0; 
-   
- }
+
   .hero-presentation{
     height: 200px;
   }

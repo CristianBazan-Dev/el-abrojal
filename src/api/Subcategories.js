@@ -426,12 +426,43 @@ export const subcategories = [
       },
     ],
   },
+  {
+    id: "cad05",
+    catId: "cad",
+    category: "Cadenas",
+    title: "Ganchos para carrocería",
+    imgs: [
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019767/test-el-abrojal/Productos/Productos/Ganchos%20J/gan_-_carr_-_1_j4rdrf.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019767/test-el-abrojal/Productos/Productos/Ganchos%20J/gan_-_carr_-_1_j4rdrf.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019767/test-el-abrojal/Productos/Productos/Ganchos%20J/gan_-_carr_-_1_j4rdrf.png",
+    ],
+
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+    treatments: [
+      {
+        title: "pulido",
+        img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      },
+    ],
+    columns: ["descripcion"],
+    rows: [
+      {
+        descripcion: "Ganchos de seguridad",
+      },
+      {
+        descripcion: "Gancho con cadena N° 70 de 2,4m",
+      },
+    ],
+  },
   // Clavos
   {
     id: "clav01",
     catId: "clav",
     category: "Clavos",
-    title: "Punta París",
+    title: "Punta París: Lisos",
     imgs: [
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014013/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_1_vxb1d6.png",
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014014/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_2_cyaqp0.png",
@@ -440,20 +471,72 @@ export const subcategories = [
 
     description:
       "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
-    treatments: [
+    // treatments: [
+    //   {
+    //     title: "lisos",
+    //     img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+    //     description:
+    //       "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+    //   },
+    //   {
+    //     title: "espiralados",
+    //     img: "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
+    //     description:
+    //       "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+    //   },
+    // ],
+    columns: ["medidas"],
+    rows: [
       {
-        title: "lisos",
-        img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
-        description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+        denominacion: '1"',
       },
       {
-        title: "espiralados",
-        img: "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
-        description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+        denominacion: '1 1/2"',
       },
+      {
+        denominacion: '2"',
+      },
+      {
+        denominacion: '2 1/2"',
+      },
+      {
+        denominacion: '3"',
+      },
+      {
+        denominacion: '3 1/2"',
+      },
+      {
+        denominacion: '4"',
+      }
     ],
+  },
+  {
+    id: "clav02",
+    catId: "clav",
+    category: "Clavos",
+    title: "Punta París: Espiralados",
+    imgs: [
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014013/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_1_vxb1d6.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014014/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_2_cyaqp0.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014014/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_2_cyaqp0.png",
+    ],
+
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+    // treatments: [
+    //   {
+    //     title: "lisos",
+    //     img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+    //     description:
+    //       "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+    //   },
+    //   {
+    //     title: "espiralados",
+    //     img: "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
+    //     description:
+    //       "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+    //   },
+    // ],
     columns: ["medidas"],
     rows: [
       {
@@ -526,37 +609,6 @@ export const subcategories = [
     ],
   },
   // Ganchos J
-  {
-    id: "gan01",
-    catId: "gan",
-    category: "Ganchos J",
-    title: "Ganchos para carrocería",
-    imgs: [
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019767/test-el-abrojal/Productos/Productos/Ganchos%20J/gan_-_carr_-_1_j4rdrf.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019767/test-el-abrojal/Productos/Productos/Ganchos%20J/gan_-_carr_-_1_j4rdrf.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019767/test-el-abrojal/Productos/Productos/Ganchos%20J/gan_-_carr_-_1_j4rdrf.png",
-    ],
-
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
-    treatments: [
-      {
-        title: "pulido",
-        img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
-        description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
-      },
-    ],
-    columns: ["descripcion"],
-    rows: [
-      {
-        descripcion: "Ganchos de seguridad",
-      },
-      {
-        descripcion: "Gancho con cadena N° 70 de 2,4m",
-      },
-    ],
-  },
   {
     id: "gan02",
     catId: "gan",
