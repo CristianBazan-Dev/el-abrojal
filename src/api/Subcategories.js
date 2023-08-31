@@ -507,7 +507,7 @@ export const subcategories = [
       },
       {
         denominacion: '4"',
-      }
+      },
     ],
   },
   {
@@ -559,7 +559,7 @@ export const subcategories = [
       },
       {
         denominacion: '4"',
-      }
+      },
     ],
   },
   // Torniquetes
@@ -567,6 +567,99 @@ export const subcategories = [
     id: "tor01",
     catId: "tor",
     category: "Torniquetes",
+    title: "Mini/Tv",
+    imgs: [
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014592/test-el-abrojal/Productos/Productos/Torniquetes/tor_-_nro._6_-_1-removebg-preview_zyrsfo.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014591/test-el-abrojal/Productos/Productos/Torniquetes/tor_-_doble_-_1-removebg-preview_re773q.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014591/test-el-abrojal/Productos/Productos/Torniquetes/tor_-_mtv_-_1-removebg-preview_tqek9d.png",
+    ],
+
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+    treatments: [
+      {
+        title: "pintado verde",
+        img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      },
+      {
+        title: "zincado",
+        img: "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      },
+    ],
+    columns: ["descripcion", "plancha", "perno"],
+    rows: [
+      {
+        descripcion: "Mini/TV",
+        plancha: 3.2,
+        perno: 12,
+      },
+      {
+        descripcion: "N° 6/Reforzado",
+        plancha: 5,
+        perno: 16,
+      },
+      {
+        descripcion: "Doble para poste",
+        plancha: 5,
+        perno: 16,
+      },
+    ],
+  },
+  {
+    id: "tor02",
+    catId: "tor",
+    category: "Torniquetes",
+    title: "N° 6/Reforzado",
+    imgs: [
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014592/test-el-abrojal/Productos/Productos/Torniquetes/tor_-_nro._6_-_1-removebg-preview_zyrsfo.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014591/test-el-abrojal/Productos/Productos/Torniquetes/tor_-_doble_-_1-removebg-preview_re773q.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014591/test-el-abrojal/Productos/Productos/Torniquetes/tor_-_mtv_-_1-removebg-preview_tqek9d.png",
+    ],
+
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+    treatments: [
+      {
+        title: "pintado verde",
+        img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      },
+      {
+        title: "zincado",
+        img: "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
+        description:
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      },
+    ],
+    columns: ["descripcion", "plancha", "perno"],
+    rows: [
+      {
+        descripcion: "Mini/TV",
+        plancha: 3.2,
+        perno: 12,
+      },
+      {
+        descripcion: "N° 6/Reforzado",
+        plancha: 5,
+        perno: 16,
+      },
+      {
+        descripcion: "Doble para poste",
+        plancha: 5,
+        perno: 16,
+      },
+    ],
+  },
+  {
+    id: "tor03",
+    catId: "tor",
+    category: "Torniquetes",
+    title: "Doble para poste",
     imgs: [
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014592/test-el-abrojal/Productos/Productos/Torniquetes/tor_-_nro._6_-_1-removebg-preview_zyrsfo.png",
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014591/test-el-abrojal/Productos/Productos/Torniquetes/tor_-_doble_-_1-removebg-preview_re773q.png",

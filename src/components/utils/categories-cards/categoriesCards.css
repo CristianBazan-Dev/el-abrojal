@@ -1,0 +1,25 @@
+.category-selection-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px);
+    gap: 15em 3em;
+}
+
+.category-card{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 430px) {
+    .category-selection-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .category-card{
+        cursor: pointer;
+    }
+}

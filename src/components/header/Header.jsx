@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
 
@@ -14,11 +14,29 @@ import { ReactComponent as WhatsappIcon } from "../../assets/icons/social/wpp.sv
 import { ReactComponent as Products } from "../../assets/icons/banner/variety.svg";
 import { ReactComponent as Us } from "../../assets/icons/whyUs/why-1.svg";
 import { ReactComponent as Contact } from "../../assets/icons/contact/phone.svg";
+import { GlobalState } from "../../GlobalState";
 
 function Header(props) {
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
 
+  const state = useContext(GlobalState);
+
+  const [categorySelected, setCategorySelected] =
+    state.categories.categorySelected;
+
+  const [subcategorySelected, setSubcategorySelected] =
+    state.categories.subcategorySelected;
+
+  const [productSelected, setProductSelected] =
+    state.categories.productSelected;
+
   const whatsappRedirection = () => {};
+
+  const ClearCategories = () => {
+    setCategorySelected("");
+    setSubcategorySelected("");
+    setProductSelected("");
+  };
 
   return (
     <header>
@@ -33,11 +51,7 @@ function Header(props) {
           <p>Contáctenos a través de Whatsapp</p>
         </div>
         <i class="fab fa-whatsapp"></i>
-
-        
       </Link>
-
-      
 
       {/* FOr development  */}
 
@@ -46,19 +60,36 @@ function Header(props) {
       </Link> */}
 
       {/* For production  */}
-      <Link to="/el-abrojal">
+      <Link
+        to="/el-abrojal"
+        onClick={() => {
+          ClearCategories();
+        }}
+      >
         <img src={Logo} alt="logo de la empresa metalúrgica 'el abrojal' " />
       </Link>
 
       <nav>
         <ul>
-          <li>
+          <li
+            onClick={() => {
+              ClearCategories();
+            }}
+          >
             <Link to="/el-abrojal">Inicio</Link>
           </li>
-          <li>
+          <li
+            onClick={() => {
+              ClearCategories();
+            }}
+          >
             <Link to="/products">Productos</Link>
           </li>
-          <li>
+          <li
+            onClick={() => {
+              ClearCategories();
+            }}
+          >
             <Link to="/about">Sobre nosotros</Link>
           </li>
           <li>
@@ -89,6 +120,7 @@ function Header(props) {
               to="/"
               onClick={() => {
                 setHamburgerMenu(false);
+                ClearCategories();
               }}
             >
               Inicio
@@ -99,6 +131,7 @@ function Header(props) {
               to="/products"
               onClick={() => {
                 setHamburgerMenu(false);
+                ClearCategories();
               }}
             >
               Productos
@@ -109,6 +142,7 @@ function Header(props) {
               to="/about"
               onClick={() => {
                 setHamburgerMenu(false);
+                ClearCategories();
               }}
             >
               Sobre nosotros
@@ -169,6 +203,7 @@ function Header(props) {
             to="/products"
             onClick={() => {
               setHamburgerMenu(false);
+              ClearCategories();
             }}
           >
             <div className="icon-item">
@@ -181,6 +216,7 @@ function Header(props) {
             href="#contact"
             onClick={() => {
               setHamburgerMenu(false);
+              ClearCategories();
             }}
           >
             <div className="icon-item">
@@ -193,6 +229,7 @@ function Header(props) {
             to="/about"
             onClick={() => {
               setHamburgerMenu(false);
+              ClearCategories();
             }}
           >
             <div className="icon-item">

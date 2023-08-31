@@ -21,7 +21,7 @@ export const categories = [
     categoryImg:
       "https://s3-alpha-sig.figma.com/img/2b33/2a80/7dedc133e26fe024c18bec562e5bf1f1?Expires=1692576000&Signature=mFSGSA~7Z0ef9qA9Xv7M42N1YlhL7iVknvgPKTl4zLR4rBfXcSY12GS~esoi612QyJS7WtkxvF9QHP~q4S9CuawqTmQqTEqZT5tyUjbwqjy1XLSh0VXAEQYQ1KT7~GhLA~iDDQaNsbF2KbVXD6RoRn8PwGPUrqbq8VWAt4TM1BM2Su8FNRGt~CTQtGNcdWpS5KfUDg0tywrEIhwJfyx-y21sJwzAdF2~-VUzrOyCuAIvL3SYOUwtO5pdxkVTAoAJo9wT4f9XqFrzyiXbBg76BDdGtb53voZNVIib5m2z6IGWwkD44cBSMT14C-xK6lQRaIuk127DGulHiLnjGt0vzw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
     icon: "https://res.cloudinary.com/dhbvri4ni/image/upload/v1691767752/test-el-abrojal/Productos/Categor%C3%ADas/icons/wireStrainers_bhyofh.png",
-    haveSubcat: false,
+    haveSubcat: true,
   },
   {
     id: "gan",
@@ -35,9 +35,9 @@ export const categories = [
     id: "arg",
     category: "Argollas",
     categoryImg:
-      "https://s3-alpha-sig.figma.com/img/f277/e7f6/10c10d43b6fde0ebdf3a32ca84c9b139?Expires=1692576000&Signature=cEiAoVGfT38PmLv0zh-hL9~-XZMAF4R9uGOPS5g2u6-qh4RvCYVO0-vaZ8DyDFw1FkgeMpB8--i~EtQv6ychjfGO1ldei41NC9B8DZKvaTEnpw0sRxxkiWGbuXzq4joO1s~BudTZWCrnK~ShE~9Uf4-AqPftwa5egT6Z4VOGZPJ0YgDOrgj9x9UuewRS7GsKFkeCCRTRlvcqh3p~-9dCLGzQsI4RUrVgNJBgxe2Wo-cFFfJaQEjLEWd4mtpZZXMpRROv6FI~aE3Jf6yIdW65u8mXSeh5Irzo9PVgMyyyvjH6ULy7XWu5a5lBFVgOGQ2Fv9kp9pcu-5cX13bwweugHA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "https://s3-alpha-sig.figma.com/img/f277/e7f6/10c10d43b6fde0ebdf3a32ca84c9b139?Expires=1692576000&Signature=cEiAoVGfT38PmLv0zh-hL9~-XZMAF4R9uGOPS5g2u6-qh4RvCYVO0-vaZ8DyDFw1FkgeMpB8--i~EtQv6ychjfGO1ldei 41NC9B8DZKvaTEnpw0sRxxkiWGbuXzq4joO1s~BudTZWCrnK~ShE~9Uf4-AqPftwa5egT6Z4VOGZPJ0YgDOrgj9x9UuewRS7GsKFkeCCRTRlvcqh3p~-9dCLGzQsI4RUrVgNJBgxe2Wo-cFFfJaQEjLEWd4mtpZZXMpRROv6FI~aE3Jf6yIdW65u8mXSeh5Irzo9PVgMyyyvjH6ULy7XWu5a5lBFVgOGQ2Fv9kp9pcu-5cX13bwweugHA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
     icon: "https://res.cloudinary.com/dhbvri4ni/image/upload/v1691767752/test-el-abrojal/Productos/Categor%C3%ADas/icons/rings_cqnqqp.png",
-    haveSubcat: false,
+    haveSubcat: true,
   },
   {
     id: "mosq",

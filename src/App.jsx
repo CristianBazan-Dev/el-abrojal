@@ -6,6 +6,7 @@ import Header from "./components/header/Header";
 import MainPages from "./components/mainPages/MainPages";
 import Footer from "./components/footer/Footer";
 import Contact from "./components/contact/Contact";
+import Modal from "./components/utils/modal/Modal";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <MainPages />
           <Contact id="contact" className="contact-section"/>
           <Footer />
+           <Modal/> 
         </article>
       </Router>
     </DataProvider>

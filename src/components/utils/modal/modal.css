@@ -7,11 +7,29 @@
   height: 100%;
   background: var(--dark-lowOp);
   margin: auto;
+  z-index: 900;
 }
 
 .modal-container.active {
   display: block;
+}
 
+.modal-container button {
+  background: var(--main);
+  color: var(--light);
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal-container button:hover {
+  background: var(--light);
+  box-shadow: var(--accent) 0px 3px 8px;
+  color: var(--main);
+  transition: 0.5s;
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 1000;
 }
 
 .modal {
@@ -45,7 +63,7 @@
   }
   100% {
     transform: translate(20px, 15px) rotate(2deg) scale(1.2);
-  
+
     filter: brightness(1.1);
   }
 }

@@ -5,6 +5,28 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat&display=swap");
 
+
+/* Header */
+@import url("./components/header/header.css");
+
+/* Main  */
+
+/* --------- home ---------- */
+@import url("./components/mainPages/Home/home.css");
+
+/* ---------- Hero --------- */
+@import url("./components/utils/hero/hero.css");
+
+/* Product  */
+@import url("./components/mainPages//Products/products.css");
+
+/* Contact  */
+
+@import url("./components/contact/contact.css");
+
+/* Footer */
+@import url("./components/footer/footer.css");
+
 :root {
   /* Color palette  */
   --main: #001f60;
@@ -26,6 +48,8 @@
   --light-lowOp: #ffffff4b;
 
   --wpp-green: #25d366;
+
+  --accent:   #8142E9; 
 
   --gradient: linear-gradient(138deg, #6b85a8 28.45%, #001f60 100%);
   --gradientLowOp: linear-gradient(138deg, #6b85a8 28.45%, #001f60 50%);
@@ -281,26 +305,6 @@ th {
 }
 /* Components css  */
 
-/* Header */
-@import url("./components/header/header.css");
-
-/* Main  */
-
-/* --------- home ---------- */
-@import url("./components/mainPages/Home/home.css");
-
-/* ---------- Hero --------- */
-@import url("./components/utils/hero/hero.css");
-
-/* Product  */
-@import url("./components/mainPages//Products/products.css");
-
-/* Contact  */
-
-@import url("./components/contact/contact.css");
-
-/* Footer */
-@import url("./components/footer/footer.css");
 
 /* User schema  */
 /* @media (prefers-color-scheme: light) {

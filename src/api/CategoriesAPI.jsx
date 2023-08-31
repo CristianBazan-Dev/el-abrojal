@@ -1,19 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { categories } from "./Categories";
 import { subcategories } from "./Subcategories";
+import { setProductInfo } from "@tomtom-international/web-sdk-maps";
 
 function CategoriesAPI(props) {
-  const [subcategorySelected, setSubcategorySelected] = useState(
-    subcategories[0]
+  const [subcategorySelected, setSubcategorySelected] = useState(""
   );
-  const [categorySelected, setCategorySelected] = useState(categories[0]);
+  const [categorySelected, setCategorySelected] = useState("");
 
+  const [productSelected, setProductSelected] = useState([]);
 
+  console.log(categorySelected)
 
 
   return {
     subcategorySelected: [subcategorySelected, setSubcategorySelected],
     categorySelected: [categorySelected, setCategorySelected],
+    productSelected: [productSelected, setProductSelected]
   };
 }
 

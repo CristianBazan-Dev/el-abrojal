@@ -5,8 +5,20 @@ import Home from './Home/Home';
 import Products from './Products/Products'
 import About from './About/About'
 import { GlobalState } from '../../GlobalState';
+import Categories from './Products/CategoriesPage/CategoriesPage';
+import CategoriesPage from './Products/CategoriesPage/CategoriesPage';
 
 function MainPages(props) {
+    const state = useContext(GlobalState); 
+
+    
+  const [categorySelected, setCategorySelected] =
+  state.categories.categorySelected;
+const [subcategorySelected, setSubcategorySelected] =
+  state.categories.subcategorySelected;
+
+const [productSelected, setProductSelected] =
+  state.categories.productSelected;
 
     return (
         <main>
@@ -18,7 +30,11 @@ function MainPages(props) {
                 {/* For production  */}
                 <Route path="/el-abrojal" element={<Home/>}/>
                 <Route path="/products" element={<Products/>}/>
+                <Route path ="/categories" element={<CategoriesPage/>} />
+      
                 <Route path="/about" element={<About/>}/>
+
+
             </Routes>
         </main>
     );
