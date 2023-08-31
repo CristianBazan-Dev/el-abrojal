@@ -31,7 +31,7 @@ function Modal() {
   const DownloadFunc = (url) => {
     saveAs(
       `${url}`,
-      `elabrojal-${productSelected.category}-${productSelected.title}.jpg`
+      `El Abrojal - ${productSelected.category} - ${productSelected.title}.jpg`
     );
   };
 
