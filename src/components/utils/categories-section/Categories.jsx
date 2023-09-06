@@ -15,60 +15,57 @@ function Categories(props) {
   const [subcategorySelected, setSubcategorySelected] =
     state.categories.subcategorySelected;
 
-  const [isActive, setIsActive] = useState(false);
-  const [categoryToggle, setCategoryToggle] = useState("");
-  const [categoryNameToggle, setCategoryNameToggle] = useState("");
+  const [catIsActive, setCatIsActive] = state.catIsActive;
+  const [categoryToggle, setCategoryToggle] = state.categoryToggle;
+  const [categoryNameToggle, setCategoryNameToggle] = state.categoryNameToggle;
 
   const [categorySelected, setCategorySelected] =
     state.categories.categorySelected;
-
 
   return (
     <div className="categories-selection">
       {categories.map((data, index) => {
         return (
-          <div key={index}>
-            <div
-              className="cat-item"
-              key={index}
+          <div
+            className="cat-item"
+            key={index}
+            onClick={() => {
+              setCategoryToggle(index);
+              setCategoryNameToggle(data.category);
+              setCatIsActive(!catIsActive);
+              setCategorySelected(data.id);
+            }}
+          >
+            <img src={data.icon} className="cat-icon" />
+            <p
+              className={
+                categorySelected == data.id ? "cat-title active" : "cat-title"
+              }
               onClick={() => {
-                setCategoryToggle(index);
-                setCategoryNameToggle(data.category);
-                setIsActive(!isActive);
-                setCategorySelected(data.id);
+                setSubcategorySelected(data);
               }}
             >
-              <img src={data.icon} className="cat-icon" />
-              <p
+              {data.category}
+            </p>
+
+            {data.haveSubcat && (
+              <div
                 className={
-                  categorySelected == data.id ? "cat-title active" : "cat-title"
+                  catIsActive && categoryToggle == index
+                    ? "selection-icon active"
+                    : "selection-icon"
                 }
-                onClick={() => {
-                  setSubcategorySelected(data);
+                id={data.id}
+                onClick={(e) => {
+                  setToggleButton(e.target.id);
                 }}
               >
-                {data.category}
-              </p>
+                <div className="bar-1"></div>
+                <div className="bar-2"></div>
+              </div>
+            )}
 
-              {data.haveSubcat && (
-                <div
-                  className={
-                    isActive && categoryToggle == index
-                      ? "selection-icon active"
-                      : "selection-icon"
-                  }
-                  id={data.id}
-                  onClick={(e) => {
-                    setToggleButton(e.target.id);
-                  }}
-                >
-                  <div className="bar-1"></div>
-                  <div className="bar-2"></div>
-                </div>
-              )}
-            </div>
-
-            {isActive && (
+            {catIsActive && (
               <ul>
                 {subcategories.map((subcategory) => {
                   if (
@@ -93,8 +90,7 @@ function Categories(props) {
         );
       })}
 
-      <div className="responsive-categories-selection">
-        <select
+      {/* <select
           name="subcategories"
           id=""
           onChange={(e) => {
@@ -112,8 +108,7 @@ function Categories(props) {
               );
             }
           })}
-        </select>
-      </div>
+        </select> */}
     </div>
   );
 }

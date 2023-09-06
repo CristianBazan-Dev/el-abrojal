@@ -32,8 +32,7 @@ header ul li {
 }
 
 .whatsapp-icon-container svg {
-  fill: var(--main);
-  /* fill: var(--wpp-green); */
+  fill: var(--wpp-green);
   width: 80px;
   height: 80px;
   cursor: pointer;
@@ -41,7 +40,7 @@ header ul li {
 }
 
 .whatsapp-icon-container:hover svg {
-  fill: var(--wpp-green);
+  filter: saturate(1);
   stroke-width: 0.3;
   stroke: var(--light);
   transition: 0.5s;
@@ -249,5 +248,18 @@ header ul li {
     position: absolute;
     top: -1em;
     left: 1em;
+  }
+
+  .whatsapp-icon-container{
+    display: none;
+  }
+}
+
+
+/* Dark mode  */
+
+@media (prefers-color-scheme: dark) {
+  header{
+    background: var(--light);
   }
 }

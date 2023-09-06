@@ -33,8 +33,7 @@ function ProductsCards(props) {
       <div className="title">
         <h2>Productos</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Venenatis tincidunt egestas
-          dolor elementum mi amet quis lobortis.
+        En constante expansión, nuestros productos son fabricados con dedicación y materia prima de calidad. 
         </p>
       </div>
 
@@ -48,6 +47,7 @@ function ProductsCards(props) {
                   style={{ backgroundImage: `url(${data.categoryImg})` }}
                   onClick={() => {
                     firstCategorySelected(data);
+                    
                   }}
                 >
                   <h2>{data.category}</h2>

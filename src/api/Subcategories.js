@@ -10,23 +10,23 @@ export const subcategories = [
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1691796959/test-el-abrojal/Productos/Productos/Cadenas/Derecha/cad_-_der_-_1_vxgzji.png",
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1691796959/test-el-abrojal/Productos/Productos/Cadenas/Derecha/cad_-_der_-_1_vxgzji.png",
     ],
-
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Caracterizada por su versatilidad de usos.",
     treatments: [
       {
         title: "pulida",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal.",
       },
       {
         title: "zincada",
         img: "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
+    imgTable : "https://res.cloudinary.com/dhbvri4ni/image/upload/v1693593555/test-el-abrojal/Productos/Productos/Cadenas/Torcida/Cadena_Torcida_-_Medidas_ztiron.png", 
     columns: [
       "denominación",
       "ø",
@@ -204,19 +204,19 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Cadena patente torcida. A traves de retorcido mecanico, se obtiene un producto que se caracteriza por sus terminaciones esteticas y la suavidad en su manejo.",
     treatments: [
       {
         title: "pulida",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal.",
       },
       {
         title: "zincada",
         img: "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
     columns: [
@@ -351,19 +351,19 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Cadena para cierre de puertas o portones de tranqueras.",
     treatments: [
       {
         title: "pulida",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal.",
       },
       {
         title: "zincada",
         img: "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
     columns: ["Denominación"],
@@ -397,19 +397,19 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Cadenas para lanza. Ideal para acoplados, trailers.",
     treatments: [
       {
         title: "pulida",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal.",
       },
       {
         title: "zincada",
         img: "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
     columns: ["cadena", "largo", "punta"],
@@ -438,13 +438,13 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Producto ideal para reforzar la seguridad en el interior de las barandas de los acoplados.",
     treatments: [
       {
         title: "pulido",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal.",
       },
     ],
     columns: ["descripcion"],
@@ -462,7 +462,7 @@ export const subcategories = [
     id: "clav01",
     catId: "clav",
     category: "Clavos",
-    title: "Punta París: Lisos",
+    title: "Punta París",
     imgs: [
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014013/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_1_vxb1d6.png",
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014014/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_2_cyaqp0.png",
@@ -470,7 +470,7 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Utilizado en albañileria ( usualmente para aspectos de encofrado), en postes, machimbre y maderas en general. Con cabeza rayada antideslizante.",
     // treatments: [
     //   {
     //     title: "lisos",
@@ -514,7 +514,7 @@ export const subcategories = [
     id: "clav02",
     catId: "clav",
     category: "Clavos",
-    title: "Punta París: Espiralados",
+    title: "Espiralados",
     imgs: [
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014013/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_1_vxb1d6.png",
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014014/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_2_cyaqp0.png",
@@ -522,7 +522,7 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Debido a su característica forma, asegura el afianzamiento del material alrededor del producto. Ideal para el armado de cajas, cajones, construccion de palets y construcción civil.",
     // treatments: [
     //   {
     //     title: "lisos",
@@ -575,19 +575,19 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Tensor de alambrados utilizado mayormente para alambre olimpico, obras civiles, cercos perimetrales. Su excelente terminacion garantiza la conservación de la forma original.",
     treatments: [
       {
         title: "pintado verde",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Tratamiento superficial de pintura sintetica de color verde.",
       },
       {
         title: "zincado",
         img: "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
     columns: ["descripcion", "plancha", "perno"],
@@ -621,7 +621,7 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Tensor de alambrado utilizado mayormente para alambrados de campo, corrales, tambos, Espcialmente utilizdo en alambrado de division de lotes. ",
     treatments: [
       {
         title: "pintado verde",
@@ -633,7 +633,7 @@ export const subcategories = [
         title: "zincado",
         img: "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
     columns: ["descripcion", "plancha", "perno"],
@@ -667,7 +667,7 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Tensor de alambre, usualmente colocado en postes para lograr una tension uniforme en ambos lados. ",
     treatments: [
       {
         title: "pintado verde",
@@ -679,7 +679,7 @@ export const subcategories = [
         title: "zincado",
         img: "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
     columns: ["descripcion", "plancha", "perno"],
@@ -714,13 +714,13 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Utilizado para tensar tejidos olimpicos, caracterizado por su excelente terminacion y resistencia",
     treatments: [
       {
         title: "pulido",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal.",
       },
     ],
     columns: ["espesor", "largo"],
@@ -764,13 +764,13 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Argollas redondas de hierro soldadas y zincadas.",
     treatments: [
       {
         title: "zincadas",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
     columns: ["espesor x diametro interno"],
@@ -880,13 +880,13 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Caracterizados por contar con un cierre que evita la apertura involuntaria.",
     treatments: [
       {
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
     columns: ["n°", "largo", "giratorio - con destorcedor"],
@@ -928,13 +928,13 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Debido a su tipo de cierre, permite mayor velocidad de instalación.",
     treatments: [
       {
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
     columns: ["n°", "largo", "giratorio - con destorcedor"],
@@ -976,13 +976,13 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "De apertura rápida, impide que el material adherente se retuerza o enrede. Sumado a eso, su estética permite un uso cotidiano en llaveros, caretas, bolsas, etc. ",
     treatments: [
       {
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
     columns: ["n°", "largo", "giratorio - con destorcedor"],
@@ -1014,13 +1014,13 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Su tipo de traba permiteel afianzamento y mantenimiento de la posición del material a enganchar.",
     treatments: [
       {
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
     columns: ["largo", "giratorio - con destorcedor"],
@@ -1047,7 +1047,7 @@ export const subcategories = [
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
     columns: ["largo", "giratorio - con destorcedor"],
@@ -1074,7 +1074,7 @@ export const subcategories = [
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
     columns: ["largo", "espesor"],
@@ -1103,13 +1103,13 @@ export const subcategories = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+      "Impide el enrollamiento y retorcimiento del material a enganchar. ",
     treatments: [
       {
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
     columns: ["largo", "espesor"],
@@ -1136,7 +1136,7 @@ export const subcategories = [
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
     columns: ["n°", "con eslabon"],

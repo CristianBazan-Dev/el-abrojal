@@ -50,7 +50,7 @@ function Header(props) {
         <div className="deploy-msg-wpp">
           <p>Contáctenos a través de Whatsapp</p>
         </div>
-        <i class="fab fa-whatsapp"></i>
+        <i className="fab fa-whatsapp"></i>
       </Link>
 
       {/* FOr development  */}

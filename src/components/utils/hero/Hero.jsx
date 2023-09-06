@@ -15,7 +15,7 @@ function Hero(props) {
 
         <div className="text">
           <h1>Metalúrgica El Abrojal</h1>
-          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
+          <h2>Fábrica de cadenas y accesorios.</h2>
         </div>
       </div>
     </div>

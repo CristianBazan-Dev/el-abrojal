@@ -31,7 +31,6 @@ function SubcategoriresCards(props) {
     setImgModal(url);
   };
 
-  console.log(productSelected);
 
   return (
     <section className="subcategories-selection-section">
@@ -49,7 +48,7 @@ function SubcategoriresCards(props) {
       <div className="subcategories-grid">
         {subcategories.map((subcat, index) => {
           if (subcat.catId == categorySelected) {
-            return <ProductCard item={subcat} index={index} />;
+            return <ProductCard item={subcat} index={index} key={index}/>;
           }
         })}
       </div>

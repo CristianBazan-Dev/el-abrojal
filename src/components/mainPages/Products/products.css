@@ -78,8 +78,7 @@
 }
 
 .details .description,
-.details .treatments,
-.details .measures {
+.details .treatments {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -180,30 +179,31 @@
 
 /* Measures  */
 
-.measures {
-  margin: auto;
-}
-
-.measures .center-table {
-  margin: auto;
+.details .measures {
   width: 100%;
-  text-align: center;
-  border: 2px solid var(--secondary);
 }
 
-.measures .center-table thead {
-  background: var(--secondary);
+.measures table{
+   text-align: center;
+  
+  
+}
+
+.measures  table thead {
+  background: var(--main);
   color: var(--light);
 }
 
-.measures .center-table td {
+.measures  td {
+  background: var(--light);
   padding: 0.5em;
+  font-weight: bold;
 }
 
 .responsive-categories-selection {
   display: none;
 }
-.responsive-measures {
+.responsive-measure {
   display: none;
 }
 
@@ -329,22 +329,38 @@
     display: none;
   }
 
-  .responsive-measures {
+  .responsive-measure  {
     display: flex;
     flex-direction: column;
-  }
-
-  .responsive-measures ul h4 {
-    color: var(--secondary);
-  }
-
-  .responsive-measures ul li {
-    display: flex;
+    justify-content: center;
     align-items: center;
+    margin: auto;
   }
 
-  .responsive-measures ul li p {
-    color: var(--main);
-    margin-left: 0.3em;
+  .responsive-measure img{ 
+    width: 100%;
+    margin-left: 1.5em;
+
   }
+
+  .responsive-measure  button {
+    font-size: .5em;
+    background: var(--main);  
+    color: var(--light);
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 1000;
+    margin: 1em;
+  }
+  
+  .responsive-measure  button:hover {
+    background: var(--light);
+    box-shadow: var(--accent) 0px 3px 8px;
+    color: var(--main);
+    transition: 0.5s;
+    border-radius: 10px;
+
+    z-index: 1000;
+  }
+  
 }

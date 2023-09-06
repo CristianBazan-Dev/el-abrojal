@@ -32,3 +32,24 @@ Modifications requested the 23/08/2023:
     - Quitar adaptacion del modo oscuro. 
 
     - Logo de whatsapp con fondo azul
+
+Modifications requested the 31/08/2023: 
+
+    Modificaciones 
+    Header: 
+    -	En inicio de fondo blanco 
+    -	En las demas, de fondo azul.
+    -	Recortar la A con el borde. 
+    Inicio: 
+    -	Achicar subtitulo 
+    -	Resaltar el titulo
+    -	Achicar el logo 
+
+
+
+    Pagina de contacto: 
+    -	Azul plano
+
+    Fijarse en el tema de las fuentes y buscar colores que resalten.
+
+

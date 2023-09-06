@@ -21,7 +21,7 @@ function ProductCard({ item, index }) {
   return (
     <div
       className="product-card"
-      key={index}
+      
       onMouseEnter={() => {
         setShowSlideCard(!showSlideCard);
         setToggle(index);
@@ -32,6 +32,7 @@ function ProductCard({ item, index }) {
       }}
       onClick={() => {
         setProductSelected(item);
+        window.scrollTo(0, 0);
       }}
     >
       <div className="front-card">

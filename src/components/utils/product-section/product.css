@@ -206,7 +206,6 @@
   gap: 5em 4em;
 }
 
-
 @media only screen and (max-width: 480px) {
   .products-page {
     display: flex;
@@ -321,11 +320,11 @@
 
   /* Table and measures  */
 
-  .measures .center-table {
+  .measures {
     display: none;
   }
 
-  .measures .center-table table {
+  .measures  table {
     display: none;
   }
 
@@ -348,14 +347,29 @@
     margin-left: 0.3em;
   }
 
-  /* Related products  */
-  
-.related-grid {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+   .measurement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   }
 
+  /* Related products  */
+  .related-products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+  }
+
+  .related-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+  }
 }

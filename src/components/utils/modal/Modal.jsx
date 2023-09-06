@@ -51,7 +51,7 @@ function Modal() {
 
       <div className="modal">
         <Controllers className="control-next" />
-        <img src={imgModal} alt="" />
+        <img src={imgModal ? imgModal : ""} alt={`Imagen desplegada desde ${imgModal}` }/>
         <Controllers className="control-prev" />
       </div>
 

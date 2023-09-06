@@ -10,8 +10,6 @@ function CategoriesAPI(props) {
 
   const [productSelected, setProductSelected] = useState([]);
 
-  console.log(categorySelected)
-
 
   return {
     subcategorySelected: [subcategorySelected, setSubcategorySelected],

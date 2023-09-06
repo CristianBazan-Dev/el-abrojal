@@ -8,12 +8,21 @@ export const DataProvider = ({ children }) => {
     const [showModal, setShowModal] = useState(false); 
     const [imgModal, setImgModal] = useState(false); 
 
+    const [catIsActive, setCatIsActive] = useState(false);
+    const [categoryToggle, setCategoryToggle] = useState("");
+    const [categoryNameToggle, setCategoryNameToggle] = useState("");
+  
 
 
     const state = {
         categories: CategoriesAPI(),
         showModal: [showModal, setShowModal],
-        imgModal: [imgModal, setImgModal]
+        imgModal: [imgModal, setImgModal],
+
+        catIsActive: [catIsActive, setCatIsActive], 
+        categoryToggle: [categoryToggle, setCategoryToggle],
+        categoryNameToggle: [categoryNameToggle, setCategoryNameToggle]
+
     }
 
     return <GlobalState.Provider value={state}>{children}</GlobalState.Provider>

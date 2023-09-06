@@ -16,13 +16,14 @@ function CategoriesCards(props) {
 
   return (
     <section className="category-selection-section">
-      {categories.map((cat) => {
+      {categories.map((cat, index) => {
         return (
           <div
             className="category-card"
             onClick={() => {
               setCategorySelected(cat.id);
             }}
+            key={index}
           >
             <img
               src={cat.categoryImg}

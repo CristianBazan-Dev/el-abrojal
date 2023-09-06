@@ -49,7 +49,7 @@ function Contact(props) {
           </ul>
         </div>
 
-        <Map/>
+        <Map />
       </div>
     </section>
   );

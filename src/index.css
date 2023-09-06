@@ -51,6 +51,8 @@
 
   --accent:   #8142E9; 
 
+  --experimental-gradient: linear-gradient(to right, #001f61, #232887, #4a2cab, #7729cd, #a912eb); 
+
   --gradient: linear-gradient(138deg, #6b85a8 28.45%, #001f60 100%);
   --gradientLowOp: linear-gradient(138deg, #6b85a8 28.45%, #001f60 50%);
 

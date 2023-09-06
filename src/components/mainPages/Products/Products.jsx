@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect} from "react";
 
-import { categories } from "../../../api/Categories.js";
-import { subcategories } from "../../../api/Subcategories.js";
 import { GlobalState } from "../../../GlobalState";
-import Modal from "../../utils/modal/Modal";
 import CategoriesCards from "../../utils/categories-cards/CategoriesCards.jsx";
 import SubcategoriesCards from "../../utils/subcategories-cards/SubcategoriesCards.jsx";
+
 import "./products.css";
+
 import Categories from "../../utils/categories-section/Categories.jsx";
 import Product from "../../utils/product-section/Product.jsx";
+import ResponsiveSubcat from "../../utils/resp-subcat/ResponsiveSubcat.jsx";
 
 function Products(props) {
   const state = useContext(GlobalState);
@@ -27,14 +27,14 @@ function Products(props) {
     window.scrollTo(0, 0);
   }, []);
 
-
-
   return (
     <section>
       <div className="products-page">
         <div className="categories">
           <h2>Categorías</h2>
           <Categories />
+          {categorySelected &&     <ResponsiveSubcat />}
+      
         </div>
 
         {productSelected ? (
@@ -44,6 +44,7 @@ function Products(props) {
         ) : (
           <CategoriesCards />
         )}
+
       </div>
     </section>
   );
