@@ -1,3 +1,8 @@
+.header-alt{
+  background: var(--main);
+  transition: 1s;
+}
+
 header img {
   max-width: 100px;
   max-height: 75px;
@@ -11,6 +16,10 @@ header ul {
 
 header ul li {
   margin-left: 20px;
+}
+
+.li-alt{
+  color: var(--light);
 }
 
 /* Responsive actions  */

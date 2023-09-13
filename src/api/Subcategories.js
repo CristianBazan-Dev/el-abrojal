@@ -6,9 +6,12 @@ export const subcategories = [
     category: "Cadenas",
     title: "Derecha",
     imgs: [
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1691796959/test-el-abrojal/Productos/Productos/Cadenas/Derecha/cad_-_der_-_1_vxgzji.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1691796959/test-el-abrojal/Productos/Productos/Cadenas/Derecha/cad_-_der_-_1_vxgzji.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1691796959/test-el-abrojal/Productos/Productos/Cadenas/Derecha/cad_-_der_-_1_vxgzji.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694435929/test-el-abrojal/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_5_skwwt4.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694435935/test-el-abrojal/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_4_h83mw8.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694435934/test-el-abrojal/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_2_b5dhfk.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694435934/test-el-abrojal/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_1_mfzrcf.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694435933/test-el-abrojal/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_3_yasxwg.png",
+     " https://res.cloudinary.com/dhbvri4ni/image/upload/v1694435927/test-el-abrojal/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_6_qulks8.png"
     ],
     description:
       "Caracterizada por su versatilidad de usos.",
@@ -198,9 +201,9 @@ export const subcategories = [
     category: "Cadenas",
     title: "Torcida",
     imgs: [
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692013745/test-el-abrojal/Productos/Productos/Cadenas/Torcida/cad_-_tor_-_1_fbtmb6.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692013745/test-el-abrojal/Productos/Productos/Cadenas/Torcida/cad_-_tor_-_1_fbtmb6.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692013745/test-el-abrojal/Productos/Productos/Cadenas/Torcida/cad_-_tor_-_1_fbtmb6.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694437262/test-el-abrojal/Productos/Productos/Cadenas/Torcida/WBG/Cad_-_Tor_-_3_bwrpvw.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694436740/test-el-abrojal/Productos/Productos/Cadenas/Torcida/WBG/Cad_-_Tor_-_1_hwuoky.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694436738/test-el-abrojal/Productos/Productos/Cadenas/Torcida/WBG/Cad_-_Tor_-_2_dzcpt5.png",
     ],
 
     description:
@@ -345,9 +348,9 @@ export const subcategories = [
     category: "Cadenas",
     title: "Cadena para tranqueras",
     imgs: [
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692013792/test-el-abrojal/Productos/Productos/Cadenas/Tranqueras/cad_-_tranqueras_-_1_fbiuqc.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692013792/test-el-abrojal/Productos/Productos/Cadenas/Tranqueras/cad_-_tranqueras_-_1_fbiuqc.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692013792/test-el-abrojal/Productos/Productos/Cadenas/Tranqueras/cad_-_tranqueras_-_1_fbiuqc.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694437118/test-el-abrojal/Productos/Productos/Cadenas/Tranqueras/WBG/Cad_-_Tranq_-_2_cnvkxf.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694437117/test-el-abrojal/Productos/Productos/Cadenas/Tranqueras/WBG/Cad_-_Tranq_-_1_yht1ic.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694437119/test-el-abrojal/Productos/Productos/Cadenas/Tranqueras/WBG/Cad_-_Tranq_-_3_xsigi6.png",
     ],
 
     description:
@@ -391,8 +394,8 @@ export const subcategories = [
     category: "Cadenas",
     title: "Lanzas para acoplados",
     imgs: [
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692013835/test-el-abrojal/Productos/Productos/Cadenas/LanzaAcoplado/cad_-_lanz_acoplado_-_1_gyhs4m.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692013835/test-el-abrojal/Productos/Productos/Cadenas/LanzaAcoplado/cad_-_lanz_acoplado_-_1_gyhs4m.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694437720/test-el-abrojal/Productos/Productos/Cadenas/LanzaAcoplado/WBG/Gan_-_Lan_-_1_vhmp92.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694437721/test-el-abrojal/Productos/Productos/Cadenas/LanzaAcoplado/WBG/Gan_-_Lan_-_2_vfglut.png",
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692013835/test-el-abrojal/Productos/Productos/Cadenas/LanzaAcoplado/cad_-_lanz_acoplado_-_1_gyhs4m.png",
     ],
 
@@ -432,9 +435,9 @@ export const subcategories = [
     category: "Cadenas",
     title: "Ganchos para carrocería",
     imgs: [
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019767/test-el-abrojal/Productos/Productos/Ganchos%20J/gan_-_carr_-_1_j4rdrf.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019767/test-el-abrojal/Productos/Productos/Ganchos%20J/gan_-_carr_-_1_j4rdrf.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019767/test-el-abrojal/Productos/Productos/Ganchos%20J/gan_-_carr_-_1_j4rdrf.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694437433/test-el-abrojal/Productos/Productos/Cadenas/Ganchos%20para%20carrocer%C3%ADas/WBG/Cad_-_Gan_-_1_t8ggib.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694437433/test-el-abrojal/Productos/Productos/Cadenas/Ganchos%20para%20carrocer%C3%ADas/WBG/Cad_-_Gan_-_1_t8ggib.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694437433/test-el-abrojal/Productos/Productos/Cadenas/Ganchos%20para%20carrocer%C3%ADas/WBG/Cad_-_Gan_-_1_t8ggib.png",
     ],
 
     description:
@@ -464,9 +467,9 @@ export const subcategories = [
     category: "Clavos",
     title: "Punta París",
     imgs: [
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014013/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_1_vxb1d6.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014014/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_2_cyaqp0.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014014/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_2_cyaqp0.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694438349/test-el-abrojal/Productos/Productos/Clavos/WBG/Clav_-_PP_-_1_eh2v6p.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694438289/test-el-abrojal/Productos/Productos/Clavos/WBG/Clav_-_PP_-_2_coup6o.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694438350/test-el-abrojal/Productos/Productos/Clavos/WBG/Clav_-_PP_-_3_mojdzy.png",
     ],
 
     description:
@@ -516,8 +519,8 @@ export const subcategories = [
     category: "Clavos",
     title: "Espiralados",
     imgs: [
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014013/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_1_vxb1d6.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014014/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_2_cyaqp0.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694439355/test-el-abrojal/Productos/Productos/Clavos/Esp/Clav_-_Esp_-_1_fbcd9g.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694439354/test-el-abrojal/Productos/Productos/Clavos/Esp/Clav_-_Esp_-_2_dui8hr.png",
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692014014/test-el-abrojal/Productos/Productos/Clavos/cl_-_pp_-_2_cyaqp0.png",
     ],
 
@@ -758,9 +761,9 @@ export const subcategories = [
     category: "Argollas",
     title: "Argollas de hierro",
     imgs: [
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019815/test-el-abrojal/Productos/Productos/Argollas/ar_-_2_leng2p.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019815/test-el-abrojal/Productos/Productos/Argollas/ar_-_2_leng2p.png",
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019815/test-el-abrojal/Productos/Productos/Argollas/ar_-_1_dowciv.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694433894/test-el-abrojal/Productos/Productos/Argollas/WBG/Arg_-_1_xdsdj9.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694434840/test-el-abrojal/Productos/Productos/Argollas/WBG/Arg_-_2_zkoh1k.png",
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1694434840/test-el-abrojal/Productos/Productos/Argollas/WBG/Arg_-_3_gwr8zd.png",
     ],
 
     description:

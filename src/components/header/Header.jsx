@@ -1,8 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./header.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 
 import Logo from "../../assets/logo.png";
+import LogoAlt from "../../assets/logoAlt.png"
+
 import { ReactComponent as Hamburger } from "../../assets/icons/utils/hamburger.svg";
 import { ReactComponent as Close } from "../../assets/icons/utils/close.svg";
 import { ReactComponent as Whatsapp } from "../../assets/icons/social/whatsapp.svg";
@@ -14,12 +16,16 @@ import { ReactComponent as WhatsappIcon } from "../../assets/icons/social/wpp.sv
 import { ReactComponent as Products } from "../../assets/icons/banner/variety.svg";
 import { ReactComponent as Us } from "../../assets/icons/whyUs/why-1.svg";
 import { ReactComponent as Contact } from "../../assets/icons/contact/phone.svg";
+
 import { GlobalState } from "../../GlobalState";
 
-function Header(props) {
-  const [hamburgerMenu, setHamburgerMenu] = useState(false);
 
+function Header(props) {
+  const location = useLocation();
   const state = useContext(GlobalState);
+
+  const [hamburgerMenu, setHamburgerMenu] = useState(false);
+  const [headerAlt, setHeaderAlt] = useState(false);
 
   const [categorySelected, setCategorySelected] =
     state.categories.categorySelected;
@@ -39,7 +45,7 @@ function Header(props) {
   };
 
   return (
-    <header>
+    <header className={!headerAlt ? "" : "header-alt"}>
       <Link
         to="https://wa.link/2s3t1s"
         target="_blank"
@@ -64,9 +70,10 @@ function Header(props) {
         to="/el-abrojal"
         onClick={() => {
           ClearCategories();
+          setHeaderAlt(false);
         }}
       >
-        <img src={Logo} alt="logo de la empresa metalúrgica 'el abrojal' " />
+        <img src={!headerAlt ? Logo : LogoAlt} alt="logo de la empresa metalúrgica 'el abrojal' " />
       </Link>
 
       <nav>
@@ -74,25 +81,31 @@ function Header(props) {
           <li
             onClick={() => {
               ClearCategories();
+              setHeaderAlt(false);
             }}
+            className={!headerAlt ? "" : "li-alt"}
           >
             <Link to="/el-abrojal">Inicio</Link>
           </li>
           <li
             onClick={() => {
               ClearCategories();
+              setHeaderAlt(true);
             }}
+            className={!headerAlt ? "" : "li-alt"}
           >
             <Link to="/products">Productos</Link>
           </li>
           <li
             onClick={() => {
               ClearCategories();
+              setHeaderAlt(true);
             }}
+            className={!headerAlt ? "" : "li-alt"}
           >
             <Link to="/about">Sobre nosotros</Link>
           </li>
-          <li>
+          <li  className={!headerAlt ? "" : "li-alt"}>
             <a href="#contact">Contacto</a>
           </li>
         </ul>
