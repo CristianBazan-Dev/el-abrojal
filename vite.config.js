@@ -3,17 +3,24 @@ import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
-export default defineConfig(({command} ) => {
-  const config = {
-    plugins: [react(), svgr()],
-    base: "/",
-  }
+// export default defineConfig(({command} ) => {
+//   const config = {
+//     plugins: [react(), svgr()],
+//     base: "/",
+//   }
 
-  if(command !== 'serve'){
-    config.base = "/el-abrojal"
-  }
+//   if(command !== 'serve'){
+//     config.base = "/"
+//   }
 
-  return config
-}
+//   return config
+// }
 
-);
+// );
+
+
+export default defineConfig({
+  plugins: [react(), svgr()],
+  base: "https://cristianbazan-dev.github.io/el-abrojal"
+
+})

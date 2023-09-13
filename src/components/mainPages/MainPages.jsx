@@ -28,7 +28,7 @@ const [productSelected, setProductSelected] =
 
 
                 {/* For production  */}
-                <Route path="/el-abrojal" element={<Home/>}/>
+                <Route path="/" element={<Home/>}/>
                 <Route path="/products" element={<Products/>}/>
                 <Route path ="/categories" element={<CategoriesPage/>} />
       
