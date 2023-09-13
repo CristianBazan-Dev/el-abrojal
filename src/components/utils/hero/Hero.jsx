@@ -9,7 +9,7 @@ function Hero(props) {
 
       <div className="hero-presentation">
       <img
-        src="https://res.cloudinary.com/dhbvri4ni/image/upload/v1691605759/test-el-abrojal/Logos/logo_h2y6cy.png"
+        src="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571060/Logos/logo_h2y6cy_ppunp1.png"
         alt="logo de la empresa metalúrgica 'el abrojal'"
       />
 
