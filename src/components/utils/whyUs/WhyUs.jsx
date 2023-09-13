@@ -9,18 +9,18 @@ function WhyUs(props) {
   const whyCards = [
     {
       icon: "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692109158/test-el-abrojal/%C3%8Dconos/Why-us/why-1_lhzjod.png",
-      title: "Title 1",
-      reasons: ["Reason I", "Reason II", "Reason III"],
+      title: "Incorporación de nuevos productos y servicios",
+      reasons: ["En Metalúrgica El Abrojal, la innovación es parte de nuestro ADN. Siempre estamos buscando formas de mejorar y expandir nuestra oferta. Recientemente, hemos incorporado nuevos productos, como clavos y ganchos para tejido olímpico, así como servicios de corte y plegado de chapa para satisfacer las demandas cambiantes del mercado. Estas adiciones reflejan nuestro compromiso de estar a la vanguardia de la industria y proporcionar soluciones integrales a nuestros clientes, respaldados por nuestra pasión por la calidad y la innovación"],
     },
     {
       icon: "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692109163/test-el-abrojal/%C3%8Dconos/Why-us/why-2_sbmfiu.png",
-      title: "Title 2",
-      reasons: ["Reason I", "Reason II", "Reason III"],
+      title: "Mejoramiento Continuo de Procesos",
+      reasons: ["Entendemos que el mundo está en constante evolución, y nuestra empresa también debe hacerlo. Es por eso que nos comprometemos a mejorar continuamente nuestros procesos de fabricación y operaciones. Esto nos permite mantenernos a la vanguardia de la industria, ofreciendo productos de alta calidad de manera eficiente y sostenible."  ],
     },
     {
       icon: "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692109167/test-el-abrojal/%C3%8Dconos/Why-us/why-3_jnnymi.png",
-      title: "Title 3",
-      reasons: ["Reason I", "Reason II", "Reason III"],
+      title: "Diversidad de Productos y Accesorios",
+      reasons: ["No nos conformamos con ser solo expertos en cadenas; nuestra gama de productos incluye una amplia variedad de accesorios metálicos. Desde torniquetes hasta argollas, cadenas especiales, tranqueras, lanzas de seguridad y mosquetones, ofrecemos soluciones para una variedad de necesidades industriales y comerciales."],
     },
   ];
 
