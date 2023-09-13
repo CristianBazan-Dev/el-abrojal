@@ -67,7 +67,7 @@ function Header(props) {
 
       {/* For production  */}
       <Link
-        to="/el-abrojal"
+        to="/"
         onClick={() => {
           ClearCategories();
           setHeaderAlt(false);
@@ -85,7 +85,7 @@ function Header(props) {
             }}
             className={!headerAlt ? "" : "li-alt"}
           >
-            <Link to="/el-abrojal">Inicio</Link>
+            <Link to="/">Inicio</Link>
           </li>
           <li
             onClick={() => {

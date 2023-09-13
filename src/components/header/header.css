@@ -101,7 +101,7 @@ header ul li {
   left: 0;
   width: 100%;
   height: 50%;
-  background: var(--gradient);
+  background: var(--main);
   z-index: 2000;
   box-shadow: var(--hard-b-sw);
   animation: menu 1s;
