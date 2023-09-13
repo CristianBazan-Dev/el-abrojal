@@ -174,7 +174,7 @@ function Header(props) {
         </ul>
 
         <div className="logo">
-          <img src={Logo} alt="" />
+          <img src={LogoAlt} alt="" />
         </div>
 
         <div className="social-icons">

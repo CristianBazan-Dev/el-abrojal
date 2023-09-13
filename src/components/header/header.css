@@ -137,7 +137,7 @@ header ul li {
   margin: 0;
 }
 
-.responsive-menu .close-icon {
+.responsive-menu .close-icon, .responsive-menu .social-icons .social-icon {
   fill: var(--light);
 }
 
@@ -147,7 +147,10 @@ header ul li {
   justify-content: center;
   align-items: center;
   margin: auto;
+
 }
+
+
 .responsive-menu .social-icons a {
   margin-left: 1em;
 }
@@ -186,7 +189,7 @@ header ul li {
     bottom: 3em;
     width: 80%;
     height: 60px;
-    background: var(--gradient);
+    background: var(--main);
     justify-content: center;
     align-items: center;
     border-radius: 15px;
