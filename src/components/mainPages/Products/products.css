@@ -33,7 +33,7 @@
   display: flex;
   align-items: baseline;
   margin-left: 2em;
-  margin-top: 1em;
+
 }
 
 .products .title .goBack-container{
@@ -88,141 +88,9 @@
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
-.details {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.details .description,
-.details .treatments {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  text-align: justify;
-  margin-bottom: 1em;
-  margin-left: 0;
-}
-
-.details .description .text,
-.details .treatments .text {
-  margin-left: 1em;
-}
-
-.details .measurement,
-.details .measures {
-  background-color: var(--darker-gray);
-}
-
-/* Description  */
-
-.details .description {
-  width: 100%;
-  background-color: var(--darker-gray);
-}
-
-.details .description p {
-  width: 90%;
-}
-
-/* Treatment  */
-
-.treatment-container .title h5 {
-  color: var(--secondary);
-}
-
-.treatment-container .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.treatment-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-
-.treatment-info > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.treatment-info img {
-  max-width: 250px;
-  width: 250px;
-  height: 150px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  border-radius: 15px;
-  margin: 2em;
-  margin-left: 0;
-  cursor: pointer;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.treatment-container .treatment-info .paragraph {
-  width: 50%;
-  height: 153px;
-}
-
-.treatment-container .treatment-info .paragraph p {
-  text-align: justify;
-  line-height: 25px;
-}
-
-.treatment-container:nth-child(even) .treatment-info {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-
-.details h4 {
-  margin: 1em 0 1em 0;
-}
-
-.separator {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 50%;
-  height: 2px;
-  background-color: var(--dark);
-}
-
-/* Measures  */
-
-.details .measures {
-  width: 100%;
-}
-
-.measures table{
-   text-align: center;
   
-  
-}
+@media only screen and (max-width: 1163px) {
 
-.measures  table thead {
-  background: var(--main);
-  color: var(--light);
-}
-
-.measures  td {
-  background: var(--light);
-  padding: 0.5em;
-  font-weight: bold;
-}
-
-.responsive-categories-selection {
-  display: none;
-}
-.responsive-measure {
-  display: none;
 }
 
 @media only screen and (max-width: 480px) {

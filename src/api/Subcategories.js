@@ -29,7 +29,7 @@ export const subcategories = [
           "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
-    imgTable : "https://res.cloudinary.com/dhbvri4ni/image/upload/v1693593555/test-el-abrojal/Productos/Productos/Cadenas/Torcida/Cadena_Torcida_-_Medidas_ztiron.png", 
+    imgTable : "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661430/Productos/Productos/Cadenas/Derecha/Table.png", 
     columns: [
       "denominación",
       "ø",
@@ -222,6 +222,7 @@ export const subcategories = [
           "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661666/Productos/Productos/Cadenas/Torcida/Screenshot_2023-09-14_002049_wjmbmt.png",
     columns: [
       "denominación",
       "ø",
@@ -369,6 +370,7 @@ export const subcategories = [
           "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661756/Productos/Productos/Cadenas/Tranqueras/Screenshot_2023-09-14_002224_bj5bgi.png",
     columns: ["Denominación"],
     rows: [
       {
@@ -415,6 +417,7 @@ export const subcategories = [
           "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661970/Productos/Productos/Cadenas/LanzaAcoplado/Screenshot_2023-09-14_002559_klpqn2.png",
     columns: ["cadena", "largo", "punta"],
     rows: [
       {
@@ -448,6 +451,7 @@ export const subcategories = [
           "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662047/Productos/Productos/Cadenas/Ganchos%20para%20carrocer%C3%ADas/Screenshot_2023-09-14_002714_kmqeze.png", 
     columns: ["descripcion"],
     rows: [
       {
@@ -486,6 +490,7 @@ export const subcategories = [
     //       "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
     //   },
     // ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662208/Productos/Productos/Clavos/PP/Screenshot_2023-09-14_002857_mlsisa.png", 
     columns: ["medidas"],
     rows: [
       {
@@ -537,6 +542,7 @@ export const subcategories = [
     //       "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
     //   },
     // ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662329/Productos/Productos/Clavos/Esp/Screenshot_2023-09-14_003200_fegqsg.png",
     columns: ["medidas"],
     rows: [
       {
@@ -577,7 +583,6 @@ export const subcategories = [
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571138/Productos/Productos/Torniquetes/MiniTv/Tor_-_Mini_-_3_se80e7_l49neq.png"
 
     ],
-
     description:
       "Tensor de alambrados utilizado mayormente para alambre olimpico, obras civiles, cercos perimetrales. Su excelente terminacion garantiza la conservación de la forma original.",
     treatments: [
@@ -594,6 +599,7 @@ export const subcategories = [
           "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662674/Productos/Productos/Torniquetes/MiniTv/Screenshot_2023-09-14_003641_xqxq8n.png", 
     columns: ["descripcion", "plancha", "perno"],
     rows: [
       {
@@ -729,6 +735,7 @@ export const subcategories = [
           "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694664216/Productos/Productos/Ganchos%20J/Screenshot_2023-09-14_004255_ds5zyg.png",
     columns: ["espesor", "largo"],
     rows: [
       {
@@ -768,7 +775,6 @@ export const subcategories = [
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571066/Productos/Productos/Argollas/WBG/Arg_-_2_zkoh1k_ii0wim.png",
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571068/Productos/Productos/Argollas/WBG/Arg_-_3_gwr8zd_z969h0.png",
     ],
-
     description:
       "Argollas redondas de hierro soldadas y zincadas.",
     treatments: [
@@ -779,6 +785,7 @@ export const subcategories = [
           "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694665925/Productos/Productos/Argollas/Screenshot_2023-09-14_013151_mwvkqq.png",   
     columns: ["espesor x diametro interno"],
     rows: [
       {
@@ -895,6 +902,7 @@ export const subcategories = [
           "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694665978/Productos/Productos/Mosquetones/Tabla%20-%20seguridad.png",   
     columns: ["n°", "largo", "giratorio - con destorcedor"],
     rows: [
       {
@@ -932,7 +940,6 @@ export const subcategories = [
     imgs: [
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019787/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_leng_-_1-removebg-preview_eg7ccc.png",
     ],
-
     description:
       "Debido a su tipo de cierre, permite mayor velocidad de instalación.",
     treatments: [
@@ -943,6 +950,7 @@ export const subcategories = [
         "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666023/Productos/Productos/Mosquetones/Tabla%20-%20Leng%C3%BCeta.png",
     columns: ["n°", "largo", "giratorio - con destorcedor"],
     rows: [
       {
@@ -980,7 +988,6 @@ export const subcategories = [
     imgs: [
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019787/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_gat_-_1-removebg-preview_tlyiyg.png",
     ],
-
     description:
       "De apertura rápida, impide que el material adherente se retuerza o enrede. Sumado a eso, su estética permite un uso cotidiano en llaveros, caretas, bolsas, etc. ",
     treatments: [
@@ -991,6 +998,7 @@ export const subcategories = [
         "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666084/Productos/Productos/Mosquetones/Tabla%20-%20Gatillo.png",
     columns: ["n°", "largo", "giratorio - con destorcedor"],
     rows: [
       {
@@ -1018,7 +1026,6 @@ export const subcategories = [
     imgs: [
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019787/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_traba_chapa_-_1-removebg-preview_gakji0.png",
     ],
-
     description:
       "Su tipo de traba permiteel afianzamento y mantenimiento de la posición del material a enganchar.",
     treatments: [
@@ -1029,6 +1036,7 @@ export const subcategories = [
         "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666127/Productos/Productos/Mosquetones/Tabla%20-%20Traba%20de%20chapa.png", 
     columns: ["largo", "giratorio - con destorcedor"],
     rows: [
       {
@@ -1045,7 +1053,6 @@ export const subcategories = [
     imgs: [
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019788/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_chat_-_1-removebg-preview_uwoye0.png",
     ],
-
     description:
       "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
     treatments: [
@@ -1056,6 +1063,7 @@ export const subcategories = [
         "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666175/Productos/Productos/Mosquetones/Tabla%20-%20Chato.png",
     columns: ["largo", "giratorio - con destorcedor"],
     rows: [
       {
@@ -1070,9 +1078,8 @@ export const subcategories = [
     category: "Mosquetones",
     title: "Enganche",
     imgs: [
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019787/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_eng_-_1-removebg-preview_vharcj.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666227/Productos/Productos/Mosquetones/Tabla%20-%20Enganche.png",
     ],
-
     description:
       "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
     treatments: [
@@ -1083,6 +1090,7 @@ export const subcategories = [
         "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666227/Productos/Productos/Mosquetones/Screenshot_2023-09-14_013658_pap9zw.png", 
     columns: ["largo", "espesor"],
     rows: [
       {
@@ -1107,7 +1115,6 @@ export const subcategories = [
     imgs: [
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019788/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_destorc_-_1-removebg-preview_hpa3aa.png",
     ],
-
     description:
       "Impide el enrollamiento y retorcimiento del material a enganchar. ",
     treatments: [
@@ -1118,6 +1125,7 @@ export const subcategories = [
         "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666336/Productos/Productos/Mosquetones/Tabla%20-%20Destorcedor.png",
     columns: ["largo", "espesor"],
     rows: [
       {
@@ -1145,6 +1153,7 @@ export const subcategories = [
         "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666423/Productos/Productos/Mosquetones/Tabla%20-%20Gancho%20Tuc.png", 
     columns: ["n°", "con eslabon"],
     rows: [
       {
