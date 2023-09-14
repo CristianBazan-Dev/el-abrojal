@@ -3,11 +3,13 @@ import CarouselGallery from "../carousel/CarouselGallery";
 import Gallery from "../gallery/Gallery";
 import "./history.css";
 
+import Logo from '../../../assets/logo.png'
+
 function History(props) {
   return (
     <section className="history-section">
       <div className="first-section">
-        <div className="titles">
+        {/* <div className="titles">
           <h1>Nuestra historia</h1>
           <div className="subtitle">
             <p>
@@ -15,46 +17,62 @@ function History(props) {
               nulla ultrices lacus cras turpis
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div className="background"></div>
       </div>
 
-      <div className="separator"></div>
-
       <div className="sections">
         <div className="second-section">
-          <div className="first-column">
-            <h2>
-              Lorem ipsum dolor sit amet consectetur. Mattis amet laoreet sed
-              volutpat.
-            </h2>
+          <h2>
+            Entendemos que el mundo está en constante evolución. 
+          </h2>
+
+          <h2 className="accent">
+            Nuestra empresa sigue ese curso.
+          </h2>
+
+          <div className="column">
             <img
               src="https://www.perfectionchain.com/wp-content/uploads/2019/03/Plant_01_web1.jpg"
               alt="foto de la empresa"
             />
-          </div>
 
-          <div className="second-column">
-            <h4>
-             A lo largo de los años nuestra empresa ha sido un faro de calidad, compromiso y progreso desde nuestros primeros pasos.
-            </h4>
-            <p>
-            Nuestra especialización en la fabricación de cadenas es la columna vertebral de nuestro éxito. A lo largo de los años, hemos perfeccionado nuestros procesos y hemos invertido en tecnología de vanguardia para ofrecer cadenas que cumplen con los más altos estándares de calidad y durabilidad. Nuestras cadenas son confiables y versátiles, utilizadas en diversas industrias en todo el país.
-            </p>
+            <div className="text">
+              <h4>
+                A lo largo de los años nuestra empresa ha sido un faro de
+                calidad, compromiso y progreso desde nuestros primeros pasos.
+              </h4>
+              <br/>
+              <p>
+                Nuestra especialización en la fabricación de cadenas es la
+                columna vertebral de nuestro éxito. Con el pasar del tiempo,
+                hemos perfeccionado nuestros procesos y hemos invertido en
+                tecnología de vanguardia para ofrecer cadenas que cumplen con
+                los más altos estándares de calidad y durabilidad. 
+               
+              </p>
+              <br/>
+              <h4> Nuestras cadenas son confiables y versátiles, utilizadas en diversas industrias en todo el país.</h4>
+            </div>
           </div>
         </div>
 
         <div className="third-section">
           <h2>
-          En Metalúrgica El Abrojal, somos más que una empresa; somos un legado de más de 30 años de excelencia en la industria metalúrgica.
+            En Metalúrgica El Abrojal, somos más que una empresa
           </h2>
+          <img src={Logo} alt="" />
+          <h2 className="accent"> Somos un
+            legado de más de 30 años de excelencia en la industria metalúrgica.</h2>
         </div>
 
         {/* <div className="gallery-section">
           <CarouselGallery />
           <Gallery />
         </div> */}
+
+      
       </div>
     </section>
   );

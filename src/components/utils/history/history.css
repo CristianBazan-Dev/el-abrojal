@@ -12,11 +12,6 @@
   margin: 2em;
 }
 
-.history-section .first-section .titles .subtitle {
-  padding: 0 0px;
-  text-align: justify;
-  margin-left: 1.4 em;
-}
 
 .history-section .first-section .background {
   background-image: url("https://res.cloudinary.com/dhbvri4ni/image/upload/v1691604226/test-el-abrojal/Hero/hero-banner_dsgumz.jpg");
@@ -41,35 +36,47 @@
 /* Second  section */
 
 .history-section .second-section {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  margin: 2em var(--m);
-  gap: 2em;
-}
-
-.history-section .second-section .first-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
+.history-section .second-section h2{
+  margin-top: 2em;
+}
+
+.history-section .second-section h2.accent{
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-size: 3em;
+  color: var(--main);
+  letter-spacing: 2px;
+  font-family: 'Kameron', serif;
+}
+
+
+
 
 /* -----First column  */
-
-.history-section .second-section .first-column h2 {
-  width: 500px;
-  text-align: left;
-  margin-bottom: 1em;
+.history-section .second-section .column {
+  display: flex;
+  text-align: justify;
+  width: 50%;
+  margin: auto;
 }
 
-.history-section .second-section .first-column img {
-  width: 500px;
+.history-section .second-section .column .text{
+  margin-left: 2em;
+}
+
+
+.history-section .second-section .column img {
+  max-width: 500px;
 }
 
 /* ------Second column ---- */
 .history-section .second-section .second-column {
+
   text-align: justify;
-  width: 500px;
-  margin-top: 2em;
+ 
 }
 
 /* Third section  */
@@ -77,89 +84,71 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
   margin: 5em;
 }
 
 .third-section h2 {
   width: 70%;
   text-align: center;
+  margin-bottom: 1em;
+}
+
+.third-section h2.accent{
+  margin-top: 1em;
+  font-size: 2.7  em;
+  color: var(--main);
+  font-family: 'Kameron', serif;
+  letter-spacing: 2px;
 }
 
 /* Responsive  */
 
 @media only screen and (max-width: 430px) {
-  .history-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+  .history-section .first-section .background {
+    max-height: 200px;
+    height: 200px;
   }
 
-  .history-section .first-section .titles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    justify-content: center;
-    margin: 1em;
+  .history-section .second-section h2{
+    font-size: .6em;
   }
 
-  .history-section .first-section .titles .subtitle {
-    text-align: center;
+  .history-section .second-section h2.accent{
+    font-size: .8em;
+    letter-spacing: 1px;
+  }
+
+  .history-section .second-section .column{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .history-section .second-section .column .text{
     margin-left: 0;
   }
 
-  .history-section .first-section .background {
-    height: 200px;
-    margin: -1em;
+  
+  .history-section .third-section{
+    margin: 0;
+    margin-top: 2em;
+
+  }
+
+  .history-section .third-section h2{
+    margin: 0;
+    width: 100%;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  .history-section .third-section img{
     margin-bottom: 1em;
   }
 
-  /* Second  section */
 
-  .history-section .second-section {
-    display: flex;
-    flex-direction: column;
-    margin: 2em var(--m);
-    gap: 0;
-  }
+  
 
-  .history-section .second-section .first-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-  }
 
-  /* -----First column  */
-
-  .history-section .second-section .first-column h2 {
-    width: 300px;
-    text-align: justify;
-    font-size: 1em;
-
-    margin-bottom: 1em;
-  }
-
-  .history-section .second-section .first-column img {
-    width: 200px;
-  }
-
-  /* ------Second column ---- */
-  .history-section .second-section .second-column {
-    text-align: justify;
-    width: 300px;
-    margin-top: 2em;
-  }
-
-  /* Third section  */
-  .third-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5em;
-    margin-top: 2em;
-  }
 }
