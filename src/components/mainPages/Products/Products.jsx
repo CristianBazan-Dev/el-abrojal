@@ -31,7 +31,7 @@ function Products(props) {
     <section>
       <div className="products-page">
         <div className="categories">
-          <h2>Categorías</h2>
+
           <Categories />
           {categorySelected &&     <ResponsiveSubcat />}
       

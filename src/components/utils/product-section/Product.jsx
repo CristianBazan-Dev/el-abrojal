@@ -4,12 +4,16 @@ import "./product.css";
 import { subcategories } from "../../../api/Subcategories";
 import ProductCard from "../product-card/ProductCard";
 
+import { ReactComponent as Back } from "../../../assets/icons/utils/back.svg";
 import { saveAs } from "file-saver";
 
 function Product(props) {
   const state = useContext(GlobalState);
   const [productSelected, setProductSelected] =
     state.categories.productSelected;
+
+  const [subcategorySelected, setSubcategorySelected] =
+    state.categories.subcategorySelected;
 
   const [showModal, setShowModal] = state.showModal;
   const [imgModal, setImgModal] = state.imgModal;
@@ -32,9 +36,24 @@ function Product(props) {
 
   return (
     <div className="products">
+      
       <div className="title">
-        <h2> {productSelected.category}</h2>
-        <h5>{productSelected.title}</h5>
+        <div className="main-title">
+          <h2> {productSelected.category}</h2>
+          <h5>{productSelected.title}</h5>
+        </div>
+
+        <div className="goBack-container">
+          <div
+            className="goBack-button"
+            onClick={() => {
+              setProductSelected("");
+            }}
+          >
+            <Back />
+            <p>Atrás</p>
+          </div>
+        </div>
       </div>
 
       <div className="gallery">

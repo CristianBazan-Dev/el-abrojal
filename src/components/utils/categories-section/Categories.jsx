@@ -24,6 +24,7 @@ function Categories(props) {
 
   return (
     <div className="categories-selection">
+      <h2>Categorías</h2>
       {categories.map((data, index) => {
         return (
           <div
@@ -36,34 +37,36 @@ function Categories(props) {
               setCategorySelected(data.id);
             }}
           >
-            <img src={data.icon} className="cat-icon" />
-            <p
-              className={
-                categorySelected == data.id ? "cat-title active" : "cat-title"
-              }
-              onClick={() => {
-                setSubcategorySelected(data);
-              }}
-            >
-              {data.category}
-            </p>
-
-            {data.haveSubcat && (
-              <div
+            <div className="cat-info">
+              <img src={data.icon} className="cat-icon" />
+              <p
                 className={
-                  catIsActive && categoryToggle == index
-                    ? "selection-icon active"
-                    : "selection-icon"
+                  categorySelected == data.id ? "cat-title active" : "cat-title"
                 }
-                id={data.id}
-                onClick={(e) => {
-                  setToggleButton(e.target.id);
+                onClick={() => {
+                  setSubcategorySelected(data);
                 }}
               >
-                <div className="bar-1"></div>
-                <div className="bar-2"></div>
-              </div>
-            )}
+                {data.category}
+              </p>
+
+              {data.haveSubcat && (
+                <div
+                  className={
+                    catIsActive && categoryToggle == index
+                      ? "selection-icon active"
+                      : "selection-icon"
+                  }
+                  id={data.id}
+                  onClick={(e) => {
+                    setToggleButton(e.target.id);
+                  }}
+                >
+                  <div className="bar-1"></div>
+                  <div className="bar-2"></div>
+                </div>
+              )}
+            </div>
 
             {catIsActive && (
               <ul>

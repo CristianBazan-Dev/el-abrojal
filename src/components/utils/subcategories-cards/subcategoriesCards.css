@@ -25,9 +25,9 @@
 .subcategories-selection-section .subcategories-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
   grid-template-rows: repeat(3, 300px);
-  gap: 10em 4em;
+  gap: 5em 4em;
 }
 
 /* Card */
@@ -121,7 +121,6 @@
     align-items: center;
   }
 
-
   .subcategories-grid .subcategory-card .slide-card {
     display: none;
     position: relative;
@@ -137,12 +136,12 @@
     z-index: 0;
     background: var(--dark-gray);
   }
-  
+
   .subcategories-grid .subcategory-card .slide-card.active {
     display: flex;
     animation: entrance 0.3s;
   }
-  
+
   @keyframes entrance {
     0% {
       right: 0%;

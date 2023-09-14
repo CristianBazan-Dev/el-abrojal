@@ -4,6 +4,7 @@ import { categories } from "../../../api/Categories";
 import { subcategories } from "../../../api/Subcategories";
 
 import "./categoriesCards.css";
+import { Link } from "react-router-dom";
 
 function CategoriesCards(props) {
   const state = useContext(GlobalState);
@@ -14,25 +15,31 @@ function CategoriesCards(props) {
   const [subcategorySelected, setSubcategorySelected] =
     state.categories.subcategorySelected;
 
+
+    
+  const firstCategorySelected = (cat) => {
+    setCategorySelected(cat.id);
+    setHaveSubcategory(cat.haveSubcat);
+  };
+
+
   return (
     <section className="category-selection-section">
-      {categories.map((cat, index) => {
-        return (
-          <div
-            className="category-card"
-            onClick={() => {
-              setCategorySelected(cat.id);
-            }}
-            key={index}
-          >
-            <img
-              src={cat.categoryImg}
-              alt={`imagen de la categoría ${cat.category}`}
-            />
-            <h2>{cat.category}</h2>
-          </div>
-        );
-      })}
+      {categories.map((data, index) => {
+            return (
+              <Link to={`/products`} key={index}>
+                <div
+                  className="product-card"
+                  style={{ backgroundImage: `url(${data.categoryImg})` }}
+                  onClick={() => {
+                    firstCategorySelected(data);
+                  }}
+                >
+                  <h2>{data.category}</h2>
+                </div>
+              </Link>
+            );
+          })}
     </section>
   );
 }
