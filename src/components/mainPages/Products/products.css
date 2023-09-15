@@ -4,7 +4,7 @@
 }
 
 .products-page.blurred {
-  backdrop-filter: blur(10px);
+  filter: blur(10px);
 }
 
 /* Products  */

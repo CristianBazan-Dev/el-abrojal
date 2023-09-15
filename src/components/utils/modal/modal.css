@@ -37,15 +37,17 @@
   justify-content: center;
   align-items: center;
   margin: 10% auto;
-  width: 50%;
+  width: 40%;
   height: 500px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background: var(--light);
   border-radius: 15px;
 }
 
+
+
 .modal img {
-  max-width: 200px;
+  max-width: 100%;
   cursor: pointer;
   transition: 1s;
   /* animation: imgFloating 10s infinite alternate; */
@@ -81,4 +83,21 @@
 .close-icon:hover {
   fill: var(--secondary);
   transition: 0.3s;
+}
+
+
+@media only screen and (max-width: 700px){
+  .modal{
+    width: 90%;
+    
+  }
+
+  .modal-container button {
+    background: var(--main);
+    color: var(--light);
+    border-radius: 20px;
+    padding: 10px;
+   font-size: 1em;
+  }
+
 }

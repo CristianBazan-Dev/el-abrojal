@@ -1,6 +1,8 @@
 .history-section {
   margin-top: 5em;
+
 }
+
 
 /* First section  */
 
@@ -23,6 +25,17 @@
   z-index: 0;
   animation: in 2s;
   filter: contrast(1.1) brightness(1) saturate(1.2);
+}
+
+@keyframes in{
+  0%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 
 .history-section .sections {
@@ -62,6 +75,8 @@
 .history-section .second-section .column .text {
   margin-left: 2em;
 }
+
+
 
 .history-section .second-section .column img {
   max-width: 500px;

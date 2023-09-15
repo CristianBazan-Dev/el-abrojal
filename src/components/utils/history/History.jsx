@@ -7,7 +7,7 @@ import Logo from '../../../assets/logo.png'
 
 function History(props) {
   return (
-    <section className="history-section">
+    <section className="history-section reveal" >
       <div className="first-section">
         {/* <div className="titles">
           <h1>Nuestra historia</h1>
@@ -39,8 +39,8 @@ function History(props) {
             />
 
             <div className="text">
-              <h4>
-                A lo largo de los años nuestra empresa ha sido un faro de
+              <h4 style={{textAlign: "left"}}>
+                A lo largo de los años, nuestra empresa ha sido un faro de
                 calidad, compromiso y progreso desde nuestros primeros pasos.
               </h4>
               <br/>
@@ -53,7 +53,7 @@ function History(props) {
                
               </p>
               <br/>
-              <h4> Nuestras cadenas son confiables y versátiles, utilizadas en diversas industrias en todo el país.</h4>
+              <h4 style={{textAlign: "center"}}> Nuestras cadenas son confiables y versátiles, utilizadas en diversas industrias en todo el país.</h4>
             </div>
           </div>
         </div>

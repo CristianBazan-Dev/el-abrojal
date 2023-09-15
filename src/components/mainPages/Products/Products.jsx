@@ -23,13 +23,15 @@ function Products(props) {
   const [productSelected, setProductSelected] =
     state.categories.productSelected;
 
+  const [blurred, setBlurred] = state.blurred; 
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <section>
-      <div className="products-page">
+      <div className={!blurred ? "products-page" : "products-page blurred"}>
         <div className="categories">
           <h2>Categorías</h2>
           <Categories />

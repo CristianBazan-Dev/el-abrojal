@@ -19,6 +19,8 @@ function Modal() {
   const [showModal, setShowModal] = state.showModal;
   const [imgModal, setImgModal] = state.imgModal;
 
+  const [blurred, setBlurred] = state.blurred; 
+
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === "Escape") {
@@ -35,6 +37,8 @@ function Modal() {
     );
   };
 
+  console.log(blurred)
+
   return (
     <div
       className={showModal ? "modal-container active" : "modal-container"}
@@ -49,9 +53,9 @@ function Modal() {
         }}
       />
 
-      <div className="modal">
+      <div className={!blurred ? "modal" : "modal blurred"}>
         <Controllers className="control-next" />
-        <img src={imgModal ? imgModal : ""} alt={`Imagen desplegada desde ${imgModal}` }/>
+        <img src={imgModal ? imgModal : ""} alt={`Imagen desplegada desde ${imgModal}`} onMouseEnter={() => {setBlurred(true)}} onMouseLeave={() => {setBlurred(false)}}/>
         <Controllers className="control-prev" />
       </div>
 

@@ -67,7 +67,7 @@ header ul li {
   justify-content: center;
   align-items: center;
   height: 65px;
-  z-index: 299;
+  z-index: 99999;
   color: var(--light);
   padding: 10px;
   border-radius: 15px 0 0 15px;
