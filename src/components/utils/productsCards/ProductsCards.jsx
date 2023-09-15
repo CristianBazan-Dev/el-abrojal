@@ -11,22 +11,26 @@ function ProductsCards(props) {
     state.categories.categorySelected;
   const [subcategorySelected, setSubcategorySelected] =
     state.categories.subcategorySelected;
+  const [productSelected, setProductSelected] = state.categories.productSelected
 
-  useEffect(() => {
-    subcategories.filter((subcat) => {
-      if (
-        categorySelected == subcat.catId &&
-        `${categorySelected}01` == subcat.id
-      ) {
-        setSubcategorySelected(subcat);
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   subcategories.filter((subcat) => {
+  //     if (
+  //       categorySelected == subcat.catId &&
+  //       `${categorySelected}01` == subcat.id
+  //     ) {
+  //       setSubcategorySelected(subcat);
+  //     }
+  //   });
+  // }, []);
 
   const firstCategorySelected = (cat) => {
     setCategorySelected(cat.id);
-    setHaveSubcategory(cat.haveSubcat);
+    setSubcategorySelected("");
+    setProductSelected(""); 
   };
+
+
 
   return (
     <div className="productsCards-section">
@@ -47,7 +51,6 @@ function ProductsCards(props) {
                   style={{ backgroundImage: `url(${data.categoryImg})` }}
                   onClick={() => {
                     firstCategorySelected(data);
-                    
                   }}
                 >
                   <h2>{data.category}</h2>

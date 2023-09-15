@@ -1078,7 +1078,7 @@ export const subcategories = [
     category: "Mosquetones",
     title: "Enganche",
     imgs: [
-      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666227/Productos/Productos/Mosquetones/Tabla%20-%20Enganche.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571117/Productos/Productos/Mosquetones/mosq_-_eng_-_1-removebg-preview_vharcj_efqt1q.png",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
@@ -1090,7 +1090,7 @@ export const subcategories = [
         "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666227/Productos/Productos/Mosquetones/Screenshot_2023-09-14_013658_pap9zw.png", 
+    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666227/Productos/Productos/Mosquetones/Tabla%20-%20Enganche.png", 
     columns: ["largo", "espesor"],
     rows: [
       {

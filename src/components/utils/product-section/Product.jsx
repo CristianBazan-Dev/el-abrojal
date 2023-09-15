@@ -12,6 +12,8 @@ function Product(props) {
   const [productSelected, setProductSelected] =
     state.categories.productSelected;
 
+  const [categorySelected, setCategorySelected] = state.categories.categorySelected
+
   const [subcategorySelected, setSubcategorySelected] =
     state.categories.subcategorySelected;
 
@@ -33,6 +35,8 @@ function Product(props) {
       `El Abrojal - Tabla de  ${productSelected.category} ${productSelected.title}.jpg`
     );
   };
+
+  console.log(categorySelected, subcategorySelected, productSelected)
 
   return (
     <div className="products">
