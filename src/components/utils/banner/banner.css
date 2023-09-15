@@ -2,7 +2,18 @@
   max-height: 124px;
   height: 124px;
   background-color: var(--main);
-  margin: 0 -1em;
+  margin: 1em -1em ;
+  animation: inBanner 2s ease-out;
+}
+
+@keyframes inBanner{
+  0%{
+    opacity: 0;
+    height: 0px;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .banner-text {
