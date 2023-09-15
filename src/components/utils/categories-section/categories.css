@@ -9,7 +9,7 @@
   display: flex;
   align-items: start;
   flex-direction: column;
-  margin-left: var(--m);
+  margin-left: 20%;
 }
 
 
@@ -82,7 +82,10 @@
   transform: translateX(-2.7px) rotate(-45deg);
 }
 
-@media only screen and (max-width: 430px) {
+
+
+
+@media only screen and (max-width: 900px) {
   /* Categories  */
 
   .categories{

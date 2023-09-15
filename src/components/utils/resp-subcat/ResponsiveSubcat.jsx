@@ -21,7 +21,7 @@ function ResponsiveSubcat(props) {
       <div className="buttons-container">
         {subcategories.map((subcategory) => {
           if (subcategory.category == categoryNameToggle) {
-            return <button>{subcategory.title}</button>;
+            return <button onClick={() => {setProductSelected(subcategory)}}>{subcategory.title}</button>;
           }
         })}
       </div>

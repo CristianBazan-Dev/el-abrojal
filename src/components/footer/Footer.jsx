@@ -142,10 +142,10 @@ function Footer(props) {
           <p>
             Sitio web desarrollado por{" "}
             <Link
-              to="https://cristianbazan-dev.github.io/portfolio/"
+              to="https://cristianbazan-dev.github.io/CB/"
               target="_blank"
             >
-              CristianBazanDev
+              CB
             </Link>
           </p>
         </div>

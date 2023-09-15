@@ -33,7 +33,7 @@
 }
 
 .hero-presentation h1 {
-  font-family: "Rockwell", serif;
+  font-family: "Kameron", serif;
   color: var(--main);
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
     0px -4px 10px rgba(255, 255, 255, 0.3);
@@ -45,10 +45,50 @@
 
 /* Responsive  */
 
-@media only screen and (max-width: 1102px) {
+
+@media only screen and (max-width: 1230px) {
+  .hero-presentation h1{
+    font-size: 3em;
+  }
+
+}
+@media only screen and (max-width: 1103px) {
+  .hero-section{
+    height: 500px;
+  }
+
+  .hero-presentation img{
+    max-width: 150px;
+  }
+
+  .hero-presentation h1{
+    font-size: 2.5em;
+  }
+
+
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .hero-section {
+    height: 300px;
+  }
+
+  .hero-presentation img{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 657px) {
+  .hero-presentation h2{
+    margin-top: 6em;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  
   .hero-section {
     height: 195px;
   }

@@ -51,6 +51,38 @@
   transition: 1s;
 }
 
+@media only screen and (max-width: 1160px) {
+  .categories-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);  
+    gap: 1em 1em;
+
+  }
+
+  .categories-container .product-card {
+    height: 300px;
+
+  }
+  
+}
+
+
+@media only screen and (max-width: 650px) {
+  .categories-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);  
+    gap: 1em 1em;
+    margin-bottom: 10em;
+  }
+
+  .categories-container .product-card {
+    height: 300px;
+
+  }
+  
+}
+
+
 
 @media only screen and (max-width: 480px) {
   .productsCards-section{

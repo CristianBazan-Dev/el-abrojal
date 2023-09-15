@@ -12,7 +12,6 @@
   margin: 2em;
 }
 
-
 .history-section .first-section .background {
   background-image: url("https://res.cloudinary.com/dhbvri4ni/image/upload/v1691604226/test-el-abrojal/Hero/hero-banner_dsgumz.jpg");
   background-size: 100%;
@@ -39,21 +38,18 @@
   display: flex;
   flex-direction: column;
 }
-.history-section .second-section h2{
-  margin-top: 2em;
+.history-section .second-section h2 {
+  margin-top: 1%;
 }
 
-.history-section .second-section h2.accent{
+.history-section .second-section h2.accent {
   margin-top: 1em;
   margin-bottom: 2em;
   font-size: 3em;
   color: var(--main);
   letter-spacing: 2px;
-  font-family: 'Kameron', serif;
+  font-family: "Kameron", serif;
 }
-
-
-
 
 /* -----First column  */
 .history-section .second-section .column {
@@ -63,10 +59,9 @@
   margin: auto;
 }
 
-.history-section .second-section .column .text{
+.history-section .second-section .column .text {
   margin-left: 2em;
 }
-
 
 .history-section .second-section .column img {
   max-width: 500px;
@@ -74,9 +69,7 @@
 
 /* ------Second column ---- */
 .history-section .second-section .second-column {
-
   text-align: justify;
- 
 }
 
 /* Third section  */
@@ -94,61 +87,92 @@
   margin-bottom: 1em;
 }
 
-.third-section h2.accent{
+.third-section h2.accent {
   margin-top: 1em;
-  font-size: 2.7  em;
+  font-size: 2.7 em;
   color: var(--main);
-  font-family: 'Kameron', serif;
+  font-family: "Kameron", serif;
   letter-spacing: 2px;
 }
 
 /* Responsive  */
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 1604px) {
+  .history-section .second-section .column {
+    width: 60%;
+  }
+  
+  .history-section .second-section .column .text {
+    margin-left: 2em;
+  }
+  
+  .history-section .second-section .column img {
+    max-width: 60%;
+    object-fit: cover;
+  }
 
+}
+
+@media only screen and (max-width: 1315px) {
   .history-section .first-section .background {
-    max-height: 200px;
-    height: 200px;
+    max-height: 700px;
+  }
+}
+
+@media only screen and (max-width: 1021px) {
+  .history-section .first-section .background {
+    max-height: 500px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .history-section .first-section .background {
+    max-height: 400px;
+    height: 400px;
   }
 
-  .history-section .second-section h2{
-    font-size: .6em;
+  .history-section .second-section h2 {
+    font-size: 0.6em;
   }
 
-  .history-section .second-section h2.accent{
-    font-size: .8em;
+  .history-section .second-section h2.accent {
+    font-size: 0.8em;
     letter-spacing: 1px;
   }
 
-  .history-section .second-section .column{
+  .history-section .second-section .column {
     display: flex;
     flex-direction: column;
   }
 
-  .history-section .second-section .column .text{
+  .history-section .second-section .column .text {
     margin-left: 0;
   }
 
-  
-  .history-section .third-section{
+  .history-section .second-section .column img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .history-section .third-section {
     margin: 0;
     margin-top: 2em;
-
   }
 
-  .history-section .third-section h2{
+  .history-section .third-section h2 {
     margin: 0;
     width: 100%;
     margin-bottom: 1em;
     width: 100%;
   }
 
-  .history-section .third-section img{
+  .history-section .third-section img {
     margin-bottom: 1em;
   }
-
-
-  
-
-
+}
+@media only screen and (max-width: 430px) {
+  .history-section .first-section .background {
+    max-height: 200px;
+    height: 400px;
+  }
 }

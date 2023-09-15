@@ -12,7 +12,7 @@
 
 .cards-why {
   display: grid;
-  grid-template-columns: repeat(3, 30em);
+  grid-template-columns: repeat(auto-fill, minmax(30em,1fr));
   gap: 3em;
   margin: auto;
   margin-top: 5em;
@@ -81,7 +81,7 @@
 
 
 /* Responsive  */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 900px) {
   .cards-why {
     display: flex;
     flex-direction: column;

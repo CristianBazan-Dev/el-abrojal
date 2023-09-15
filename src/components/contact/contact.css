@@ -22,7 +22,7 @@
   color: var(--light)
 }
 
-.contact-element svg{
+.contact-section  .contact-element svg{
   fill: var(--light);
 }
 
@@ -32,8 +32,11 @@
 
 /* Responsive  */
 
-@media only screen and (max-width: 480px) {
+
+
+@media only screen and (max-width: 900px) {
   .contact-section{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,8 +47,9 @@
   .contact-info{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
+
   }
+
 
 }
