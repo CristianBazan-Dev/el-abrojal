@@ -16,13 +16,8 @@
     justify-content: center;
     background-size: cover;
     cursor: pointer;
-    transition: 1s;
+    /* transition: 1s; */
   }
-
-.category-selection-section .product-card:hover{
-    max-height: 400px;
-    height: 400px;
-}
 
 
   .category-selection-section  .product-card h2 {

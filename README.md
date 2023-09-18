@@ -53,3 +53,89 @@ Modifications requested the 31/08/2023:
     Fijarse en el tema de las fuentes y buscar colores que resalten.
 
 
+Modifications requested the 15/09/2023: 
+
+    Inicio
+    - Fijar el header
+
+    - Logo de WhatsApp con el blanco
+
+    - Sin animación del hero
+
+    - Achicar imagen 
+
+    - Borrar la antena
+
+    - Achicar fuentes
+
+    - Achicar fuentes en el banner azul
+
+    - Fotos de los productos más chicas y más al medio. 
+
+    - Comprimir información de contacto y achicar el mapa.
+
+    - Achicar el logo del footer
+
+    - Resaltar más los 
+
+    - Dowen pagio
+
+
+    Productos
+    - Problema de rutas
+
+    - Achicar grilla: mínimo 3 
+
+    - Quitar animaciones
+
+    - Subcategorías
+
+    - Mejorar las galerías de las subfotos
+
+    - Poco Border Radius 
+
+    - Border solid completo
+
+
+    *  Productos
+
+    - Más mercado libre. Achicamos la Main foto y la sección
+
+    - Títulos: un solo tamaño intermedio entre h1 y H2
+
+    - Quitar fondo con la página de adobe.
+
+   -  Cambiamos lupa por puntero
+
+    - Agrandar al hacer click
+
+    - Achicar sombra azul, ir por el borde azul
+
+    - Agregar misma interactividad que mercado libre
+
+   -  Quitar relacionados
+
+    - Achicar tabla
+
+    - Quitar imágenes de tratamientos
+
+    * Categorías:
+    - Más oscura 
+
+    - Iconos alineados desde el lado derecho
+
+    - Quitar subcategorías
+
+    Sobre nosotros
+
+   -  Imagen al final
+
+   -  Mover el final a por qué elegirnos
+
+    Móvil 
+
+    - Header presente
+
+    - Tarjetas de categorías de a 2
+
+    - Logo alternativo -> Agrandar el sombreado del blanco

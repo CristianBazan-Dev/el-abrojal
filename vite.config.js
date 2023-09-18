@@ -21,5 +21,5 @@ import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
   plugins: [react(), svgr()],
-  // base: "https://cristianbazan-dev.github.io/el-abrojal"
+  base: "/el-abrojal/"
 })

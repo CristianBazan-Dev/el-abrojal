@@ -25,7 +25,28 @@ function Footer(props) {
             />
           </div>
 
-          <div className="social-icons">
+          
+        </div>
+
+        <div className="credits">
+        <div className="copyright">
+          <p>Metalurgica El Abrojal @ 2023 - Todos los derechos reservados.</p>
+        </div>
+
+        <div className="developer">
+          <p>
+            Sitio web desarrollado por{" "}
+            <Link
+              to="https://cristianbazan-dev.github.io/CB/"
+              target="_blank"
+            >
+              CB
+            </Link>
+          </p>
+        </div>
+      </div>
+
+        <div className="social-icons">
             <Link to="/">
               <Facebook className="social-icon"/>
             </Link>
@@ -38,9 +59,8 @@ function Footer(props) {
               <Whatsapp className="social-icon"/>
             </Link>
           </div>
-        </div>
 
-        <div className="sections">
+        {/* <div className="sections">
           <div className="section">
             <ul>
               <li>
@@ -130,26 +150,10 @@ function Footer(props) {
               </div>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
 
-      <div className="credits">
-        <div className="copyright">
-          <p>Metalurgica El Abrojal @ 2023 - Todos los derechos reservados.</p>
-        </div>
 
-        <div className="developer">
-          <p>
-            Sitio web desarrollado por{" "}
-            <Link
-              to="https://cristianbazan-dev.github.io/CB/"
-              target="_blank"
-            >
-              CB
-            </Link>
-          </p>
-        </div>
-      </div>
     </footer>
   );
 }

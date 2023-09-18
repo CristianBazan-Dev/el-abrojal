@@ -44,7 +44,9 @@ function Products(props) {
         ) : categorySelected ? (
           <SubcategoriesCards />
         ) : (
+
           <CategoriesCards />
+          
         )}
 
       </div>

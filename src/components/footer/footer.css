@@ -1,12 +1,18 @@
 .info {
   display: flex;
   justify-content: space-between;
+  margin-left: var(--m);
+  margin-right: var(--m);
 }
 
 /* Logo  */
 
 .logo-container {
   margin-left: var(--m);
+}
+
+.logo-container .logo img{
+  max-width: 150px;
 }
 
 .social-icon {
@@ -60,7 +66,8 @@
 /* Footer of footer  */
 .credits {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 2em;
 }
 

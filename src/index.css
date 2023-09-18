@@ -28,6 +28,10 @@
 @import url("./components/footer/footer.css");
 
 :root {
+  /* Sizes  */
+
+  --header-sz: 94px; 
+
   /* Color palette  */
   --main: #001f60;
   --main-lowOp: #001e60c5;
@@ -47,7 +51,7 @@
   --light: #ffffff;
   --light-lowOp: #ffffff4b;
 
-  --wpp-green: #25d366;
+  --wpp-green: #28f172;
 
   --accent:   #8142E9; 
 
@@ -115,23 +119,26 @@ body {
 article {
   height: 100vh;
   display: grid;
-  grid-template-rows: 5em 1fr 1fr 5em;
+  grid-template-rows: 1fr 1fr 1fr 5em;
   grid-template-columns: 100%;
 }
 
 header {
   background: var(--light);
-  max-height: 94px;
+  max-height: var(--header-sz);
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  position: fixed; 
+  z-index: 9999999;
 }
 
 main {
   background: whitesmoke;
   color: #444;
   padding: 1rem;
+  margin-top: 4.7em;
 }
 
 .blurred {
@@ -139,15 +146,16 @@ main {
 }
 
 footer {
-  padding: 5rem;
-  max-height: 400px;
+
+  padding: 1rem;
+  max-height: 200px;
 }
 
 /* Typography */
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 64px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 700;
   line-height: 75px; /* 117.188% */
@@ -156,7 +164,7 @@ h1 {
 
 h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 40px; /* 111.111% */

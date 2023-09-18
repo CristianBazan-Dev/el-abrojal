@@ -1,9 +1,9 @@
 .banner-section {
-  max-height: 124px;
-  height: 124px;
+  max-height: 100px;
+  height: 100px;
   background-color: var(--main);
   margin: 1em -1em ;
-  animation: inBanner 2s ease-out;
+
 }
 
 @keyframes inBanner{

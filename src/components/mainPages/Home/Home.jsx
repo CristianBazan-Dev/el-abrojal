@@ -12,6 +12,7 @@ function Home(props) {
             <Hero/>
             <Banner/>
             <ProductsCards/>
+ 
         </section>
     );
 }

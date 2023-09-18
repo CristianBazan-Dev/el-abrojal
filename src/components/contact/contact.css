@@ -4,14 +4,19 @@
 
 .contact-info {
   display: flex;
-  justify-content: space-around;
-  margin: 3em var(--m);
+  justify-content: center;
+  margin: 1em;
+
+}
+
+.contact-info > div{
+  margin-left: 5em;
 }
 
 .text h2 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2em;
+  
 }
 
 .text ul .contact-element{

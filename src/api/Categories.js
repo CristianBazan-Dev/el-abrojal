@@ -19,7 +19,7 @@ export const categories = [
     id: "tor",
     category: "Torniquetes",
     categoryImg:
-      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571139/Productos/Productos/Torniquetes/Nro6/Tor_-_Nro6_-_2_xo629u_f2wu2k.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571127/Productos/Productos/Torniquetes/MiniTv/Tor_-_Mini_-_2_pc6res_z0zymv.png",
     icon: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571058/Productos/Categor%C3%ADas/icons/wireStrainers_bhyofh_sofxzw.png",
     haveSubcat: true,
   },
