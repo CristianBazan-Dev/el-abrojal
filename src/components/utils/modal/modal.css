@@ -49,13 +49,8 @@
 .modal img {
   max-width: 100%;
   cursor: pointer;
-  transition: 1s;
-  /* animation: imgFloating 10s infinite alternate; */
-}
 
-.modal img:hover {
-  transform: scale(2);
-  transition: 1s;
+  /* animation: imgFloating 10s infinite alternate; */
 }
 
 @keyframes imgFloating {

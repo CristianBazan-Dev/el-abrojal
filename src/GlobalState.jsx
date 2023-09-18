@@ -7,6 +7,7 @@ export const GlobalState = createContext();
 export const DataProvider = ({ children }) => {
     const [showModal, setShowModal] = useState(false); 
     const [imgModal, setImgModal] = useState(false); 
+    const [mainImg, setMainImg] = useState(""); 
     const [blurred, setBlurred] = useState(false); 
 
     const [catIsActive, setCatIsActive] = useState(false);
@@ -19,6 +20,7 @@ export const DataProvider = ({ children }) => {
         categories: CategoriesAPI(),
         showModal: [showModal, setShowModal],
         imgModal: [imgModal, setImgModal],
+        mainImg: [mainImg, setMainImg], 
         blurred: [blurred, setBlurred], 
         catIsActive: [catIsActive, setCatIsActive], 
         categoryToggle: [categoryToggle, setCategoryToggle],

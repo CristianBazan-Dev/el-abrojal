@@ -12,7 +12,8 @@ function Product(props) {
   const [productSelected, setProductSelected] =
     state.categories.productSelected;
 
-  const [categorySelected, setCategorySelected] = state.categories.categorySelected
+  const [categorySelected, setCategorySelected] =
+    state.categories.categorySelected;
 
   const [subcategorySelected, setSubcategorySelected] =
     state.categories.subcategorySelected;
@@ -20,9 +21,17 @@ function Product(props) {
   const [showModal, setShowModal] = state.showModal;
   const [imgModal, setImgModal] = state.imgModal;
 
+  const [isChangeMainImg, setIsChangeMainImg] = useState(false);
+  const [mainImg, setMainImg] = state.mainImg;
+
   const handleGallery = (url) => {
     setShowModal(!showModal);
     setImgModal(url);
+  };
+
+  const handleMainImg = (url) => {
+    setMainImg(url);
+    setIsChangeMainImg(true);
   };
 
   useEffect(() => {
@@ -36,14 +45,21 @@ function Product(props) {
     );
   };
 
-  console.log(categorySelected, subcategorySelected, productSelected)
+  console.log(mainImg);
 
   return (
     <div className="products">
       <div className="title">
         <div className="main-title">
-          <h2> {productSelected.category}</h2>
-          <h5>{productSelected.title}</h5>
+          {
+            (productSelected.catId = "cad" ? (
+              <h3> Cadena </h3>
+            ) : (
+              <h3> {productSelected.category}</h3>
+            ))
+          }
+
+          <h3>{productSelected.title}</h3>
         </div>
 
         <div className="goBack-container">
@@ -63,7 +79,7 @@ function Product(props) {
         <div className="main-img">
           {productSelected.imgs && (
             <img
-              src={productSelected.imgs[0]}
+              src={!isChangeMainImg ? productSelected.imgs[0] : mainImg}
               alt=""
               onClick={() => {
                 handleGallery(productSelected.imgs[0]);
@@ -82,6 +98,9 @@ function Product(props) {
                   key={index}
                   onClick={() => {
                     handleGallery(imgs);
+                  }}
+                  onMouseEnter={() => {
+                    handleMainImg(imgs);
                   }}
                 ></div>
               );
@@ -109,19 +128,8 @@ function Product(props) {
               {productSelected.treatments.map((treatment, index) => {
                 return (
                   <div className="treatment-container" key={index}>
-                    <div className="title">
-                      {" "}
-                      <h5>{treatment.title}</h5>{" "}
-                    </div>
-
                     <div className="treatment-info">
-                      <div>
-                        <img src={treatment.img} alt="" />
-
-                        <div className="paragraph">
-                          <p>{treatment.description}</p>
-                        </div>
-                      </div>
+                      <h5>{treatment.title}:</h5> <p>{treatment.description}</p>
                     </div>
                   </div>
                 );
@@ -194,7 +202,7 @@ function Product(props) {
                           <td>{row.denominacion}</td>
                         </tr>
                       );
-                    // } else if (productSelected.id == "tor01" || productSelected.id == "tor02") {
+                      // } else if (productSelected.id == "tor01" || productSelected.id == "tor02") {
                       return (
                         <tr key={index}>
                           <td>{row.descripcion}</td>
@@ -307,7 +315,7 @@ function Product(props) {
         </div>
       </div>
 
-      <div className="related-products">
+      {/* <div className="related-products">
         <h4>Productos relacionados</h4>
         <div className="related-grid">
           {subcategories.map((subcat, index) => {
@@ -319,7 +327,7 @@ function Product(props) {
             }
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

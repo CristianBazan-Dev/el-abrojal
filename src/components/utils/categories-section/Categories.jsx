@@ -50,7 +50,7 @@ function Categories(props) {
                 {data.category}
               </p>
 
-              {data.haveSubcat && (
+              {/* {data.haveSubcat && (
                 <div
                   className={
                     catIsActive && categoryToggle == index
@@ -65,10 +65,10 @@ function Categories(props) {
                   <div className="bar-1"></div>
                   <div className="bar-2"></div>
                 </div>
-              )}
+              )} */}
             </div>
 
-            {catIsActive && (
+            {/* {catIsActive && (
               <ul>
                 {subcategories.map((subcategory) => {
                   if (
@@ -88,7 +88,7 @@ function Categories(props) {
                   }
                 })}
               </ul>
-            )}
+            )} */}
           </div>
         );
       })}

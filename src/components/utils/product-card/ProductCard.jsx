@@ -52,7 +52,7 @@ function ProductCard({ item, index }) {
         </div>
       </div>
 
-      <div
+      {/* <div
         className={
           showSlideCard && toggle == index ? "slide-card active" : "slide-card"
         }
@@ -71,7 +71,7 @@ function ProductCard({ item, index }) {
             );
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

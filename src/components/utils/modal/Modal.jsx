@@ -37,7 +37,6 @@ function Modal() {
     );
   };
 
-  console.log(blurred)
 
   return (
     <div
