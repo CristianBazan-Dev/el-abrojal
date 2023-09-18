@@ -20,9 +20,6 @@ const [subcategorySelected, setSubcategorySelected] =
 const [productSelected, setProductSelected] =
   state.categories.productSelected;
 
-
-
-
     return (
         <main>
             <Routes>
@@ -32,10 +29,10 @@ const [productSelected, setProductSelected] =
 
                 {/* For production  */}
                 <Route path="/" element={<Home/>}/>
-                <Route path="https://elabrojal.com/products" element={<Products/>}/>
+                <Route path="/products" element={<Products/>}/>
                 {/* <Route path ="/categories" element={<CategoriesPage/>} /> */}
       
-                <Route path="https://elabrojal.com/about" element={<About/>}/>
+                <Route path="/about" element={<About/>}/>
 
 
             </Routes>
