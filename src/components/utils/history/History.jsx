@@ -9,9 +9,12 @@ import WhyUs from "../whyUs/WhyUs";
 function History(props) {
   return (
     <section className="history-section">
-      <WhyUs />
 
       <div className="sections">
+
+
+        <WhyUs />
+
         <div className="second-section">
           <h2>Entendemos que el mundo está en constante evolución.</h2>
 
@@ -40,18 +43,11 @@ function History(props) {
           </div>
         </div>
 
-        <div className="first-section">
-          {/* <div className="titles">
-          <h1>Nuestra historia</h1>
-          <div className="subtitle">
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Purus arcu arcu commodo et
-              nulla ultrices lacus cras turpis
-            </p>
-          </div>
-        </div> */}
-
-          <div className="background"></div>
+        <div className="last-section">
+          <img
+            src="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571177/Hero/hero-banner_dsgumz_ed9ukx.jpg"
+            alt="Foto  de la empresa"
+          />
         </div>
 
         {/* <div className="gallery-section">

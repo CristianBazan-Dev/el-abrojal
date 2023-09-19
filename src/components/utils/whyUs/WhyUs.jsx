@@ -37,6 +37,11 @@ function WhyUs(props) {
     },
   ];
 
+  const EraseAnimation = (e) => { 
+    const element = e.target 
+    e.target.style.animation = "none";  
+  }
+
   return (
     <section className="whyUs-section">
       <h3>¿Por qué elegirnos?</h3>
@@ -54,7 +59,7 @@ function WhyUs(props) {
       <div className="cards-why">
         {whyCards.map((card, index) => {
           return (
-            <div className="whyCard" key={index}>
+            <div className="whyCard" key={index} onMouseEnter={(e) => {EraseAnimation(e)}}>
               <div className="images">
                 <img
                   src={card.icon}

@@ -3,12 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1em;
+  margin-bottom: 3em;
 
 }
 
 .whyUs-section h3 {
   color: var(--dark);
-  margin-top: 2.5em;
+
 }
 
 .cards-why {
@@ -41,14 +43,13 @@
   animation: entrance3 1s;
 }
 
-.whyCard:hover {
-  animation: cardAnimation 0.8s alternate;
-  animation-iteration-count: 2;
+/* .whyCard:hover {
+
   box-shadow: var(--main) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   transition: 0.5s;
-}
+} */
 
 .whyCard img {
   margin: 2em;
