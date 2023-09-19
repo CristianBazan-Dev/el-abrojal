@@ -21,6 +21,7 @@ function Categories(props) {
 
   const [categorySelected, setCategorySelected] =
     state.categories.categorySelected;
+    
 
   return (
     <div className="categories-selection">
@@ -33,6 +34,7 @@ function Categories(props) {
             onClick={() => {
               setCategoryToggle(index);
               setCategoryNameToggle(data.category);
+              setProductSelected(""); 
               setCatIsActive(!catIsActive);
               setCategorySelected(data.id);
             }}

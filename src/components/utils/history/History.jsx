@@ -4,23 +4,15 @@ import Gallery from "../gallery/Gallery";
 import "./history.css";
 
 import Logo from '../../../assets/logo.png'
+import WhyUs from "../whyUs/WhyUs";
 
 function History(props) {
   return (
     <section className="history-section reveal" >
-      <div className="first-section">
-        {/* <div className="titles">
-          <h1>Nuestra historia</h1>
-          <div className="subtitle">
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Purus arcu arcu commodo et
-              nulla ultrices lacus cras turpis
-            </p>
-          </div>
-        </div> */}
+      <WhyUs/> 
 
-        <div className="background"></div>
-      </div>
+
+    
 
       <div className="sections">
         <div className="second-section">
@@ -52,20 +44,26 @@ function History(props) {
                 los más altos estándares de calidad y durabilidad. 
                
               </p>
-              <br/>
-              <h4 style={{textAlign: "center"}}> Nuestras cadenas son confiables y versátiles, utilizadas en diversas industrias en todo el país.</h4>
+
             </div>
           </div>
         </div>
 
-        <div className="third-section">
-          <h2>
-            En Metalúrgica El Abrojal, somos más que una empresa
-          </h2>
-          <img src={Logo} alt="" />
-          <h2 className="accent"> Somos un
-            legado de más de 30 años de excelencia en la industria metalúrgica.</h2>
-        </div>
+        <div className="first-section">
+        {/* <div className="titles">
+          <h1>Nuestra historia</h1>
+          <div className="subtitle">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Purus arcu arcu commodo et
+              nulla ultrices lacus cras turpis
+            </p>
+          </div>
+        </div> */}
+
+        <div className="background"></div>
+      </div>
+
+
 
         {/* <div className="gallery-section">
           <CarouselGallery />

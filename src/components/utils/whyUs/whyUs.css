@@ -28,6 +28,7 @@
   flex-direction: column;
   cursor: pointer;
   align-items: center;  
+  background: #ffffff;
 }
 
 .whyCard:nth-child(1){

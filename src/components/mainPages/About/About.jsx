@@ -28,7 +28,7 @@ function About(props) {
 
     return (
         <section onScroll={scroll()} >
-            <WhyUs/>
+  
             <History />
         </section>
     );
