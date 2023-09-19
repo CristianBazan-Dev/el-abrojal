@@ -122,7 +122,9 @@
 }
 
 .whyCard p {
-  margin-bottom: 0.5em;
+  text-align: center ;
+  padding: 20px;
+  margin-bottom: 0em;
 }
 
 
