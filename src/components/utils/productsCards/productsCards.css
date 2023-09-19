@@ -80,18 +80,46 @@
 
 @media only screen and (max-width: 480px) {
   .productsCards-section {
-    margin-bottom: 10em;
+    margin-bottom: 0em;
+  }
+
+  .categories-container .product-card {
+
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--light);
+    border-radius: var(--card-br);
+    display: flex;
+    background-size: cover;
+    cursor: pointer;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  
   }
 
   .categories-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 170px);
+    grid-template-rows: repeat(3, 300px);
+    gap: 0em 2em;
+    place-items: center;
   }
 
-  .product-card {
-    width: 300px;
-    height: 600px;
+  .categories-container .product-card {
+    max-width: 150px;
+    max-height: 270px;
+    width: 150px; 
+    height: 270px;
+  }
+
+  .categories-container .product-card h2 {
+    position: relative;
+    top: 7em;
+    font-size: 1em;
+    margin: 1em;
+    color: var(--light);
+    text-shadow: 3px 0px 7px var(--main), -3px 0px 7px rgba(81, 67, 21, 0.8),
+      0px 4px 7px rgba(81, 67, 21, 0.8);
   }
 }

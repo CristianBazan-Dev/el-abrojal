@@ -77,39 +77,40 @@
     display: none;
   }
 
-  .logo-container{
-    display: flex;
-    justify-content: center;
+  .info{
+    display: flex ;
+    flex-direction: column;
     align-items: center;
-    margin: auto;
-    flex-direction: row-reverse;
-    margin-bottom: 3em;
   }
+
+  .logo-container{
+    margin-left: 0; 
+  }
+
+  
 
   .social-icons{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: .3em;
-    margin-left: -1em;
+    margin-left: 0;
   }
 
   .social-icons .social-icon{
+    margin-left: 2em;
     width: 30px;
     margin-bottom: .3em;
   }
 
-  .credits{
+
+  
+  .credits {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-
+    justify-content: center;
+    margin-top: 0;
+    width: 300px;
   }
 
-  .copyright{
-    width: 100%;
-    margin-bottom: .1em;
-  }
 
 }

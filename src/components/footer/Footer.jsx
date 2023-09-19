@@ -58,7 +58,7 @@ function Footer(props) {
             <Link to="/">
               <Whatsapp className="social-icon"/>
             </Link>
-          </div>
+        </div>
 
         {/* <div className="sections">
           <div className="section">

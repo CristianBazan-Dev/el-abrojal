@@ -41,7 +41,7 @@
 
 @media only screen and (max-width: 900px) {
   .contact-section{
-
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +54,10 @@
     flex-direction: column;
     text-align: center;
 
+  }
+
+  .contact-info > div{
+    margin-left: 0;
   }
 
 

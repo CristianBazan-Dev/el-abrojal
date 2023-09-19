@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, createBrowserRouter } from 'react-router-dom';
 
 import Home from './Home/Home';
 import Products from './Products/Products'
@@ -19,7 +19,7 @@ const [subcategorySelected, setSubcategorySelected] =
 
 const [productSelected, setProductSelected] =
   state.categories.productSelected;
-  
+
 
 
 
