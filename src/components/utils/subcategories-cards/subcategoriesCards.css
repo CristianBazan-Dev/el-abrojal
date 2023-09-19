@@ -23,6 +23,7 @@
 /* Grid */
 
 .subcategories-selection-section .subcategories-grid {
+  margin-top: 2em;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
