@@ -51,7 +51,7 @@ function Header(props) {
 
   const Redirect = (url) => {
     window.location.href(`${url}`)
-    window.scrollTo(0,0);
+    window.scrollTo(0,0 );
   }
 
   return (
@@ -236,9 +236,10 @@ function Header(props) {
           </Link>
 
           <a
-            href="#contact"
+            
             onClick={() => {
               setHamburgerMenu(false);
+              RedirectToContact(); 
               ClearCategories();
             }}
           >
