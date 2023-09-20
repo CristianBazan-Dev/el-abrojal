@@ -6,6 +6,10 @@ import Modal from '../components/utils/modal/Modal';
 
 import AboutSection from '../components/mainPages/About/About'
 
+useEffect(() => {
+    window.scrollTo(0, 0); 
+}, [])
+
 function About(props) {
     return (
         <article className="app">
