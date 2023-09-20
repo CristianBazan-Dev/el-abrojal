@@ -44,6 +44,10 @@ function Header(props) {
     setProductSelected("");
   };
 
+  const RedirectToContact = () => {
+    window.scrollTo(0, document.body.scrollHeight)
+  }
+
   return (
     <header className={!headerAlt ? "" : "header-alt"}>
       <Link
@@ -105,8 +109,8 @@ function Header(props) {
           >
             <Link to="/about">Sobre nosotros</Link>
           </li>
-          <li  className={!headerAlt ? "" : "li-alt"}>
-            <a href="#contact">Contacto</a>
+          <li  className={!headerAlt ? "" : "li-alt"} onClick={() => {RedirectToContact()}}>
+            Contacto
           </li>
         </ul>
       </nav>

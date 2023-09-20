@@ -16,6 +16,7 @@ header ul {
 
 header ul li {
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .li-alt{
