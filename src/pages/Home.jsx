@@ -6,11 +6,13 @@ import Modal from "../components/utils/modal/Modal";
 
 import HomeSection from "../components/mainPages/Home/Home";
 
+
+function Home(props) {
+  
 useEffect(() => {
   window.scrollTo(0, 0); 
 }, [])
 
-function Home(props) {
   return (
     <article className="app">
       <Header />
