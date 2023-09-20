@@ -35,7 +35,7 @@ function Products(props) {
         <div className="categories">
           <h2>Categorías</h2>
           <Categories />
-          {categorySelected &&     <ResponsiveSubcat />}
+          {/* {categorySelected &&     <ResponsiveSubcat />} */}
       
         </div>
 

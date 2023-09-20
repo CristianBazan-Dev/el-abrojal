@@ -109,6 +109,22 @@
 }
 
 @media only screen and (max-width: 420px) {
+
+  .product-card .front-card {
+    display: flex;
+    align-items: center;
+    width: 170px;
+    height: 250px;
+
+  }
+
+  .product-card .front-card img {
+    max-width: 160px;
+    max-height: 200px;
+  }
+
+
+
   .product-card .slide-card {
     right: 0%;
     top: 35%;

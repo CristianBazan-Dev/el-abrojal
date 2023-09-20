@@ -140,29 +140,16 @@
 
 
 @media only screen and (max-width: 430px) {
+  
   .subcategories-selection-section .subcategories-grid {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 170px);
+    grid-template-rows: repeat(3, 300px);
+    gap: 1em 1em;
   }
 
-  .subcategories-grid .subcategory-card .slide-card {
-    display: none;
-    position: relative;
-    justify-content: flex-start;
-    right: 50%;
-    flex-direction: column;
-    align-items: center;
-    background: #fff;
-    width: 200px;
-    height: 200px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 24px;
-    z-index: 0;
-    background: var(--dark-gray);
-  }
+ 
 
   .subcategories-grid .subcategory-card .slide-card.active {
     display: flex;

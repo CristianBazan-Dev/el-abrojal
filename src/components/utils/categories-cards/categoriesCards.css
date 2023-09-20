@@ -59,10 +59,32 @@
 @media only screen and (max-width: 480px) {
     .category-selection-section{
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 170px);
+        grid-template-rows: repeat(3, 300px);
+        gap: 2em 2em;
+        place-items: center;
+    }
+
+    .category-selection-section .product-card {
+      max-width: 150px;
+      max-height: 270px;
+      width: 150px; 
+      height: 270px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+
+    .category-selection-section .product-card h2 {
+      position: relative;
+      top: 7em;
+      font-size: 1em;
+      margin: 1em;
+      color: var(--light);
+      text-shadow: 3px 0px 7px var(--main), -3px 0px 7px rgba(81, 67, 21, 0.8),
+        0px 4px 7px rgba(81, 67, 21, 0.8);
     }
     
     .category-card{
