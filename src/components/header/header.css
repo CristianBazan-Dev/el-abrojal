@@ -1,5 +1,5 @@
 .header-alt{
-  background: var(--main);
+  background: var(--main) !important;
   transition: 1s;
 }
 
