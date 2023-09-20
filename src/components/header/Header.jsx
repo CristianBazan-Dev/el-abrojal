@@ -36,7 +36,7 @@ function Header(props) {
   const [productSelected, setProductSelected] =
     state.categories.productSelected;
 
-  const whatsappRedirection = () => {};
+ 
 
   const ClearCategories = () => {
     setCategorySelected("");
@@ -46,6 +46,12 @@ function Header(props) {
 
   const RedirectToContact = () => {
     window.scrollTo(0, document.body.scrollHeight)
+  }
+
+
+  const Redirect = (url) => {
+    window.location.href(`${url}`)
+    window.scrollTo(0,0);
   }
 
   return (
