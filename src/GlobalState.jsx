@@ -13,7 +13,7 @@ export const DataProvider = ({ children }) => {
     const [catIsActive, setCatIsActive] = useState(false);
     const [categoryToggle, setCategoryToggle] = useState("");
     const [categoryNameToggle, setCategoryNameToggle] = useState("");
-  
+    const [headerAlt, setHeaderAlt] = useState(false);
 
 
     const state = {
@@ -24,7 +24,8 @@ export const DataProvider = ({ children }) => {
         blurred: [blurred, setBlurred], 
         catIsActive: [catIsActive, setCatIsActive], 
         categoryToggle: [categoryToggle, setCategoryToggle],
-        categoryNameToggle: [categoryNameToggle, setCategoryNameToggle]
+        categoryNameToggle: [categoryNameToggle, setCategoryNameToggle],
+        headerAlt: [headerAlt, setHeaderAlt]
 
     }
 

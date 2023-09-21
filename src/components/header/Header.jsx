@@ -25,7 +25,7 @@ function Header(props) {
   const state = useContext(GlobalState);
 
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
-  const [headerAlt, setHeaderAlt] = useState(false);
+  const [headerAlt, setHeaderAlt] = state.headerAlt;
 
   const [categorySelected, setCategorySelected] =
     state.categories.categorySelected;
@@ -80,7 +80,6 @@ function Header(props) {
         to="/"
         onClick={() => {
           ClearCategories();
-          setHeaderAlt(false);
         }}
       >
         <img src={!headerAlt ? Logo : LogoAlt} alt="logo de la empresa metalúrgica 'el abrojal' " />
@@ -91,7 +90,7 @@ function Header(props) {
           <li
             onClick={() => {
               ClearCategories();
-              setHeaderAlt(false);
+          
             }}
             className={!headerAlt ? "" : "li-alt"}
           >
@@ -100,7 +99,7 @@ function Header(props) {
           <li
             onClick={() => {
               ClearCategories();
-              setHeaderAlt(true);
+          
             }}
             className={!headerAlt ? "" : "li-alt"}
           >
@@ -109,7 +108,7 @@ function Header(props) {
           <li
             onClick={() => {
               ClearCategories();
-              setHeaderAlt(true);
+       
             }}
             className={!headerAlt ? "" : "li-alt"}
           >

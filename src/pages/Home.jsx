@@ -1,15 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import Header from "../components/header/Header";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import Modal from "../components/utils/modal/Modal";
 
 import HomeSection from "../components/mainPages/Home/Home";
+import { GlobalState } from "../GlobalState";
 
 
 function Home(props) {
+
+  const state = useContext(GlobalState);
+  const [headerAlt, setHeaderAlt] = state.headerAlt; 
   
 useEffect(() => {
+  setHeaderAlt(false) ;
   window.scrollTo(0, 0); 
 }, [])
 

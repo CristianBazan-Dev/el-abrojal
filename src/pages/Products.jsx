@@ -15,10 +15,13 @@ function Products(props) {
   const [categorySelected, setCategorySelected] =
     state.categories.categorySelected;
 
+    const [headerAlt, setHeaderAlt] = state.headerAlt
+
   useEffect(() => {
     setProductSelected("");
     setCategorySelected("");
     window.scrollTo(0, 0);
+    setHeaderAlt(true)
   }, []);
   
   return (
