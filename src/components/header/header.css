@@ -31,6 +31,14 @@ header ul li {
   cursor: pointer;
 }
 
+.hamburger-menu path{
+  stroke: black;
+}
+
+.hamburger-menu.alt path{
+  stroke: white;
+}
+
 .whatsapp-icon-container {
   display: flex;
   justify-content: center;

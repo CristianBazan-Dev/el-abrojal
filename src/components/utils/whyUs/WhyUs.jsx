@@ -44,7 +44,7 @@ function WhyUs(props) {
 
   return (
     <section className="whyUs-section">
-      <h3>¿Por qué elegirnos?</h3>
+      <h1>¿Por qué elegirnos?</h1>
 
       <div className="third-section">
         <h2>En Metalúrgica El Abrojal, somos más que una empresa</h2>

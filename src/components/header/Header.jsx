@@ -121,7 +121,7 @@ function Header(props) {
       </nav>
 
       <Hamburger
-        className="hamburger-menu"
+        className={!headerAlt ? "hamburger-menu" : "hamburger-menu alt"}
         onClick={() => {
           setHamburgerMenu(!hamburgerMenu);
         }}
