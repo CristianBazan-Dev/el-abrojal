@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   min-height: 50em;
+
 }
 
 .products-page.blurred {
@@ -11,13 +12,10 @@
 /* Products  */
 
 .products {
-  width: 80%;
+  width: 100%;
   margin-right: var(--m);
-  background: var(--gray);
+  background: white;
 }
-
-
-
 
 /* Products title  */
 .products .title{
