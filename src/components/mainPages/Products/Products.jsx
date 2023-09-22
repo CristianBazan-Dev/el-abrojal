@@ -31,9 +31,9 @@ function Products(props) {
 
   return (
     <section>
-      <div className={!blurred ? "products-page" : "products-page blurred"}>
+      <div className={!showModal ? "products-page" : "products-page blurred"}>
         <div className="categories">
-          <h2>Categorías</h2>
+        
           <Categories />
           {/* {categorySelected &&     <ResponsiveSubcat />} */}
       

@@ -21,11 +21,12 @@ function Categories(props) {
 
   const [categorySelected, setCategorySelected] =
     state.categories.categorySelected;
-    
 
   return (
     <div className="categories-selection">
-      {/* <h2>Categorías</h2> */}
+      <h2>Categorías</h2>
+
+      <div className="cats-container">
       {categories.map((data, index) => {
         return (
           <div
@@ -34,7 +35,7 @@ function Categories(props) {
             onClick={() => {
               setCategoryToggle(index);
               setCategoryNameToggle(data.category);
-              setProductSelected(""); 
+              setProductSelected("");
               setCatIsActive(!catIsActive);
               setCategorySelected(data.id);
             }}
@@ -94,6 +95,8 @@ function Categories(props) {
           </div>
         );
       })}
+      </div>
+
 
       {/* <select
           name="subcategories"

@@ -49,10 +49,7 @@ function Header(props) {
   }
 
 
-  const Redirect = (url) => {
-    window.location.href(`${url}`)
-    window.scrollTo(0,0 );
-  }
+
 
   return (
     <header className={!headerAlt ? "" : "header-alt"}>
@@ -80,6 +77,7 @@ function Header(props) {
         to="/"
         onClick={() => {
           ClearCategories();
+          window.scrollTo(0,0); 
         }}
       >
         <img src={!headerAlt ? Logo : LogoAlt} alt="logo de la empresa metalúrgica 'el abrojal' " />
@@ -90,7 +88,7 @@ function Header(props) {
           <li
             onClick={() => {
               ClearCategories();
-          
+              window.scrollTo(0,0); 
             }}
             className={!headerAlt ? "" : "li-alt"}
           >
@@ -108,7 +106,7 @@ function Header(props) {
           <li
             onClick={() => {
               ClearCategories();
-       
+              window.scrollTo(0,0); 
             }}
             className={!headerAlt ? "" : "li-alt"}
           >
@@ -143,6 +141,7 @@ function Header(props) {
               onClick={() => {
                 setHamburgerMenu(false);
                 ClearCategories();
+                window.scrollTo(0,0); 
               }}
             >
               Inicio
@@ -154,6 +153,7 @@ function Header(props) {
               onClick={() => {
                 setHamburgerMenu(false);
                 ClearCategories();
+                window.scrollTo(0,0);   
               }}
             >
               Productos
@@ -165,6 +165,7 @@ function Header(props) {
               onClick={() => {
                 setHamburgerMenu(false);
                 ClearCategories();
+                window.scrollTo(0,0);  
               }}
             >
               Sobre nosotros
@@ -175,6 +176,7 @@ function Header(props) {
               href="#contact"
               onClick={() => {
                 setHamburgerMenu(false);
+                window.scrollTo(0,0);  
               }}
             >
               Contacto
@@ -205,10 +207,10 @@ function Header(props) {
             <p>
               Página web desarrollada por{" "}
               <Link
-                to="https://cristianbazan-dev.github.io/portfolio/"
+                to="https://cristianbazan-dev.github.io/CB/"
                 target="_blank"
               >
-                CristianBazanDev
+                CB
               </Link>
             </p>
           </div>
@@ -226,6 +228,7 @@ function Header(props) {
             onClick={() => {
               setHamburgerMenu(false);
               ClearCategories();
+              window.scrollTo(0,0);  
             }}
           >
             <div className="icon-item">
@@ -240,6 +243,7 @@ function Header(props) {
               setHamburgerMenu(false);
               RedirectToContact(); 
               ClearCategories();
+              
             }}
           >
             <div className="icon-item">
@@ -253,6 +257,7 @@ function Header(props) {
             onClick={() => {
               setHamburgerMenu(false);
               ClearCategories();
+              window.scrollTo(0,0);  
             }}
           >
             <div className="icon-item">
