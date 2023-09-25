@@ -6,6 +6,7 @@ import Modal from "../components/utils/modal/Modal";
 
 import ProductsSection from "../components/mainPages/Products/Products";
 import { GlobalState } from "../GlobalState";
+import { useTitle } from "../hooks/useTitle";
 
 function Products(props) {
   const state = useContext(GlobalState);
@@ -15,15 +16,17 @@ function Products(props) {
   const [categorySelected, setCategorySelected] =
     state.categories.categorySelected;
 
-    const [headerAlt, setHeaderAlt] = state.headerAlt
+  const [headerAlt, setHeaderAlt] = state.headerAlt;
 
   useEffect(() => {
     setProductSelected("");
     setCategorySelected("");
     window.scrollTo(0, 0);
-    setHeaderAlt(true)
+    setHeaderAlt(true);
   }, []);
-  
+
+  useTitle({ title: "Productos" });
+
   return (
     <article className="app">
       <Header />
