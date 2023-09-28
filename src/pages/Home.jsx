@@ -29,11 +29,20 @@ function Home(props) {
     <>
       <Helmet>
         <title>El Abrojal | Fábrica de cadenas</title>
-        <meta name="description"  content="Fábrica de cadenas con más de 30 años en el rubro. Cadenas. Torniquetes. Ganchos. Y muchos productos más. ¡Envíenos su consulta!"/>
-        <meta name="thumbnail" content="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571060/Logos/logo_h2y6cy_ppunp1.png"/>
-        <link rel="canonical" href="https://elabrojal.com"/>
+        <meta
+          name="description"
+          content="Fábrica de cadenas con más de 30 años en el rubro. Cadenas. Torniquetes. Ganchos. Y muchos productos más. ¡Envíenos su consulta!"
+        />
+        <meta name="robots" content="index, follow"></meta>
+        <meta name="googlebot" content="index, follow"></meta>
+        <meta name="generator" content="react"></meta>
+        <meta
+          name="thumbnail"
+          content="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571060/Logos/logo_h2y6cy_ppunp1.png"
+        />
+        <link rel="canonical" href="https://elabrojal.com" />
 
-        
+ 
       </Helmet>
 
       <article className="app">
