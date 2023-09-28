@@ -36,12 +36,17 @@ function Home(props) {
         <meta name="robots" content="index, follow"></meta>
         <meta name="googlebot" content="index, follow"></meta>
         <meta name="generator" content="react"></meta>
+        <meta name="subject" content="Landing page of El Abrojal chains factory"/>
+        <meta name="subject" content="Página web de la fábrica de cadenas El Abrojal"/>
+        <meta name="referrer" content="no-referrer" />
+
         <meta
           name="thumbnail"
           content="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571060/Logos/logo_h2y6cy_ppunp1.png"
         />
         <link rel="canonical" href="https://elabrojal.com" />
-
+        <meta name="geo.position" content="latitude;longitude"/>
+        <meta name="geo.placename" content="Morrison"></meta>
  
       </Helmet>
 

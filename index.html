@@ -16,7 +16,11 @@
               return s.replace(/~and~/g, "&");
             })
             .join("?");
-          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
         }
       })(window.location);
     </script>
@@ -31,7 +35,6 @@
         <Attribute name="height" value="130" />
       </DataObject>
     </PageMap>
-    
   </head>
   <body>
     <div id="root"></div>
