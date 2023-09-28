@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+
 export const useTitle = ({ title }) => {
   const prevTitle = useRef(document.title);
 
@@ -7,5 +8,7 @@ export const useTitle = ({ title }) => {
 
     
     document.title = `El Abrojal | ${title} `;
+
+    return () => document.title = previuousTitle; 
   }, [title]);
 };

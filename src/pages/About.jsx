@@ -6,6 +6,7 @@ import Modal from '../components/utils/modal/Modal';
 
 import AboutSection from '../components/mainPages/About/About'
 import { GlobalState } from '../GlobalState';
+import { useTitle } from '../hooks/useTitle';
 
 function About(props) {
     const state = useContext(GlobalState)
@@ -17,6 +18,7 @@ useEffect(() => {
     setHeaderAlt(true)
 }, [])
 
+useTitle({title: "Sobre nosotros"})
 
 
     return (

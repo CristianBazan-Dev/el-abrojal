@@ -265,11 +265,6 @@ th {
     font-size: 0.5em;
   }
 
-  header {
-    display: flex;
-
-    justify-content: center;
-  }
 
   h1 {
     font-size: 30px;
@@ -316,6 +311,17 @@ th {
     text-transform: none;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+
 
 @media only screen and (max-width: 480px) {
 }

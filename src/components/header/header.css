@@ -177,6 +177,7 @@ header ul li {
 
 /* Responsive */
 @media only screen and (max-width: 900px) {
+
   header img {
     display: flex;
     justify-content: center;
