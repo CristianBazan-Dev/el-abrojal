@@ -8,6 +8,8 @@ import HomeSection from "../components/mainPages/Home/Home";
 import { GlobalState } from "../GlobalState";
 import { useSEO } from "../hooks/useSEO";
 
+import { Helmet } from "react-helmet";
+
 function Home(props) {
   const state = useContext(GlobalState);
   const [headerAlt, setHeaderAlt] = state.headerAlt;
@@ -17,18 +19,30 @@ function Home(props) {
     window.scrollTo(0, 0);
   }, []);
 
-  useSEO({ description: "Fábrica de cadenas con más de 30 años en el rubro. Cadenas. Torniquetes. Ganchos. Y muchos productos más. ¡Envíenos su consulta!", title: "Fábrica de cadenas" });
+  // useSEO({
+  //   description:
+  //     "",
+  //   title: "Fábrica de cadenas",
+  // });
 
   return (
-    <article className="app">
-      <Header />
-      <main>
-        <HomeSection />
-      </main>
-      <Contact id="contact" className="contact-section" />
-      <Footer />
-      <Modal />
-    </article>
+    <>
+      <Helmet>
+        <title>El Abrojal | Fábrica de cadenas</title>
+        <meta name="description"  content="Fábrica de cadenas con más de 30 años en el rubro. Cadenas. Torniquetes. Ganchos. Y muchos productos más. ¡Envíenos su consulta!"/>
+        <meta name="thumbnail" content="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571060/Logos/logo_h2y6cy_ppunp1.png"/>
+      </Helmet>
+
+      <article className="app">
+        <Header />
+        <main>
+          <HomeSection />
+        </main>
+        <Contact id="contact" className="contact-section" />
+        <Footer />
+        <Modal />
+      </article>
+    </>
   );
 }
 
