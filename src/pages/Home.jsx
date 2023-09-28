@@ -31,6 +31,9 @@ function Home(props) {
         <title>El Abrojal | Fábrica de cadenas</title>
         <meta name="description"  content="Fábrica de cadenas con más de 30 años en el rubro. Cadenas. Torniquetes. Ganchos. Y muchos productos más. ¡Envíenos su consulta!"/>
         <meta name="thumbnail" content="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571060/Logos/logo_h2y6cy_ppunp1.png"/>
+        <link rel="canonical" href="https://elabrojal.com"/>
+
+        
       </Helmet>
 
       <article className="app">

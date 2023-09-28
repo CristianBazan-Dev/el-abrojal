@@ -8,6 +8,8 @@ import ProductsSection from "../components/mainPages/Products/Products";
 import { GlobalState } from "../GlobalState";
 import { useSEO } from "../hooks/useSEO";
 
+import { Helmet } from "react-helmet";
+
 function Products(props) {
   const state = useContext(GlobalState);
   const [productSelected, setProductSelected] =
@@ -25,20 +27,33 @@ function Products(props) {
     setHeaderAlt(true);
   }, []);
 
-  useSEO({description:"Los productos de El Abrojal se caracterizan por la calidad de su materia prima y la dedicación en su fabricación.", title: "Productos" });
-
   return (
-    <article className="app">
-      <Header />
+    <>
+      <Helmet>
+        <title>El Abrojal | Productos</title>
+        <meta
+          name="description"
+          content="Fábrica de cadenas con más de 30 años en el rubro. Cadenas. Torniquetes. Ganchos. Y muchos productos más. ¡Envíenos su consulta!"
+        />
+        <meta
+          name="thumbnail"
+          content="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571060/Logos/logo_h2y6cy_ppunp1.png"
+        />  
+        <link rel="canonical" href="https://elabrojal.com/#/products" />
+      </Helmet>
 
-      <main>
-        <ProductsSection />
-      </main>
+      <article className="app">
+        <Header />
 
-      <Contact id="contact" className="contact-section" />
-      <Footer />
-      <Modal />
-    </article>
+        <main>
+          <ProductsSection />
+        </main>
+
+        <Contact id="contact" className="contact-section" />
+        <Footer />
+        <Modal />
+      </article>
+    </>
   );
 }
 
