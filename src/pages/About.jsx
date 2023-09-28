@@ -6,7 +6,7 @@ import Modal from '../components/utils/modal/Modal';
 
 import AboutSection from '../components/mainPages/About/About'
 import { GlobalState } from '../GlobalState';
-import { useTitle } from '../hooks/useTitle';
+import { useSEO } from "../hooks/useSEO";
 
 function About(props) {
     const state = useContext(GlobalState)
@@ -18,7 +18,7 @@ useEffect(() => {
     setHeaderAlt(true)
 }, [])
 
-useTitle({title: "Sobre nosotros"})
+useSEO({description: "En Metalúrgica El Abrojal somos más que una empresa: somos un legado de más de 30 años de excelencia en la industria.",title: "Sobre nosotros"})
 
 
     return (

@@ -6,7 +6,7 @@ import Modal from "../components/utils/modal/Modal";
 
 import HomeSection from "../components/mainPages/Home/Home";
 import { GlobalState } from "../GlobalState";
-import { useTitle } from "../hooks/useTitle";
+import { useSEO } from "../hooks/useSEO";
 
 function Home(props) {
   const state = useContext(GlobalState);
@@ -17,7 +17,7 @@ function Home(props) {
     window.scrollTo(0, 0);
   }, []);
 
-  useTitle({ title: "Fábrica de cadenas" });
+  useSEO({ description: "Fábrica de cadenas con más de 30 años en el rubro. Cadenas. Torniquetes. Ganchos. Y muchos productos más. ¡Envíenos su consulta!", title: "Fábrica de cadenas" });
 
   return (
     <article className="app">

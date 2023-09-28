@@ -6,7 +6,7 @@ import Modal from "../components/utils/modal/Modal";
 
 import ProductsSection from "../components/mainPages/Products/Products";
 import { GlobalState } from "../GlobalState";
-import { useTitle } from "../hooks/useTitle";
+import { useSEO } from "../hooks/useSEO";
 
 function Products(props) {
   const state = useContext(GlobalState);
@@ -25,7 +25,7 @@ function Products(props) {
     setHeaderAlt(true);
   }, []);
 
-  useTitle({ title: "Productos" });
+  useSEO({description:"Los productos de El Abrojal se caracterizan por la calidad de su materia prima y la dedicación en su fabricación.", title: "Productos" });
 
   return (
     <article className="app">
