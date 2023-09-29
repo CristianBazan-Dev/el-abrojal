@@ -33,7 +33,7 @@ function Products(props) {
         <title>El Abrojal | Productos</title>
         <meta
           name="description"
-          content="Fábrica de cadenas con más de 30 años en el rubro. Cadenas. Torniquetes. Ganchos. Y muchos productos más. ¡Envíenos su consulta!"
+          content="Nuestros productos se encuentran realizados con materia prima de calidad y con dedicación."
         />
         <meta
           name="thumbnail"

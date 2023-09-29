@@ -31,7 +31,7 @@ function About(props) {
         <title>El Abrojal | Sobre nosotros</title>
         <meta
           name="description"
-          content="Fábrica de cadenas con más de 30 años en el rubro. Cadenas. Torniquetes. Ganchos. Y muchos productos más. ¡Envíenos su consulta!"
+          content="En Metalúrgica El Abrojal somos más que una empresa: somos un legado de más de 30 años en la industria. "
         />
         <meta
           name="thumbnail"
