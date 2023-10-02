@@ -33,13 +33,30 @@ function Products(props) {
         <title>El Abrojal | Productos</title>
         <meta
           name="description"
-          content="Nuestros productos se encuentran realizados con materia prima de calidad y con dedicación."
+          content="Nuestros productos son fabricados con dedicación y materia prima de calidad. "
         />
+        <meta name="robots" content="index, follow"></meta>
+        <meta name="googlebot" content="index, follow"></meta>
+        <meta name="generator" content="react"></meta>
+        <meta
+          name="subject"
+          content="Landing page of El Abrojal chains factory"
+        />
+        <meta
+          name="subject"
+          content="Página web de la fábrica de cadenas El Abrojal"
+        />
+        <meta name="referrer" content="no-referrer" />
+
         <meta
           name="thumbnail"
           content="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571060/Logos/logo_h2y6cy_ppunp1.png"
-        />  
+        />
         <link rel="canonical" href="https://elabrojal.com/#/products" />
+        <meta name="geo.region" content="AR-X" />
+        <meta name="geo.placename" content="Morrison" />
+        <meta name="geo.position" content="-34.996496;-64.967282" />
+        <meta name="ICBM" content="-34.996496, -64.967282" />
       </Helmet>
 
       <article className="app">
