@@ -237,7 +237,7 @@ function Header(props) {
             </div>
           </Link>
 
-          <a
+          <div
             
             onClick={() => {
               setHamburgerMenu(false);
@@ -250,7 +250,7 @@ function Header(props) {
               <Contact className="icon" />
               <p>Contacto</p>
             </div>
-          </a>
+          </div>
 
           <Link
             to="/about"
