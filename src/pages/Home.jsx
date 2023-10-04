@@ -35,7 +35,25 @@ function Home(props) {
         />
         <meta name="robots" content="index, follow"></meta>
         <meta name="googlebot" content="index, follow"></meta>
+        <meta name="bingbot" content="index, follow"></meta>
+
+        <link rel="canonical" href="https://elabrojal.com" />
+
+        <meta property="og:locale" content="es_ES"></meta>
+        <meta property="og:type" content="website"></meta>
+        <meta
+          property="og:title"
+          content="El Abrojal | Fábrica de cadenas"
+        ></meta>
+        <meta
+          property="og:description"
+          content="Fábrica de cadenas con más de 30 años en el rubro. Cadenas. Torniquetes. Ganchos. Y muchos productos más. ¡Envíenos su consulta!"
+        ></meta>
+        <meta property="og:url" content="https://elabrojal.com"></meta>
+        <meta property="og:site_name" content="El Abrojal"></meta>
+
         <meta name="generator" content="react"></meta>
+
         <meta
           name="subject"
           content="Landing page of El Abrojal chains factory"
@@ -50,7 +68,7 @@ function Home(props) {
           name="thumbnail"
           content="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571060/Logos/logo_h2y6cy_ppunp1.png"
         />
-        <link rel="canonical" href="https://elabrojal.com" />
+
         <meta name="geo.region" content="AR-X" />
         <meta name="geo.placename" content="Morrison" />
         <meta name="geo.position" content="-34.996496;-64.967282" />

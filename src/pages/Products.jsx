@@ -37,6 +37,21 @@ function Products(props) {
         />
         <meta name="robots" content="index, follow"></meta>
         <meta name="googlebot" content="index, follow"></meta>
+        <meta name="bingbot" content="index, follow"></meta>
+
+        <meta property="og:locale" content="es_ES"></meta>
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:title" content="El Abrojal | Productos"></meta>
+        <meta
+          property="og:description"
+          content="Nuestros productos son fabricados con dedicación y materia prima de calidad."
+        ></meta>
+        <meta
+          property="og:url"
+          content="https://elabrojal.com/#/products"
+        ></meta>
+        <meta property="og:site_name" content="El Abrojal"></meta>
+
         <meta name="generator" content="react"></meta>
         <meta
           name="subject"
