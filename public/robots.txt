@@ -3,6 +3,4 @@ Allow: /
 Allow: /#/products
 Allow: /#/about
 
-Sitemap: https://elabrojal.com/#/
-Sitemap: https://elabrojal.com/#/products
-Sitemap: https://elabrojal.com/#/about
+Sitemap: https://elabrojal.com/sitemap.xml
