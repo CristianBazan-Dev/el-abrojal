@@ -14,10 +14,10 @@
   margin-top: 1em;
 }
 
-.cats-container{
+.cats-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   margin-left: -1em;
 }
 
@@ -95,13 +95,27 @@
   .categories {
     width: 100%;
     background: var(--darker-gray);
+    display: block; 
+    margin-bottom: 2cqw;
+    margin-right: 0;
+  }
+  
+  .categories-selection h2{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 3em;
+    margin: auto; 
+  }
+  .categories-selection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin: 0;
+    margin-top: 1em;
   }
 
-  .categories-selection {
+   .categories-selection .cats-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));

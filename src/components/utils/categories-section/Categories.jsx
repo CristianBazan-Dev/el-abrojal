@@ -97,26 +97,6 @@ function Categories(props) {
       })}
       </div>
 
-
-      {/* <select
-          name="subcategories"
-          id=""
-          onChange={(e) => {
-            searchCategory(e.target.value);
-          }}
-        >
-          {subcategories.map((subcategory) => {
-            {
-              return (
-                <option key={subcategory.id} value={subcategory.id}>
-                  {subcategory.title
-                    ? `${subcategory.category} - ${subcategory.title} `
-                    : `${subcategory.category}`}
-                </option>
-              );
-            }
-          })}
-        </select> */}
     </div>
   );
 }
