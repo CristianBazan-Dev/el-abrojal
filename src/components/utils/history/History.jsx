@@ -45,7 +45,7 @@ function History(props) {
 
         <div className="last-section">
           <img
-            src="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571177/Hero/hero-banner_dsgumz_ed9ukx.jpg"
+            src="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1696847659/Hero/Hero_-_Banner_cxr4lm.jpg"
             alt="Foto  de la empresa"
           />
         </div>
