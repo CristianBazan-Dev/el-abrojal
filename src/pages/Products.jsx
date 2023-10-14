@@ -30,7 +30,7 @@ function Products(props) {
   return (
     <>
       <Helmet>
-        <title>El Abrojal | Productos</title>
+        <title>Metalúrgica El Abrojal | Productos</title>
         <meta
           name="description"
           content="Nuestros productos son fabricados con dedicación y materia prima de calidad. "
@@ -41,7 +41,7 @@ function Products(props) {
 
         <meta property="og:locale" content="es_ES"></meta>
         <meta property="og:type" content="website"></meta>
-        <meta property="og:title" content="El Abrojal | Productos"></meta>
+        <meta property="og:title" content="Metalúrgica El Abrojal | Productos"></meta>
         <meta
           property="og:description"
           content="Nuestros productos son fabricados con dedicación y materia prima de calidad."
@@ -55,7 +55,7 @@ function Products(props) {
         <meta name="generator" content="react"></meta>
         <meta
           name="subject"
-          content="Landing page of El Abrojal chains factory"
+          content="Landing page of Metalúrgica El Abrojal chains factory"
         />
         <meta
           name="subject"

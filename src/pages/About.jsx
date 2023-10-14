@@ -28,7 +28,7 @@ function About(props) {
   return (
     <>
       <Helmet>
-        <title>El Abrojal | Sobre nosotros</title>
+        <title>Metalúrgica El Abrojal | Sobre nosotros</title>
         <meta
           name="description"
           content="Somos más que una empresa: somos un legado con más de 30 años de experiencia en la industtria. "
@@ -39,7 +39,7 @@ function About(props) {
 
         <meta property="og:locale" content="es_ES"></meta>
         <meta property="og:type" content="website"></meta>
-        <meta property="og:title" content="El Abrojal | Sobre nosotros"></meta>
+        <meta property="og:title" content="Metalúrgica El Abrojal | Sobre nosotros"></meta>
         <meta property="og:description" content="Somos más que una empresa: somos un legado con más de 30 años de experiencia en la industria."></meta>
         <meta property="og:url" content="https://elabrojal.com/#/about"></meta>
         <meta property="og:site_name" content="El Abrojal"></meta>
@@ -47,7 +47,7 @@ function About(props) {
         <meta name="generator" content="react"></meta>
         <meta
           name="subject"
-          content="Landing page of El Abrojal chains factory"
+          content="Landing page of Metalúrgica El Abrojal chains factory"
         />
         <meta
           name="subject"

@@ -28,7 +28,7 @@ function Home(props) {
   return (
     <>
       <Helmet>
-        <title>El Abrojal | Fábrica de cadenas</title>
+        <title>Metalúrgica El Abrojal | Fábrica de cadenas</title>
         <meta
           name="description"
           content="Fábrica de cadenas con más de 30 años en el rubro. Cadenas. Torniquetes. Ganchos. Y muchos productos más. ¡Envíenos su consulta!"
@@ -43,7 +43,7 @@ function Home(props) {
         <meta property="og:type" content="website"></meta>
         <meta
           property="og:title"
-          content="El Abrojal | Fábrica de cadenas"
+          content="Metalúrgica El Abrojal | Fábrica de cadenas"
         ></meta>
         <meta
           property="og:description"
@@ -56,7 +56,7 @@ function Home(props) {
 
         <meta
           name="subject"
-          content="Landing page of El Abrojal chains factory"
+          content="Landing page of Metalúrgica El Abrojal chains factory"
         />
         <meta
           name="subject"
