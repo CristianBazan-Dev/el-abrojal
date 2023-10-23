@@ -37,7 +37,7 @@ function Home(props) {
         <meta name="googlebot" content="index, follow"></meta>
         <meta name="bingbot" content="index, follow"></meta>
 
-        <link rel="canonical" href="https://elabrojal.com" />
+        <link rel="canonical" href="https://elabrojal.com/" />
 
         <meta property="og:locale" content="es_ES"></meta>
         <meta property="og:type" content="website"></meta>
