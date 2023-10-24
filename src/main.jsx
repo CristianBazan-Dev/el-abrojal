@@ -15,6 +15,10 @@ const router = createHashRouter([
     element: <Home />,
   },
   {
+    path: "/#/",
+    element: <Home />,
+  },
+  {
     path: "/products",
     element: <Products />,
   },
