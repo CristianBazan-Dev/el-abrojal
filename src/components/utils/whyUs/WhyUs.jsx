@@ -36,7 +36,7 @@ function WhyUs(props) {
       ],
     },
     {
-      icon: "",
+      icon: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1699467395/%C3%8Dconos/Why-us/why-4_neq20f.png",
       title: "Evolución continua",
       reasons: [
         "A lo largo de los años, nuestra empresa ha sido un faro de calidad, compromiso y progreso desde nuestros primeros pasos",
