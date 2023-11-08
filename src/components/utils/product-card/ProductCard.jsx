@@ -18,32 +18,23 @@ function ProductCard({ item, index }) {
 
   const [toggle, setToggle] = useState({});
 
-  const [showModal, setShowModal] = state.showModal; 
-  const [imgModal, setImgModal] = state.imgModal
+  const [showModal, setShowModal] = state.showModal;
+  const [imgModal, setImgModal] = state.imgModal;
 
   const OpenImg = (url) => {
-    setShowModal(true); 
-    setImgModal(url)
-  }
+    setShowModal(true);
+    setImgModal(url);
+  };
 
   return (
-    <div
-      className="product-card"
-      
-      onMouseEnter={() => {
-        setShowSlideCard(!showSlideCard);
-        setToggle(index);
-      }}
-      onMouseLeave={() => {
-        setShowSlideCard(false);
-        setToggle("");
-      }}
-
-    >
-      <div className={!showSlideCard ? "front-card" : "front-card active"}  onClick={() => {
-        setProductSelected(item);
-        window.scrollTo(0, 0);
-      }}>
+    <div className="product-card">
+      <div
+        className={!showSlideCard ? "front-card" : "front-card active"}
+        onClick={() => {
+          setProductSelected(item);
+          window.scrollTo(0, 0);
+        }}
+      >
         <img src={item.imgs[0]} alt="" />
 
         <div className="text">

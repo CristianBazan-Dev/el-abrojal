@@ -1,33 +1,42 @@
 .contact-section {
   background: var(--main);
+  position: relative;
+}
+
+.contact-section::after {
+  content: "";
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  height: 5%;
+  background: var(--green);
+  width: 100%;
 }
 
 .contact-info {
   display: flex;
   justify-content: center;
   margin: 1em;
-
 }
 
-.contact-info > div{
+.contact-info > div {
   margin-left: 5em;
 }
 
 .text h2 {
   display: flex;
   flex-direction: column;
-  
 }
 
-.text ul .contact-element{
+.text ul .contact-element {
   margin-bottom: 2em;
 }
 
-.text ul .contact-element p{
-  color: var(--light)
+.text ul .contact-element p {
+  color: var(--light);
 }
 
-.contact-section  .contact-element svg{
+.contact-section .contact-element svg {
   fill: var(--light);
 }
 
@@ -37,11 +46,8 @@
 
 /* Responsive  */
 
-
-
 @media only screen and (max-width: 900px) {
-  .contact-section{
-   
+  .contact-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,16 +55,13 @@
     text-align: center;
   }
 
-  .contact-info{
+  .contact-info {
     display: flex;
     flex-direction: column;
     text-align: center;
-
   }
 
-  .contact-info > div{
+  .contact-info > div {
     margin-left: 0;
   }
-
-
 }

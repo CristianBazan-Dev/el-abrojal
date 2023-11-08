@@ -1,6 +1,19 @@
-.header-alt{
+.header-alt {
   background: var(--main) !important;
   transition: 1s;
+}
+
+header {
+  position: relative;
+}
+
+header::after {
+  position: absolute;
+  bottom: -0.9em;
+  content: "";
+  height: 20%;
+  background: var(--green);
+  width: 100%;
 }
 
 header img {
@@ -19,7 +32,7 @@ header ul li {
   cursor: pointer;
 }
 
-.li-alt{
+.li-alt {
   color: var(--light);
 }
 
@@ -31,11 +44,11 @@ header ul li {
   cursor: pointer;
 }
 
-.hamburger-menu path{
+.hamburger-menu path {
   stroke: black;
 }
 
-.hamburger-menu.alt path{
+.hamburger-menu.alt path {
   stroke: white;
 }
 
@@ -146,7 +159,8 @@ header ul li {
   margin: 0;
 }
 
-.responsive-menu .close-icon, .responsive-menu .social-icons .social-icon {
+.responsive-menu .close-icon,
+.responsive-menu .social-icons .social-icon {
   fill: var(--light);
 }
 
@@ -156,9 +170,7 @@ header ul li {
   justify-content: center;
   align-items: center;
   margin: auto;
-
 }
-
 
 .responsive-menu .social-icons a {
   margin-left: 1em;
@@ -177,7 +189,6 @@ header ul li {
 
 /* Responsive */
 @media only screen and (max-width: 900px) {
-
   header img {
     display: flex;
     justify-content: center;
@@ -272,16 +283,15 @@ header ul li {
     left: 1em;
   }
 
-  .whatsapp-icon-container{
+  .whatsapp-icon-container {
     display: none;
   }
 }
 
-
 /* Dark mode  */
 
 @media (prefers-color-scheme: dark) {
-  header{
+  header {
     background: var(--light);
   }
 }

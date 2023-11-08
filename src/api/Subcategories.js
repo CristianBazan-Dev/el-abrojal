@@ -32,7 +32,7 @@ export const subcategories = [
     imgTable : "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661430/Productos/Productos/Cadenas/Derecha/Table.png", 
     columns: [
       "denominación",
-      "ø",
+      "diámetro de alambre",
       "ancho int.",
       "largo int.",
       "kg x mt",
@@ -225,7 +225,7 @@ export const subcategories = [
     imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661666/Productos/Productos/Cadenas/Torcida/Screenshot_2023-09-14_002049_wjmbmt.png",
     columns: [
       "denominación",
-      "ø",
+      "diámetro de alambre",
       "ancho int.",
       "largo int.",
       "kg x mt",

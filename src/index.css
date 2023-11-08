@@ -35,7 +35,7 @@
   --header-sz: 94px; 
 
   /* Color palette  */
-  --main: #001f60;
+  --main: #124bc3; 
   --main-lowOp: #001e60c5;
   --secondary: #6b85a8;
   --secondary-lowOp: #6b85a86c;
@@ -55,14 +55,10 @@
 
   --wpp-green: #28f172;
 
-  --accent:   #8142E9; 
 
-  --experimental-gradient: linear-gradient(to right, #001f61, #232887, #4a2cab, #7729cd, #a912eb); 
+  --green: #B3E325; 
 
-  --gradient: linear-gradient(138deg, #6b85a8 28.45%, #001f60 100%);
-  --gradientLowOp: linear-gradient(138deg, #6b85a8 28.45%, #001f60 50%);
 
-  --gradientAlt: linear-gradient(-138deg, #6b85a8 28.45%, #001f60 100%);
 
   --light-b-sw: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --medium-b-sw: rgba(0, 0, 0, 0.24) 0px 3px 8px;

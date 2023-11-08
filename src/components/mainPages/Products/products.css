@@ -1,8 +1,7 @@
 .products-page {
   display: flex;
   justify-content: space-between;
-  min-height: 50em;
-
+  min-height: 25em;
 }
 
 .products-page.blurred {
