@@ -1,7 +1,8 @@
 .products-page {
   display: flex;
   justify-content: space-between;
-  min-height: 25em;
+  min-height: 40em;
+  margin-top: 1em;
 }
 
 .products-page.blurred {
@@ -17,28 +18,22 @@
 }
 
 /* Products title  */
-.products .title{
+.products .title {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
-
-.products .title .main-title{
-
+.products .title .main-title {
   display: flex;
   align-items: baseline;
   margin-left: 2em;
-
 }
 
-.products .title .goBack-container{
+.products .title .goBack-container {
   margin-right: var(--m);
 }
-
-
 
 .products .title h2 {
   margin-right: 0.5em;
@@ -86,9 +81,8 @@
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-  
-@media only screen and (max-width: 1163px) {
 
+@media only screen and (max-width: 1163px) {
 }
 
 @media only screen and (max-width: 900px) {
@@ -213,7 +207,7 @@
     display: none;
   }
 
-  .responsive-measure  {
+  .responsive-measure {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,23 +215,22 @@
     margin: auto;
   }
 
-  .responsive-measure img{ 
+  .responsive-measure img {
     width: 100%;
     margin-left: 1.5em;
-
   }
 
-  .responsive-measure  button {
-    font-size: .5em;
-    background: var(--main);  
+  .responsive-measure button {
+    font-size: 0.5em;
+    background: var(--main);
     color: var(--light);
     border-radius: 10px;
     padding: 5px;
     z-index: 1000;
     margin: 1em;
   }
-  
-  .responsive-measure  button:hover {
+
+  .responsive-measure button:hover {
     background: var(--light);
     box-shadow: var(--accent) 0px 3px 8px;
     color: var(--main);
@@ -246,5 +239,4 @@
 
     z-index: 1000;
   }
-  
 }

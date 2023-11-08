@@ -240,11 +240,15 @@ li {
   text-transform: uppercase;
 }
 
-table,
-td,
-th {
+table, th {
   border: 1px solid;
 }
+
+td{
+  border-bottom: 1px solid;
+}
+
+
 
 table {
   width: 100%;

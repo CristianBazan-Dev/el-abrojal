@@ -4,6 +4,7 @@
   margin-left: 2em;
   margin-right: var(--m);
   background: var(--gray);
+
 }
 
 /* Products title  */
@@ -153,6 +154,7 @@
 
 .measures .center-table table {
   text-align: center;
+  border-collapse: collapse;
 }
 
 .measures .center-table thead {
@@ -161,7 +163,6 @@
 }
 
 .measures td {
- 
   font-weight: bold;
 }
 
