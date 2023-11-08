@@ -10,7 +10,10 @@
 
 .whyUs-section h3 {
   color: var(--dark);
+}
 
+.whyUs-section .third-section .accent{
+  font-family: 'Montserrat', sans-serif;
 }
 
 .cards-why {

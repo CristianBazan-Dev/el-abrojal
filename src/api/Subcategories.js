@@ -423,12 +423,12 @@ export const subcategories = [
       {
         cadena: "Cadena n° 90",
         largo: 3,
-        punta: "Arg. oval 12. mm",
+        punta: "Arg. ovalada 12. mm",
       },
       {
         cadena: "Cadena n° 100",
         largo: 3,
-        punta: "Arg. oval 12. mm",
+        punta: "Arg. ovalada 12. mm",
       },
     ],
   },

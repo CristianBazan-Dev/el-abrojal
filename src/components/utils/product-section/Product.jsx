@@ -182,7 +182,7 @@ function Product(props) {
                       return (
                         <tr key={index}>
                           <td>{row.cadena}</td>
-                          <td>{row.largo}</td>
+                          <td>{row.largo} mts</td>
                           <td>{row.punta}</td>
                         </tr>
                       );

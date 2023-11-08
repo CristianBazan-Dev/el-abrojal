@@ -3,7 +3,7 @@ import { ReactComponent as WhyIcon1 } from "../../../assets/icons/whyUs/why-1.sv
 import { ReactComponent as WhyIcon2 } from "../../../assets/icons/whyUs/why-2.svg";
 import { ReactComponent as WhyIcon3 } from "../../../assets/icons/whyUs/why-3.svg";
 
-import Logo from '../../../assets/logo.png'
+import Logo from "../../../assets/logo.png";
 
 import "./whyUs.css";
 
@@ -35,12 +35,20 @@ function WhyUs(props) {
         " Desde torniquetes hasta argollas, cadenas especiales, tranqueras, lanzas de seguridad y mosquetones, ofrecemos soluciones para una variedad de necesidades industriales y comerciales.",
       ],
     },
+    {
+      icon: "",
+      title: "Evolución continua",
+      reasons: [
+        "A lo largo de los años, nuestra empresa ha sido un faro de calidad, compromiso y progreso desde nuestros primeros pasos",
+        "Nuestra especialización en la fabricación de cadenas es la columna vertebral de nuestro éxito. Con el pasar del tiempo, hemos perfeccionado nuestros procesos y hemos invertido en tecnología de vanguardia para ofrecer cadenas que cumplen con los más altos estándares de calidad y durabilidad.",
+      ],
+    },
   ];
 
-  const EraseAnimation = (e) => { 
-    const element = e.target 
-    e.target.style.animation = "none";  
-  }
+  const EraseAnimation = (e) => {
+    const element = e.target;
+    e.target.style.animation = "none";
+  };
 
   return (
     <section className="whyUs-section">
@@ -59,7 +67,13 @@ function WhyUs(props) {
       <div className="cards-why">
         {whyCards.map((card, index) => {
           return (
-            <div className="whyCard" key={index} onMouseEnter={(e) => {EraseAnimation(e)}}>
+            <div
+              className="whyCard"
+              key={index}
+              onMouseEnter={(e) => {
+                EraseAnimation(e);
+              }}
+            >
               <div className="images">
                 <img
                   src={card.icon}
