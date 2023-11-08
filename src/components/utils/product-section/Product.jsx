@@ -6,11 +6,11 @@ import ProductCard from "../product-card/ProductCard";
 
 import { ReactComponent as Back } from "../../../assets/icons/utils/back.svg";
 import { saveAs } from "file-saver";
+import { useParams } from "react-router-dom";
 
 function Product(props) {
   const state = useContext(GlobalState);
-  const [productSelected, setProductSelected] =
-    state.categories.productSelected;
+  const [productSelected, setProductSelected] = useState([]);
 
   const [categorySelected, setCategorySelected] =
     state.categories.categorySelected;
@@ -23,6 +23,8 @@ function Product(props) {
 
   const [isChangeMainImg, setIsChangeMainImg] = useState(false);
   const [mainImg, setMainImg] = state.mainImg;
+
+  const params = useParams();
 
   const handleGallery = (url) => {
     setShowModal(!showModal);
@@ -45,7 +47,16 @@ function Product(props) {
     );
   };
 
-  console.log(mainImg);
+  useEffect(() => {
+    {
+      subcategories.map((product) => {
+        if (params.id == product.id) {
+          setProductSelected(product);
+        }
+      });
+    }
+  }, []);
+
 
   return (
     <div className="products">

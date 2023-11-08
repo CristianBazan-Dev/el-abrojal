@@ -6,7 +6,7 @@
 .contact-section::after {
   content: "";
   position: absolute;
-  bottom: -1em;
+  bottom: 0;
   left: 0;
   height: 5%;
   background: var(--green);

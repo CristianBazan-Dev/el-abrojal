@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./productCard.css";
 import { GlobalState } from "../../../GlobalState";
+import { Link } from "react-router-dom";
 
 function ProductCard({ item, index }) {
   const state = useContext(GlobalState);
@@ -27,13 +28,10 @@ function ProductCard({ item, index }) {
   };
 
   return (
-    <div className="product-card">
+    <Link to={`/products/${item.id}`}>
+     <div className="product-card">
       <div
         className={!showSlideCard ? "front-card" : "front-card active"}
-        onClick={() => {
-          setProductSelected(item);
-          window.scrollTo(0, 0);
-        }}
       >
         <img src={item.imgs[0]} alt="" />
 
@@ -64,6 +62,8 @@ function ProductCard({ item, index }) {
         </div>
       </div> */}
     </div>
+    </Link>
+   
   );
 }
 
