@@ -85,10 +85,16 @@ function Product(props) {
         <Header />
 
         <main>
-          <div className="product-page">
-            <Categories />
-            <ProductSection />
-          </div>
+          <section>
+            <div className="products-page">
+              <div className="categories">
+                <Categories />
+              </div>
+              <div className="products">
+                <ProductSection />
+              </div>
+            </div>
+          </section>
         </main>
 
         <Contact id="contact" className="contact-section" />

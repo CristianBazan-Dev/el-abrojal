@@ -28,42 +28,18 @@ function ProductCard({ item, index }) {
   };
 
   return (
-    <Link to={`/products/${item.id}`}>
-     <div className="product-card">
-      <div
-        className={!showSlideCard ? "front-card" : "front-card active"}
-      >
-        <img src={item.imgs[0]} alt="" />
+    <Link to={`/products/${item.id}`} className="product-card">
+      <div className="product-card">
+        <div className={!showSlideCard ? "front-card" : "front-card active"}>
+          <img src={item.imgs[0]} alt="" />
 
-        <div className="text">
-          <p>{item.category}</p>
-          <h5>{item.title}</h5>
+          <div className="text">
+            <p>{item.category}</p>
+            <h5>{item.title}</h5>
+          </div>
         </div>
       </div>
-
-      {/* <div
-        className={
-          showSlideCard && toggle == index ? "slide-card active" : "slide-card"
-        }
-      >
-        <div className="subcategory-gallery">
-          {item.imgs.map((img, e) => {
-            return (
-              <div className="container">
-                <img
-                  src={img}
-                  onClick={() => {
-                    OpenImg(img);
-                  }}
-                />
-              </div>
-            );
-          })}
-        </div>
-      </div> */}
-    </div>
     </Link>
-   
   );
 }
 
