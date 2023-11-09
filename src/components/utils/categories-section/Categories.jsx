@@ -5,6 +5,7 @@ import { subcategories } from "../../../api/Subcategories.js";
 import { GlobalState } from "../../../GlobalState";
 
 import "./categories.css";
+import { Link } from "react-router-dom";
 
 function Categories(props) {
   const state = useContext(GlobalState);
@@ -27,33 +28,36 @@ function Categories(props) {
       <h2>Categorías</h2>
 
       <div className="cats-container">
-      {categories.map((data, index) => {
-        return (
-          <div
-            className="cat-item"
-            key={index}
-            onClick={() => {
-              setCategoryToggle(index);
-              setCategoryNameToggle(data.category);
-              setProductSelected("");
-              setCatIsActive(!catIsActive);
-              setCategorySelected(data.id);
-            }}
-          >
-            <div className="cat-info">
-              <img src={data.icon} className="cat-icon" />
-              <p
-                className={
-                  categorySelected == data.id ? "cat-title active" : "cat-title"
-                }
+        {categories.map((data, index) => {
+          return (
+            <Link to={`/category/${data.id}`}>
+              <div
+                className="cat-item"
+                key={index}
                 onClick={() => {
-                  setSubcategorySelected(data);
+                  setCategoryToggle(index);
+                  setCategoryNameToggle(data.category);
+                  setProductSelected("");
+                  setCatIsActive(!catIsActive);
+                  setCategorySelected(data.id);
                 }}
               >
-                {data.category}
-              </p>
+                <div className="cat-info">
+                  <img src={data.icon} className="cat-icon" />
+                  <p
+                    className={
+                      categorySelected == data.id
+                        ? "cat-title active"
+                        : "cat-title"
+                    }
+                    onClick={() => {
+                      setSubcategorySelected(data);
+                    }}
+                  >
+                    {data.category}
+                  </p>
 
-              {/* {data.haveSubcat && (
+                  {/* {data.haveSubcat && (
                 <div
                   className={
                     catIsActive && categoryToggle == index
@@ -69,9 +73,9 @@ function Categories(props) {
                   <div className="bar-2"></div>
                 </div>
               )} */}
-            </div>
+                </div>
 
-            {/* {catIsActive && (
+                {/* {catIsActive && (
               <ul>
                 {subcategories.map((subcategory) => {
                   if (
@@ -92,11 +96,11 @@ function Categories(props) {
                 })}
               </ul>
             )} */}
-          </div>
-        );
-      })}
+              </div>
+            </Link>
+          );
+        })}
       </div>
-
     </div>
   );
 }

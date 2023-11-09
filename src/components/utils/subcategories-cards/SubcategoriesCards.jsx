@@ -6,6 +6,7 @@ import Modal from "../../utils/modal/Modal";
 
 import { ReactComponent as Back } from "../../../assets/icons/utils/back.svg";
 import ProductCard from "../product-card/ProductCard";
+import { Link, useParams } from "react-router-dom";
 
 function SubcategoriresCards(props) {
   const state = useContext(GlobalState);
@@ -26,29 +27,29 @@ function SubcategoriresCards(props) {
 
   const [toggle, setToggle] = useState({});
 
+  const params = useParams();
+
   const OpenImg = (url) => {
     setShowModal(!showModal);
     setImgModal(url);
   };
 
-
   return (
     <section className="subcategories-selection-section">
-     
-      <div
+
+
+      <Link
         className="goBack-button"
-        onClick={() => {
-          setCategorySelected("");
-        }}
+        to={`/products/`}
       >
         <Back />
         <p>Volver a las categorías</p>
-      </div>
+      </Link>
 
       <div className="subcategories-grid">
         {subcategories.map((subcat, index) => {
-          if (subcat.catId == categorySelected) {
-            return <ProductCard item={subcat} index={index} key={index}/>;
+          if (subcat.catId == params.id) {
+            return <ProductCard item={subcat} index={index} key={index} />;
           }
         })}
       </div>

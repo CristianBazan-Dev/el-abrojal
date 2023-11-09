@@ -11,7 +11,8 @@ function ProductsCards(props) {
     state.categories.categorySelected;
   const [subcategorySelected, setSubcategorySelected] =
     state.categories.subcategorySelected;
-  const [productSelected, setProductSelected] = state.categories.productSelected
+  const [productSelected, setProductSelected] =
+    state.categories.productSelected;
 
   // useEffect(() => {
   //   subcategories.filter((subcat) => {
@@ -24,20 +25,13 @@ function ProductsCards(props) {
   //   });
   // }, []);
 
-  const firstCategorySelected = (cat) => {
-    setCategorySelected(cat.id);
-    setSubcategorySelected("");
-    setProductSelected(""); 
-  };
-
-
-
   return (
     <div className="productsCards-section">
       <div className="title">
         <h2>Productos</h2>
         <p>
-        En constante expansión, nuestros productos son fabricados con dedicación y materia prima de calidad. 
+          En constante expansión, nuestros productos son fabricados con
+          dedicación y materia prima de calidad.
         </p>
       </div>
 
@@ -45,7 +39,7 @@ function ProductsCards(props) {
         <div className="categories-container">
           {categories.map((data, index) => {
             return (
-              <Link to={`/products`} key={index}>
+              <Link to={`/category/${data.id}`} key={index}>
                 <div
                   className="product-card"
                   style={{ backgroundImage: `url(${data.categoryImg})` }}

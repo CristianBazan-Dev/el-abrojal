@@ -9,6 +9,8 @@ import Products from "./pages/Products";
 import Product from "./pages/Product";
 import About from "./pages/About";
 import { DataProvider } from "./GlobalState";
+import Subcategory from "./pages/Category";
+import Category from "./pages/Category";
 
 const router = createHashRouter([
   {
@@ -22,6 +24,10 @@ const router = createHashRouter([
   {
     path: "/products",
     element: <Products />,
+  },
+  {
+    path: "/category/:id",
+    element: <Category />,
   },
   {
     path: "/products/:id",
