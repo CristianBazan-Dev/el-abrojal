@@ -5,6 +5,7 @@ import axios from "axios";
 import "./categoriesCards.css";
 import { Link } from "react-router-dom";
 
+
 function CategoriesCards(props) {
   const state = useContext(GlobalState);
   const [categories, setCategories] = useState([])
