@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat&family=Kameron&display=swap");
-
 
 /* Header */
 @import url("./components/header/header.css");
@@ -28,14 +26,13 @@
 /* Footer */
 @import url("./components/footer/footer.css");
 
-
 :root {
   /* Sizes  */
 
-  --header-sz: 94px; 
+  --header-sz: 94px;
 
   /* Color palette  */
-  --main: #124bc3; 
+  --main: #124bc3;
   --main-lowOp: #001e60c5;
   --secondary: #6b85a8;
   --secondary-lowOp: #6b85a86c;
@@ -55,19 +52,16 @@
 
   --wpp-green: #28f172;
 
-
-  --green: #B3E325;
- 
-
+  --green: #b3e325;
 
   --light-b-sw: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --medium-b-sw: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --hard-b-sw: rgb(38, 57, 77) 0px 20px 30px -10px;
 
   --text-sh: 2px 7px 5px rgba(0, 0, 0, 0.3),
-  0px -4px 10px rgba(255, 255, 255, 0.3);
+    0px -4px 10px rgba(255, 255, 255, 0.3);
 
-  --card-br: 10px; 
+  --card-br: 10px;
 
   /* Fonts size  */
 
@@ -81,7 +75,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   user-select: none;
-
 }
 
 html,
@@ -124,13 +117,13 @@ article {
 }
 
 header {
-  background: var(--light) !important;
+  background: var(--main);
   max-height: var(--header-sz);
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  position: fixed; 
+  position: fixed;
   z-index: 9999999;
 }
 
@@ -146,7 +139,6 @@ main {
 }
 
 footer {
-
   padding: 1rem;
   max-height: 200px;
 }
@@ -240,15 +232,14 @@ li {
   text-transform: uppercase;
 }
 
-table, th {
+table,
+th {
   border: 1px solid;
 }
 
-td{
+td {
   border-bottom: 1px solid;
 }
-
-
 
 table {
   width: 100%;
@@ -266,7 +257,6 @@ th {
   li {
     font-size: 0.5em;
   }
-
 
   h1 {
     font-size: 30px;
@@ -315,20 +305,16 @@ th {
 }
 
 @media only screen and (max-width: 900px) {
-  header{
+  header {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
 }
-
-
 
 @media only screen and (max-width: 480px) {
 }
 /* Components css  */
-
 
 /* User schema  */
 /* @media (prefers-color-scheme: light) {

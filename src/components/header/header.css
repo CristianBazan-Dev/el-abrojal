@@ -1,10 +1,7 @@
-.header-alt {
-  background: var(--main) !important;
-  transition: 1s;
-}
 
 header {
   position: relative;
+
 }
 
 header::after {
@@ -31,11 +28,9 @@ header ul li {
   margin-left: 20px;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
-}
-
-.li-alt {
   color: var(--light);
 }
+
 
 /* Responsive actions  */
 

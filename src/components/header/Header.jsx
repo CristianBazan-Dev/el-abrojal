@@ -2,8 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import "./header.css";
 import { Link, useLocation, useParams } from "react-router-dom";
 
-import Logo from "../../assets/logo.png";
-import LogoAlt from "../../assets/logoAlt.png"
+import Logo from "../../assets/logoAlt.png";
 
 import { ReactComponent as Hamburger } from "../../assets/icons/utils/hamburger.svg";
 import { ReactComponent as Close } from "../../assets/icons/utils/close.svg";
@@ -52,7 +51,7 @@ function Header(props) {
 
 
   return (
-    <header className={!headerAlt ? "" : "header-alt"}>
+    <header>
       <Link
         to="https://wa.link/2s3t1s"
         target="_blank"
@@ -80,7 +79,7 @@ function Header(props) {
           window.scrollTo(0,0); 
         }}
       >
-        <img src={!headerAlt ? Logo : LogoAlt} alt="logo de la empresa metalúrgica 'el abrojal' " />
+        <img src={Logo} alt="logo de la empresa metalúrgica 'el abrojal' " />
       </Link>
 
       <nav>
@@ -185,7 +184,7 @@ function Header(props) {
         </ul>
 
         <div className="logo">
-          <img src={LogoAlt} alt="" />
+          <img src={Logo} alt="" />
         </div>
 
         <div className="social-icons">
