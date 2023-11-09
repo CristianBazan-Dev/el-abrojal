@@ -4,15 +4,11 @@ import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import Modal from "../components/utils/modal/Modal";
 
-import ProductsSection from "../components/mainPages/Products/Products";
 import { GlobalState } from "../GlobalState";
 import { useSEO } from "../hooks/useSEO";
 
 import { Helmet } from "react-helmet";
-import Products from "../components/mainPages/Products/Products";
-
-import ProductSection from "../components/utils/product-section/Product";
-import Categories from "../components/utils/categories-section/Categories";
+import ProductSection from "../components/mainPages/Product/Product"
 
 function Product(props) {
   const state = useContext(GlobalState);
@@ -85,10 +81,7 @@ function Product(props) {
         <Header />
 
         <main>
-          <div className="product-page">
-            <Categories />
-            <ProductSection />
-          </div>
+          <ProductSection/>
         </main>
 
         <Contact id="contact" className="contact-section" />

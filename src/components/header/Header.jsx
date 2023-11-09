@@ -101,7 +101,7 @@ function Header(props) {
             }}
             className={!headerAlt ? "" : "li-alt"}
           >
-            <Link to="/products">Productos</Link>
+            <Link to="/categories">Productos</Link>
           </li>
           <li
             onClick={() => {
@@ -149,7 +149,7 @@ function Header(props) {
           </li>
           <li>
             <Link
-              to="/products"
+              to="/categories"
               onClick={() => {
                 setHamburgerMenu(false);
                 ClearCategories();
@@ -224,7 +224,7 @@ function Header(props) {
 
         <div className="icons">
           <Link
-            to="/products"
+            to="/categories"
             onClick={() => {
               setHamburgerMenu(false);
               ClearCategories();

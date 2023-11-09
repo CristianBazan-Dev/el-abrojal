@@ -1,0 +1,242 @@
+.products-page {
+  display: flex;
+  justify-content: space-between;
+  min-height: 40em;
+  margin-top: 1em;
+}
+
+.products-page.blurred {
+  filter: blur(10px);
+}
+
+/* Products  */
+
+.products {
+  width: 100%;
+  margin-right: var(--m);
+  background: white;
+}
+
+/* Products title  */
+.products .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products .title .main-title {
+  display: flex;
+  align-items: baseline;
+  margin-left: 2em;
+}
+
+.products .title .goBack-container {
+  margin-right: var(--m);
+}
+
+.products .title h2 {
+  margin-right: 0.5em;
+}
+
+/* Gallery  */
+
+.gallery {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-img {
+  width: 50%;
+}
+
+.main-img img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.galleries-imgs {
+}
+
+.galleries-imgs .card-img {
+  max-width: 130px;
+  max-height: 100px;
+  width: 130px;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 15px;
+  margin: 2em;
+  cursor: pointer;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.galleries-imgs .card-img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media only screen and (max-width: 1163px) {
+}
+
+@media only screen and (max-width: 900px) {
+  .products-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Products  */
+
+  /* Products  */
+
+  .products {
+    width: 100%;
+    /* margin: ; */
+    margin-right: 0;
+    background: var(--gray);
+  }
+
+  /* Products title  */
+
+  .products .title {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .products .title h2 {
+    margin-right: 0;
+  }
+
+  .products .title h5 {
+    font-size: 0.5em;
+  }
+
+  /* Products gallery  */
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-img {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-img img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .galleries-imgs {
+    display: flex;
+  }
+
+  .galleries-imgs .card-img {
+    max-width: 70px;
+    max-height: 70px;
+  }
+
+  /* Product treatment  */
+
+  .treatment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .treatment-info > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .treatment-info img {
+    max-width: 250px;
+    width: 250px;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 15px;
+    margin: 0;
+    margin-left: 0;
+    cursor: pointer;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .treatment-container .treatment-info .paragraph {
+    width: 100%;
+    height: auto;
+    margin: 1em;
+    flex-direction: column;
+  }
+
+  .treatment-container .treatment-info .paragraph p {
+    text-align: center;
+    line-height: 25px;
+  }
+
+  /* Table and measures  */
+
+  .measures .center-table {
+    display: none;
+  }
+
+  .measures .center-table table {
+    display: none;
+  }
+
+  .responsive-measure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .responsive-measure img {
+    width: 100%;
+    margin-left: 1.5em;
+  }
+
+  .responsive-measure button {
+    font-size: 0.5em;
+    background: var(--main);
+    color: var(--light);
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 1000;
+    margin: 1em;
+  }
+
+  .responsive-measure button:hover {
+    background: var(--light);
+    box-shadow: var(--accent) 0px 3px 8px;
+    color: var(--main);
+    transition: 0.5s;
+    border-radius: 10px;
+
+    z-index: 1000;
+  }
+}
