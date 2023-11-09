@@ -1,0 +1,1140 @@
+[
+    {
+    "id": "cad01",
+    "catId": "cad",
+    "category": "Cadenas",
+    "title": "Derecha",
+    "imgs": [
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571093/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_3_yasxwg_ubvbvt.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571086/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_4_h83mw8_py20r2.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571080/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_2_b5dhfk_pj1jhb.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571077/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_1_mfzrcf_tgv7mu.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571073/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_6_qulks8_w1qmcl.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571070/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_5_skwwt4_cg5nbk.png"
+    ],
+    "description": "Caracterizada por su versatilidad de usos.",
+    "treatments": [
+      {
+        "title": "pulida",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal."
+      },
+      {
+        "title": "zincada",
+        "img": "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
+        "description":
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661430/Productos/Productos/Cadenas/Derecha/Table.png",
+    "columns": [
+      "denominación",
+      "diámetro de alambre",
+      "ancho int.",
+      "largo int.",
+      "kg x mt",
+      "mt x kg",
+      "carga"
+    ],
+    "rows": [
+      {
+        "denominacion": "Cadena derecha n° 25",
+        "diametro": 2.5,
+        "anchoInt": 4.1,
+        "largoInt": 18,
+        "kgxmt": 0.11,
+        "mtxkg": 9.0,
+        "carga": 60
+      },
+      {
+        "denominacion": "Cadena derecha n° 30",
+        "diametro": 3,
+        "anchoInt": 5,
+        "largoInt": 19,
+        "kgxmt": 0.17,
+        "mtxkg": 5.81,
+        "carga": 70
+      },
+      {
+        "denominacion": "Cadena derecha n° 35",
+        "diametro": 3.5,
+        "anchoInt": 5.9,
+        "largoInt": 20.5,
+        "kgxmt": 0.22,
+        "mtxkg": 4.5,
+        "carga": 110
+      },
+      {
+        "denominacion": "Cadena derecha n° 40",
+        "diametro": 4,
+        "anchoInt": 6.8,
+        "largoInt": 22.5,
+        "kgxmt": 0.32,
+        "mtxkg": 3.12,
+        "carga": 140
+      },
+      {
+        "denominacion": "Cadena derecha n° 45",
+        "diametro": 4.5,
+        "anchoInt": 7.5,
+        "largoInt": 24.5,
+        "kgxmt": 0.4,
+        "mtxkg": 2.5,
+        "carga": 180
+      },
+      {
+        "denominacion": "Cadena derecha n° 50",
+        "diametro": 5,
+        "anchoInt": 8.5,
+        "largoInt": 26.5,
+        "kgxmt": 0.47,
+        "mtxkg": 2.13,
+        "carga": 220
+      },
+      {
+        "denominacion": "Cadena derecha n° 55",
+        "diametro": 5.5,
+        "anchoInt": 9.3,
+        "largoInt": 28.5,
+        "kgxmt": 0.55,
+        "mtxkg": 1.82,
+        "carga": 270
+      },
+      {
+        "denominacion": "Cadena derecha n° 60",
+        "diametro": 6,
+        "anchoInt": 10.2,
+        "largoInt": 31,
+        "kgxmt": 0.7,
+        "mtxkg": 1.45,
+        "carga": 320
+      },
+      {
+        "denominacion": "Cadena derecha n° 70",
+        "diametro": 7,
+        "anchoInt": 11.5,
+        "largoInt": 33.5,
+        "kgxmt": 0.98,
+        "mtxkg": 1.03,
+        "carga": 440
+      },
+      {
+        "denominacion": "Cadena derecha n° 80",
+        "diametro": 8,
+        "anchoInt": 13,
+        "largoInt": 36.5,
+        "kgxmt": 1.22,
+        "mtxkg": 0.82,
+        "carga": 570
+      },
+      {
+        "denominacion": "Cadena derecha n° 90",
+        "diametro": 9,
+        "anchoInt": 14.8,
+        "largoInt": 39.5,
+        "kgxmt": 1.57,
+        "mtxkg": 0.64,
+        "carga": 720
+      },
+      {
+        "denominacion": "Cadena derecha n° 100",
+        "diametro": 10,
+        "anchoInt": 16.6,
+        "largoInt": 43,
+        "kgxmt": 1.92,
+        "mtxkg": 0.52,
+        "carga": 900
+      },
+      {
+        "denominacion": "Cadena derecha n° 110",
+        "diametro": 11,
+        "anchoInt": 18.5,
+        "largoInt": 46.5,
+        "kgxmt": 2.41,
+        "mtxkg": 0.41,
+        "carga": 1080
+      },
+      {
+        "denominacion": "Cadena derecha n° 120",
+        "diametro": 12,
+        "anchoInt": 20.5,
+        "largoInt": 50.5,
+        "kgxmt": 2.98,
+        "mtxkg": 0.34,
+        "carga": 1200
+      },
+      {
+        "denominacion": "Cadena derecha n° 140",
+        "diametro": 14,
+        "anchoInt": 48,
+        "largoInt": 76,
+        "kgxmt": 4.04,
+        "mtxkg": 0.24,
+        "carga": 1770
+      },
+      {
+        "denominacion": "Cadena derecha n° 160",
+        "diametro": 16,
+        "anchoInt": 56,
+        "largoInt": 88,
+        "kgxmt": 4.59,
+        "mtxkg": 0.22,
+        "carga": 2300
+      },
+      {
+        "denominacion": "Cadena derecha n° 200",
+        "diametro": 20,
+        "anchoInt": 70,
+        "largoInt": 110,
+        "kgxmt": 8.19,
+        "mtxkg": 0.122,
+        "carga": 3500
+      }
+    ]
+  },
+  {
+    "id": "cad02",
+    "catId": "cad",
+    "category": "Cadenas",
+    "title": "Torcida",
+    "imgs": [
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571103/Productos/Productos/Cadenas/Torcida/WBG/Cad_-_Tor_-_3_bwrpvw_v4ardk.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571079/Productos/Productos/Cadenas/Torcida/WBG/Cad_-_Tor_-_2_dzcpt5_ds4vcj.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571075/Productos/Productos/Cadenas/Torcida/WBG/Cad_-_Tor_-_1_hwuoky_s3tyjt.png"
+    ],
+    "description":
+      "Cadena patente torcida. A traves de retorcido mecanico, se obtiene un producto que se caracteriza por sus terminaciones esteticas y la suavidad en su manejo.",
+    "treatments": [
+      {
+        "title": "pulida",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal."
+      },
+      {
+        "title": "zincada",
+        "img": "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
+        "description":
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661666/Productos/Productos/Cadenas/Torcida/Screenshot_2023-09-14_002049_wjmbmt.png",
+    "columns": [
+      "denominación",
+      "diámetro de alambre",
+      "ancho int.",
+      "largo int.",
+      "kg x mt",
+      "mt x kg",
+      "carga"
+    ],
+    "rows": [
+      {
+        "denominacion": "Cadena torcida n° 35",
+        "diametro": 3.5,
+        "anchoInt": 5.9,
+        "largoInt": 20.5,
+        "kgxmt": 0.22,
+        "mtxkg": 4.5,
+        "carga": 110
+      },
+      {
+        "denominacion": "Cadena torcida n° 40",
+        "diametro": 4,
+        "anchoInt": 6.8,
+        "largoInt": 22.5,
+        "kgxmt": 0.32,
+        "mtxkg": 3.12,
+        "carga": 140
+      },
+      {
+        "denominacion": "Cadena torcida n° 45",
+        "diametro": 4.5,
+        "anchoInt": 7.5,
+        "largoInt": 24.5,
+        "kgxmt": 0.4,
+        "mtxkg": 2.5,
+        "carga": 180
+      },
+      {
+        "denominacion": "Cadena torcida n° 50",
+        "diametro": 5,
+        "anchoInt": 8.5,
+        "largoInt": 26.5,
+        "kgxmt": 0.47,
+        "mtxkg": 2.13,
+        "carga": 220
+      },
+      {
+        "denominacion": "Cadena torcida n° 55",
+        "diametro": 5.5,
+        "anchoInt": 9.3,
+        "largoInt": 28.5,
+        "kgxmt": 0.55,
+        "mtxkg": 1.82,
+        "carga": 270
+      },
+      {
+        "denominacion": "Cadena torcida n° 60",
+        "diametro": 6,
+        "anchoInt": 10.2,
+        "largoInt": 31,
+        "kgxmt": 0.7,
+        "mtxkg": 1.45,
+        "carga": 320
+      },
+      {
+        "denominacion": "Cadena torcida n° 70",
+        "diametro": 7,
+        "anchoInt": 11.5,
+        "largoInt": 33.5,
+        "kgxmt": 0.98,
+        "mtxkg": 1.03,
+        "carga": 440
+      },
+      {
+        "denominacion": "Cadena torcida n° 80",
+        "diametro": 8,
+        "anchoInt": 13,
+        "largoInt": 36.5,
+        "kgxmt": 1.22,
+        "mtxkg": 0.82,
+        "carga": 570
+      },
+      {
+        "denominacion": "Cadena torcida n° 90",
+        "diametro": 9,
+        "anchoInt": 14.8,
+        "largoInt": 39.5,
+        "kgxmt": 1.57,
+        "mtxkg": 0.64,
+        "carga": 720
+      },
+      {
+        "denominacion": "Cadena torcida n° 100",
+        "diametro": 10,
+        "anchoInt": 16.6,
+        "largoInt": 43,
+        "kgxmt": 1.92,
+        "mtxkg": 0.52,
+        "carga": 900
+      },
+      {
+        "denominacion": "Cadena torcida n° 110",
+        "diametro": 11,
+        "anchoInt": 18.5,
+        "largoInt": 46.5,
+        "kgxmt": 2.41,
+        "mtxkg": 0.41,
+        "carga": 1080
+      },
+      {
+        "denominacion": "Cadena torcida n° 120",
+        "diametro": 12,
+        "anchoInt": 20.5,
+        "largoInt": 50.5,
+        "kgxmt": 2.98,
+        "mtxkg": 0.34,
+        "carga": 1200
+      }
+    ]
+  },
+  {
+    "id": "cad03",
+    "catId": "cad",
+    "category": "Cadenas",
+    "title": "Cadena para tranqueras",
+    "imgs": [
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571104/Productos/Productos/Cadenas/Tranqueras/WBG/Cad_-_Tranq_-_2_cnvkxf_yl6the.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571107/Productos/Productos/Cadenas/Tranqueras/WBG/Cad_-_Tranq_-_3_xsigi6_rlvrkc.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571097/Productos/Productos/Cadenas/Tranqueras/WBG/Cad_-_Tranq_-_1_yht1ic_cpiwni.png"
+    ],
+    "description": "Cadena para cierre de puertas o portones de tranqueras.",
+    "treatments": [
+      {
+        "title": "pulida",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal."
+      },
+      {
+        "title": "zincada",
+        "img": "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
+        "description":
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661756/Productos/Productos/Cadenas/Tranqueras/Screenshot_2023-09-14_002224_bj5bgi.png",
+    "columns": ["Denominación"],
+    "rows": [
+      {
+        "denominacion": "60 x 1 mt"
+      },
+      {
+        "denominacion": "70 x 1,10 mts"
+      },
+      {
+        "denominacion": "80 x 1,2 mts"
+      },
+      {
+        "denominacion": "Por tramo de 25 kg"
+      },
+      {
+        "denominacion": "Ganchos x kg"
+      }
+    ]
+  },
+  {
+    "id": "cad04",
+    "catId": "cad",
+    "category": "Cadenas",
+    "title": "Lanzas para acoplados",
+    "imgs": [
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571068/Productos/Productos/Cadenas/LanzaAcoplado/WBG/Gan_-_Lan_-_1_vhmp92_jser9i.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571074/Productos/Productos/Cadenas/LanzaAcoplado/WBG/Gan_-_Lan_-_2_vfglut_dkg3b4.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571068/Productos/Productos/Cadenas/LanzaAcoplado/cad_-_lanz_acoplado_-_1_gyhs4m_xgmuzi.png"
+    ],
+    "description": "Cadenas para lanza. Ideal para acoplados, trailers.",
+    "treatments": [
+      {
+        "title": "pulida",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal."
+      },
+      {
+        "title": "zincada",
+        "img": "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
+        "description":
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661970/Productos/Productos/Cadenas/LanzaAcoplado/Screenshot_2023-09-14_002559_klpqn2.png",
+    "columns": ["cadena", "largo", "punta"],
+    "rows": [
+      {
+        "cadena": "Cadena n° 90",
+        "largo": 3,
+        "punta": "Arg. ovalada 12. mm"
+      },
+      {
+        "cadena": "Cadena n° 100",
+        "largo": 3,
+        "punta": "Arg. ovalada 12. mm"
+      }
+    ]
+  },
+  {
+    "id": "cad05",
+    "catId": "cad",
+    "category": "Cadenas",
+    "title": "Ganchos para carrocería",
+    "imgs": [
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571073/Productos/Productos/Cadenas/Ganchos%20para%20carrocer%C3%ADas/WBG/Cad_-_Gan_-_1_t8ggib_z9g5nf.png"
+    ],
+    "description":
+      "Producto ideal para reforzar la seguridad en el interior de las barandas de los acoplados.",
+    "treatments": [
+      {
+        "title": "pulido",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662047/Productos/Productos/Cadenas/Ganchos%20para%20carrocer%C3%ADas/Screenshot_2023-09-14_002714_kmqeze.png",
+    "columns": ["descripcion"],
+    "rows": [
+      {
+        "descripcion": "Ganchos de seguridad"
+      },
+      {
+        "descripcion": "Gancho con cadena N° 70 de 2,4m"
+      }
+    ]
+  },
+  {
+    "id": "clav01",
+    "catId": "clav",
+    "category": "Clavos",
+    "title": "Punta París",
+    "imgs": [
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571115/Productos/Productos/Clavos/PP/Clav_-_PP_-_1_ebxy5t_ezsmsl.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571113/Productos/Productos/Clavos/PP/Clav_-_PP_-_2_iku6yo_gcztfs.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571115/Productos/Productos/Clavos/PP/Clav_-_PP_-_3_ukqujz_q9dc5k.png"
+    ],
+
+    "description":
+      "Utilizado en albañileria ( usualmente para aspectos de encofrado), en postes, machimbre y maderas en general. Con cabeza rayada antideslizante.",
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662208/Productos/Productos/Clavos/PP/Screenshot_2023-09-14_002857_mlsisa.png",
+    "columns": ["medidas"],
+    "rows": [
+      {
+        "denominacion": "1"
+      },
+      {
+        "denominacion": "1 1/2"
+      },
+      {
+        "denominacion": "2"
+      },
+      {
+        "denominacion": "2 1/2"
+      },
+      {
+        "denominacion": "3"
+      },
+      {
+        "denominacion": "3 1/2"
+      },
+      {
+        "denominacion": "4"
+      }
+    ]
+  },
+  {
+    "id": "clav02",
+    "catId": "clav",
+    "category": "Clavos",
+    "title": "Espiralados",
+    "imgs": [
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571115/Productos/Productos/Clavos/Esp/Clav_-_Esp_-_1_fbcd9g_j2om7n.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571112/Productos/Productos/Clavos/Esp/Clav_-_Esp_-_2_dui8hr_dqmlyi.png"
+    ],
+    "description":
+      "Debido a su característica forma, asegura el afianzamiento del material alrededor del producto. Ideal para el armado de cajas, cajones, construccion de palets y construcción civil.",
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662329/Productos/Productos/Clavos/Esp/Screenshot_2023-09-14_003200_fegqsg.png",
+    "columns": ["medidas"],
+    "rows": [
+      {
+        "denominacion": "1"
+      },
+      {
+        "denominacion": "1 1/2"
+      },
+      {
+        "denominacion": "2"
+      },
+      {
+        "denominacion": "2 1/2"
+      },
+      {
+        "denominacion": "3"
+      },
+      {
+        "denominacion": "3 1/2"
+      },
+      {
+        "denominacion": "4"
+      }
+    ]
+  },
+  {
+    "id": "tor01",
+    "catId": "tor",
+    "category": "Torniquetes",
+    "title": "Mini/Tv",
+    "imgs": [
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571132/Productos/Productos/Torniquetes/MiniTv/Tor_-_Mini_-_6_mi0jkm_r6zb9s.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571131/Productos/Productos/Torniquetes/MiniTv/Tor_-_Mini_-_4_zshahs_mq4ngp.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571131/Productos/Productos/Torniquetes/MiniTv/Tor_-_Mini_-_5_lkpb1h_gders8.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571127/Productos/Productos/Torniquetes/MiniTv/Tor_-_Mini_-_2_pc6res_z0zymv.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571126/Productos/Productos/Torniquetes/MiniTv/Tor_-_Mini_-_1_mbu4la_payxmx.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571138/Productos/Productos/Torniquetes/MiniTv/Tor_-_Mini_-_3_se80e7_l49neq.png"
+    ],
+    "description":
+      "Tensor de alambrados utilizado mayormente para alambre olimpico, obras civiles, cercos perimetrales. Su excelente terminacion garantiza la conservación de la forma original.",
+    "treatments": [
+      {
+        "title": "pintado verde",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Tratamiento superficial de pintura sintetica de color verde."
+      },
+      {
+        "title": "zincado",
+        "img": "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
+        "description":
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662674/Productos/Productos/Torniquetes/MiniTv/Screenshot_2023-09-14_003641_xqxq8n.png",
+    "columns": ["descripcion", "plancha", "perno"],
+    "rows": [
+      {
+        "descripcion": "Mini/TV",
+        "plancha": 3.2,
+        "perno": 12
+      },
+      {
+        "descripcion": "N° 6/Reforzado",
+        "plancha": 5,
+        "perno": 16
+      },
+      {
+        "descripcion": "Doble para poste",
+        "plancha": 5,
+        "perno": 16
+      }
+    ]
+  },
+  {
+    "id": "tor02",
+    "catId": "tor",
+    "category": "Torniquetes",
+    "title": "N° 6/Reforzado",
+    "imgs": [
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571155/Productos/Productos/Torniquetes/Nro6/Tor_-_Nro6_-_7_gnedxn_mtuegq.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571143/Productos/Productos/Torniquetes/Nro6/Tor_-_Nro6_-_4_bsrmjr_f89rqd.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571147/Productos/Productos/Torniquetes/Nro6/Tor_-_Nro6_-_6_mdwxwm_pept1y.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571139/Productos/Productos/Torniquetes/Nro6/Tor_-_Nro6_-_2_xo629u_f2wu2k.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571138/Productos/Productos/Torniquetes/Nro6/Tor_-_Nro6_-_1_m2h5ew_vjjpjq.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571139/Productos/Productos/Torniquetes/Nro6/Tor_-_Nro6_-_3_awnmrq_ggo51z.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571138/Productos/Productos/Torniquetes/Nro6/Tor_-_Nro6_-_1_m2h5ew_vjjpjq.png"
+    ],
+
+    "description":
+      "Tensor de alambrado utilizado mayormente para alambrados de campo, corrales, tambos, Espcialmente utilizdo en alambrado de division de lotes. ",
+    "treatments": [
+      {
+        "title": "pintado verde",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla."
+      },
+      {
+        "title": "zincado",
+        "img": "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
+        "description":
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo."
+      }
+    ],
+    "columns": ["descripcion", "plancha", "perno"],
+    "rows": [
+      {
+        "descripcion": "Mini/TV",
+        "plancha": 3.2,
+        "perno": 12
+      },
+      {
+        "descripcion": "N° 6/Reforzado",
+        "plancha": 5,
+        "perno": 16
+      },
+      {
+        "descripcion": "Doble para poste",
+        "plancha": 5,
+        "perno": 16
+      }
+    ]
+  },
+  {
+    "id": "tor03",
+    "catId": "tor",
+    "category": "Torniquetes",
+    "title": "Doble para poste",
+    "imgs": [
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571134/Productos/Productos/Torniquetes/Doble/Tor_-_Doble_-_2_hwgrni_x7cos8.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571124/Productos/Productos/Torniquetes/Doble/Tor_-_Doble_-_1_eylx73_o2ggh3.png"
+    ],
+    "description":
+      "Tensor de alambre, usualmente colocado en postes para lograr una tension uniforme en ambos lados. ",
+    "treatments": [
+      {
+        "title": "pintado verde",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla."
+      },
+      {
+        "title": "zincado",
+        "img": "https://metalmalla.com/wp-content/uploads/2021/07/proceso_zincado_elecrozincado_2.jpg",
+        "description":
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo."
+      }
+    ],
+    "columns": ["descripcion", "plancha", "perno"],
+    "rows": [
+      {
+        "descripcion": "Mini/TV",
+        "plancha": 3.2,
+        "perno": 12
+      },
+      {
+        "descripcion": "N° 6/Reforzado",
+        "plancha": 5,
+        "perno": 16
+      },
+      {
+        "descripcion": "Doble para poste",
+        "plancha": 5,
+        "perno": 16
+      }
+    ]
+  },
+  {
+    "id": "gan02",
+    "catId": "gan",
+    "category": "Ganchos J",
+    "title": "Ganchos estira tejido con tuerca y arandela.",
+    "imgs": [
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571116/Productos/Productos/Ganchos%20J/Gan_-_1_elbqve_cwbpaz.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571116/Productos/Productos/Ganchos%20J/gan_-_est._tej._t_y_a_-_1_yzc0kr_txlkrs.png"
+    ],
+
+    "description":
+      "Utilizado para tensar tejidos olimpicos, caracterizado por su excelente terminacion y resistencia",
+    "treatments": [
+      {
+        "title": "pulido",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694664216/Productos/Productos/Ganchos%20J/Screenshot_2023-09-14_004255_ds5zyg.png",
+    "columns": ["espesor", "largo"],
+    "rows": [
+      {
+        "espesor": "S/16",
+        "largo": 150
+      },
+      {
+        "espesor": "S/16",
+        "largo": 175
+      },
+      {
+        "espesor": "S/16",
+        "largo": 200
+      },
+      {
+        "espesor": "S/16",
+        "largo": 225
+      },
+      {
+        "espesor": "S/16",
+        "largo": 250
+      },
+      {
+        "espesor": "S/16",
+        "largo": 300
+      }
+    ]
+  },
+  {
+    "id": "arg01",
+    "catId": "arg",
+    "category": "Argollas",
+    "title": "Argollas de hierro",
+    "imgs": [
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571068/Productos/Productos/Argollas/WBG/Arg_-_1_xdsdj9_culhbl.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571066/Productos/Productos/Argollas/WBG/Arg_-_2_zkoh1k_ii0wim.png",
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571068/Productos/Productos/Argollas/WBG/Arg_-_3_gwr8zd_z969h0.png"
+    ],
+    "description": "Argollas redondas de hierro soldadas y zincadas.",
+    "treatments": [
+      {
+        "title": "zincadas",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694665925/Productos/Productos/Argollas/Screenshot_2023-09-14_013151_mwvkqq.png",
+    "columns": ["espesor x diametro interno"],
+    "rows": [
+      {
+        "espesor": 4,
+        "diametroInt": 23
+      },
+      {
+        "espesor": 5.5,
+        "diametroInt": 35
+      },
+      {
+        "espesor": 6,
+        "diametroInt": 28
+      },
+      {
+        "espesor": 6,
+        "diametroInt": 35
+      },
+      {
+        "espesor": 6,
+        "diametroInt": 40
+      },
+      {
+        "espesor": 6,
+        "diametroInt": 44
+      },
+      {
+        "espesor": 6,
+        "diametroInt": 50
+      },
+      {
+        "espesor": 7,
+        "diametroInt": 27
+      },
+      {
+        "espesor": 7,
+        "diametroInt": 40
+      },
+      {
+        "espesor": 7,
+        "diametroInt": 50
+      },
+      {
+        "espesor": 7,
+        "diametroInt": 61
+      },
+      {
+        "espesor": 8,
+        "diametroInt": 35
+      },
+      {
+        "espesor": 8,
+        "diametroInt": 40
+      },
+      {
+        "espesor": 8,
+        "diametroInt": 50
+      },
+      {
+        "espesor": 8,
+        "diametroInt": 61
+      },
+      {
+        "espesor": 8,
+        "diametroInt": 65
+      },
+      {
+        "espesor": 8,
+        "diametroInt": 70
+      },
+      {
+        "espesor": 8,
+        "diametroInt": 75
+      },
+      {
+        "espesor": 8,
+        "diametroInt": 93
+      },
+      {
+        "espesor": 10,
+        "diametroInt": 40
+      },
+      {
+        "espesor": 10,
+        "diametroInt": 50
+      },
+      {
+        "espesor": 10,
+        "diametroInt": 61
+      },
+      {
+        "espesor": 12,
+        "diametroInt": 93
+      }
+    ]
+  },
+  {
+    "id": "mosq01",
+    "catId": "mosq",
+    "category": "Mosquetones",
+    "title": "Seguridad",
+    "imgs": [
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019789/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_seg_-_1-removebg-preview_h7psfa.png"
+    ],
+    "description":
+      "Caracterizados por contar con un cierre que evita la apertura involuntaria.",
+    "treatments": [
+      {
+        "title": "niquelado",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694665978/Productos/Productos/Mosquetones/Tabla%20-%20seguridad.png",
+    "columns": ["n°", "largo", "giratorio - con destorcedor"],
+    "rows": [
+      {
+        "n": "00",
+        "largo": 85,
+        "giratorio": true
+      },
+      {
+        "n": 0,
+        "largo": 120,
+        "giratorio": true
+      },
+      {
+        "n": 1,
+        "largo": 150,
+        "giratorio": true
+      },
+      {
+        "n": 2,
+        "largo": 111,
+        "giratorio": false
+      },
+      {
+        "n": 3,
+        "largo": 180,
+        "giratorio": true
+      }
+    ]
+  },
+  {
+    "id": "mosq02",
+    "catId": "mosq",
+    "category": "Mosquetones",
+    "title": "Lengüeta",
+    "imgs": [
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019787/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_leng_-_1-removebg-preview_eg7ccc.png"
+    ],
+    "description":
+      "Debido a su tipo de cierre, permite mayor velocidad de instalación.",
+    "treatments": [
+      {
+        "title": "niquelado",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666023/Productos/Productos/Mosquetones/Tabla%20-%20Leng%C3%BCeta.png",
+    "columns": ["n°", "largo", "giratorio - con destorcedor"],
+    "rows": [
+      {
+        "n": 1,
+        "largo": 74,
+        "giratorio": true
+      },
+      {
+        "n": 2,
+        "largo": 88,
+        "giratorio": true
+      },
+      {
+        "n": 3,
+        "largo": 96,
+        "giratorio": true
+      },
+      {
+        "n": 4,
+        "largo": 113,
+        "giratorio": true
+      },
+      {
+        "n": 5,
+        "largo": 122,
+        "giratorio": true
+      }
+    ]
+  },
+  {
+    "id": "mosq03",
+    "catId": "mosq",
+    "category": "Mosquetones",
+    "title": "Gatillo",
+    "imgs": [
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019787/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_gat_-_1-removebg-preview_tlyiyg.png"
+    ],
+    "description":
+      "De apertura rápida, impide que el material adherente se retuerza o enrede. Sumado a eso, su estética permite un uso cotidiano en llaveros, caretas, bolsas, etc. ",
+    "treatments": [
+      {
+        "title": "niquelado",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666084/Productos/Productos/Mosquetones/Tabla%20-%20Gatillo.png",
+    "columns": ["n°", "largo", "giratorio - con destorcedor"],
+    "rows": [
+      {
+        "n": 2,
+        "largo": 55,
+        "giratorio": true
+      },
+      {
+        "n": 3,
+        "largo": 70,
+        "giratorio": true
+      },
+      {
+        "n": 4,
+        "largo": 90,
+        "giratorio": true
+      }
+    ]
+  },
+  {
+    "id": "mosq04",
+    "catId": "mosq",
+    "category": "Mosquetones",
+    "title": "Traba de chapa",
+    "imgs": [
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019787/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_traba_chapa_-_1-removebg-preview_gakji0.png"
+    ],
+    "description":
+      "Su tipo de traba permiteel afianzamento y mantenimiento de la posición del material a enganchar.",
+    "treatments": [
+      {
+        "title": "niquelado",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666127/Productos/Productos/Mosquetones/Tabla%20-%20Traba%20de%20chapa.png",
+    "columns": ["largo", "giratorio - con destorcedor"],
+    "rows": [
+      {
+        "largo": 90,
+        "giratorio": true
+      }
+    ]
+  },
+  {
+    "id": "mosq05",
+    "catId": "mosq",
+    "category": "Mosquetones",
+    "title": "Mosqueton chato",
+    "imgs": [
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019788/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_chat_-_1-removebg-preview_uwoye0.png"
+    ],
+    "description":
+      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+    "treatments": [
+      {
+        "title": "niquelado",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666175/Productos/Productos/Mosquetones/Tabla%20-%20Chato.png",
+    "columns": ["largo", "giratorio - con destorcedor"],
+    "rows": [
+      {
+        "largo": 90,
+        "giratorio": true
+      }
+    ]
+  },
+  {
+    "id": "mosq06",
+    "catId": "mosq",
+    "category": "Mosquetones",
+    "title": "Enganche",
+    "imgs": [
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571117/Productos/Productos/Mosquetones/mosq_-_eng_-_1-removebg-preview_vharcj_efqt1q.png"
+    ],
+    "description":
+      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+    "treatments": [
+      {
+        "title": "niquelado",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666227/Productos/Productos/Mosquetones/Tabla%20-%20Enganche.png",
+    "columns": ["largo", "espesor"],
+    "rows": [
+      {
+        "largo": 66,
+        "espesor": 6.5
+      },
+      {
+        "largo": 80,
+        "espesor": 8
+      },
+      {
+        "largo": 66,
+        "espesor": 6.5
+      }
+    ]
+  },
+  {
+    "id": "mosq07",
+    "catId": "mosq",
+    "category": "Mosquetones",
+    "title": "Destorcedor",
+    "imgs": [
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019788/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_destorc_-_1-removebg-preview_hpa3aa.png"
+    ],
+    "description":
+      "Impide el enrollamiento y retorcimiento del material a enganchar. ",
+    "treatments": [
+      {
+        "title": "niquelado",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666336/Productos/Productos/Mosquetones/Tabla%20-%20Destorcedor.png",
+    "columns": ["largo", "espesor"],
+    "rows": [
+      {
+        "largo": 90,
+        "espesor": 6
+      }
+    ]
+  },
+  {
+    "id": "mosq08",
+    "catId": "mosq",
+    "category": "Mosquetones",
+    "title": "Gancho tucumano",
+    "imgs": [
+      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019788/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_ganc_Tuc_-_1-removebg-preview_yp3wbc.png"
+    ],
+    "description":
+      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+    "treatments": [
+      {
+        "title": "niquelado",
+        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
+        "description":
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular."
+      }
+    ],
+    "imgTable":
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666423/Productos/Productos/Mosquetones/Tabla%20-%20Gancho%20Tuc.png",
+    "columns": ["n°", "con eslabon"],
+    "rows": [
+      {
+        "n": 10,
+        "eslabon": true
+      },
+      {
+        "n": 11,
+        "eslabon": true
+      }
+    ]
+  }
+]
