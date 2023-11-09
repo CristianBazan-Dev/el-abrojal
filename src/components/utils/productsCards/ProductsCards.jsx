@@ -29,23 +29,19 @@ function ProductsCards(props) {
     <div className="productsCards-section">
       <div className="title">
         <h2>Productos</h2>
-        <p>
-          En constante expansión, nuestros productos son fabricados con
-          dedicación y materia prima de calidad.
-        </p>
       </div>
 
       <div className="grid-container">
         <div className="categories-container">
           {categories.map((data, index) => {
             return (
-              <Link to={`/category/${data.id}`} key={index}>
+              <Link to={`/categories/${data.id}`} key={index}>
                 <div
                   className="product-card"
                   style={{ backgroundImage: `url(${data.categoryImg})` }}
-                  onClick={() => {
-                    firstCategorySelected(data);
-                  }}
+                  // onClick={() => {
+                  //   firstCategorySelected(data);
+                  // }}
                 >
                   <h2>{data.category}</h2>
                 </div>

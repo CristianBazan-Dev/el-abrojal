@@ -1,0 +1,22 @@
+.product-card {
+    max-width: 300px;
+    max-height: 470px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--light);
+    border-radius: var(--card-br);
+    display: flex;
+    background-size: cover;
+    cursor: pointer;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+  
+.product-card h2 {
+    position: relative;
+    top: 6.5em;
+    margin: 1em;
+    color: var(--base);
+  }

@@ -7,49 +7,50 @@ import Modal from "../../utils/modal/Modal";
 import { ReactComponent as Back } from "../../../assets/icons/utils/back.svg";
 import ProductCard from "../product-card/ProductCard";
 import { Link, useParams } from "react-router-dom";
+import {} from "../../../../products.json";
+import axios from "axios";
 
-function SubcategoriresCards(props) {
+function SubcategoriesCards(props) {
   const state = useContext(GlobalState);
-
-  const [categorySelected, setCategorySelected] =
-    state.categories.categorySelected;
-
-  const [subcategorySelected, setSubcategorySelected] =
-    state.categories.subcategorySelected;
-
-  const [productSelected, setProductSelected] =
-    state.categories.productSelected;
 
   const [showModal, setShowModal] = state.showModal;
   const [imgModal, setImgModal] = state.imgModal;
 
   const [showSlideCard, setShowSlideCard] = useState(false);
+  const [subcategories, setSubcategories] = useState([]);
 
   const [toggle, setToggle] = useState({});
 
   const params = useParams();
+
+  const [products, setProducts] = useState([]);
 
   const OpenImg = (url) => {
     setShowModal(!showModal);
     setImgModal(url);
   };
 
+  const getSubcategories = () => {
+    const res = axios.get("../../../../products.json").then((res) => {
+      setSubcategories(res.data);
+    });
+  };
+
+  useEffect(() => {
+    getSubcategories();
+  }, []);
+
   return (
     <section className="subcategories-selection-section">
-
-
-      <Link
-        className="goBack-button"
-        to={`/products/`}
-      >
+      <Link className="goBack-button" to={`/categories`}>
         <Back />
         <p>Volver a las categorías</p>
       </Link>
 
       <div className="subcategories-grid">
-        {subcategories.map((subcat, index) => {
-          if (subcat.catId == params.id) {
-            return <ProductCard item={subcat} index={index} key={index} />;
+        {subcategories.map((product, index) => {
+          if (product.catId == params.id) {
+            return <ProductCard item={product} index={index} key={index} />;
           }
         })}
       </div>
@@ -57,4 +58,4 @@ function SubcategoriresCards(props) {
   );
 }
 
-export default SubcategoriresCards;
+export default SubcategoriesCards;

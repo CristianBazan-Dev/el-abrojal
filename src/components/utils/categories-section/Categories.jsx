@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import { categories } from "../../../api/Categories.js";
 import { subcategories } from "../../../api/Subcategories.js";
@@ -23,6 +23,10 @@ function Categories(props) {
   const [categorySelected, setCategorySelected] =
     state.categories.categorySelected;
 
+    const reload = () =>{
+     
+    }
+
   return (
     <div className="categories-selection">
       <h2>Categorías</h2>
@@ -30,16 +34,12 @@ function Categories(props) {
       <div className="cats-container">
         {categories.map((data, index) => {
           return (
-            <Link to={`/category/${data.id}`}>
+            <Link to={`/categories/${data.id}`} >
               <div
                 className="cat-item"
                 key={index}
                 onClick={() => {
-                  setCategoryToggle(index);
-                  setCategoryNameToggle(data.category);
-                  setProductSelected("");
                   setCatIsActive(!catIsActive);
-                  setCategorySelected(data.id);
                 }}
               >
                 <div className="cat-info">
@@ -50,9 +50,6 @@ function Categories(props) {
                         ? "cat-title active"
                         : "cat-title"
                     }
-                    onClick={() => {
-                      setSubcategorySelected(data);
-                    }}
                   >
                     {data.category}
                   </p>

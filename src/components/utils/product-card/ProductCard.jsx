@@ -28,7 +28,7 @@ function ProductCard({ item, index }) {
   };
 
   return (
-    <Link to={`/products/${item.id}`} className="product-card">
+    <Link to={`/product/${item.id}`} className="product-card">
       <div className="product-card">
         <div className={!showSlideCard ? "front-card" : "front-card active"}>
           <img src={item.imgs[0]} alt="" />

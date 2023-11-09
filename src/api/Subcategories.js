@@ -11,10 +11,9 @@ export const subcategories = [
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571080/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_2_b5dhfk_pj1jhb.png",
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571077/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_1_mfzrcf_tgv7mu.png",
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571073/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_6_qulks8_w1qmcl.png",
-     "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571070/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_5_skwwt4_cg5nbk.png"
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571070/Productos/Productos/Cadenas/Derecha/WBG/Cad_-_Der_-_5_skwwt4_cg5nbk.png",
     ],
-    description:
-      "Caracterizada por su versatilidad de usos.",
+    description: "Caracterizada por su versatilidad de usos.",
     treatments: [
       {
         title: "pulida",
@@ -29,7 +28,8 @@ export const subcategories = [
           "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
-    imgTable : "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661430/Productos/Productos/Cadenas/Derecha/Table.png", 
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661430/Productos/Productos/Cadenas/Derecha/Table.png",
     columns: [
       "denominación",
       "diámetro de alambre",
@@ -222,7 +222,8 @@ export const subcategories = [
           "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661666/Productos/Productos/Cadenas/Torcida/Screenshot_2023-09-14_002049_wjmbmt.png",
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661666/Productos/Productos/Cadenas/Torcida/Screenshot_2023-09-14_002049_wjmbmt.png",
     columns: [
       "denominación",
       "diámetro de alambre",
@@ -354,8 +355,7 @@ export const subcategories = [
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571097/Productos/Productos/Cadenas/Tranqueras/WBG/Cad_-_Tranq_-_1_yht1ic_cpiwni.png",
     ],
 
-    description:
-      "Cadena para cierre de puertas o portones de tranqueras.",
+    description: "Cadena para cierre de puertas o portones de tranqueras.",
     treatments: [
       {
         title: "pulida",
@@ -370,7 +370,8 @@ export const subcategories = [
           "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661756/Productos/Productos/Cadenas/Tranqueras/Screenshot_2023-09-14_002224_bj5bgi.png",
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661756/Productos/Productos/Cadenas/Tranqueras/Screenshot_2023-09-14_002224_bj5bgi.png",
     columns: ["Denominación"],
     rows: [
       {
@@ -401,8 +402,7 @@ export const subcategories = [
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571068/Productos/Productos/Cadenas/LanzaAcoplado/cad_-_lanz_acoplado_-_1_gyhs4m_xgmuzi.png",
     ],
 
-    description:
-      "Cadenas para lanza. Ideal para acoplados, trailers.",
+    description: "Cadenas para lanza. Ideal para acoplados, trailers.",
     treatments: [
       {
         title: "pulida",
@@ -417,7 +417,8 @@ export const subcategories = [
           "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661970/Productos/Productos/Cadenas/LanzaAcoplado/Screenshot_2023-09-14_002559_klpqn2.png",
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694661970/Productos/Productos/Cadenas/LanzaAcoplado/Screenshot_2023-09-14_002559_klpqn2.png",
     columns: ["cadena", "largo", "punta"],
     rows: [
       {
@@ -451,7 +452,8 @@ export const subcategories = [
           "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662047/Productos/Productos/Cadenas/Ganchos%20para%20carrocer%C3%ADas/Screenshot_2023-09-14_002714_kmqeze.png", 
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662047/Productos/Productos/Cadenas/Ganchos%20para%20carrocer%C3%ADas/Screenshot_2023-09-14_002714_kmqeze.png",
     columns: ["descripcion"],
     rows: [
       {
@@ -490,7 +492,8 @@ export const subcategories = [
     //       "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
     //   },
     // ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662208/Productos/Productos/Clavos/PP/Screenshot_2023-09-14_002857_mlsisa.png", 
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662208/Productos/Productos/Clavos/PP/Screenshot_2023-09-14_002857_mlsisa.png",
     columns: ["medidas"],
     rows: [
       {
@@ -542,7 +545,8 @@ export const subcategories = [
     //       "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
     //   },
     // ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662329/Productos/Productos/Clavos/Esp/Screenshot_2023-09-14_003200_fegqsg.png",
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662329/Productos/Productos/Clavos/Esp/Screenshot_2023-09-14_003200_fegqsg.png",
     columns: ["medidas"],
     rows: [
       {
@@ -580,8 +584,7 @@ export const subcategories = [
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571131/Productos/Productos/Torniquetes/MiniTv/Tor_-_Mini_-_5_lkpb1h_gders8.png",
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571127/Productos/Productos/Torniquetes/MiniTv/Tor_-_Mini_-_2_pc6res_z0zymv.png",
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571126/Productos/Productos/Torniquetes/MiniTv/Tor_-_Mini_-_1_mbu4la_payxmx.png",
-      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571138/Productos/Productos/Torniquetes/MiniTv/Tor_-_Mini_-_3_se80e7_l49neq.png"
-
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571138/Productos/Productos/Torniquetes/MiniTv/Tor_-_Mini_-_3_se80e7_l49neq.png",
     ],
     description:
       "Tensor de alambrados utilizado mayormente para alambre olimpico, obras civiles, cercos perimetrales. Su excelente terminacion garantiza la conservación de la forma original.",
@@ -599,7 +602,8 @@ export const subcategories = [
           "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662674/Productos/Productos/Torniquetes/MiniTv/Screenshot_2023-09-14_003641_xqxq8n.png", 
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694662674/Productos/Productos/Torniquetes/MiniTv/Screenshot_2023-09-14_003641_xqxq8n.png",
     columns: ["descripcion", "plancha", "perno"],
     rows: [
       {
@@ -676,7 +680,7 @@ export const subcategories = [
     title: "Doble para poste",
     imgs: [
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571134/Productos/Productos/Torniquetes/Doble/Tor_-_Doble_-_2_hwgrni_x7cos8.png",
-      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571124/Productos/Productos/Torniquetes/Doble/Tor_-_Doble_-_1_eylx73_o2ggh3.png"
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571124/Productos/Productos/Torniquetes/Doble/Tor_-_Doble_-_1_eylx73_o2ggh3.png",
     ],
 
     description:
@@ -735,7 +739,8 @@ export const subcategories = [
           "Alisamiento y lustre de la superficie. Garantiza un excelente brillo del metal.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694664216/Productos/Productos/Ganchos%20J/Screenshot_2023-09-14_004255_ds5zyg.png",
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694664216/Productos/Productos/Ganchos%20J/Screenshot_2023-09-14_004255_ds5zyg.png",
     columns: ["espesor", "largo"],
     rows: [
       {
@@ -775,8 +780,7 @@ export const subcategories = [
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571066/Productos/Productos/Argollas/WBG/Arg_-_2_zkoh1k_ii0wim.png",
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571068/Productos/Productos/Argollas/WBG/Arg_-_3_gwr8zd_z969h0.png",
     ],
-    description:
-      "Argollas redondas de hierro soldadas y zincadas.",
+    description: "Argollas redondas de hierro soldadas y zincadas.",
     treatments: [
       {
         title: "zincadas",
@@ -785,7 +789,8 @@ export const subcategories = [
           "Basado en la aplicación de una capa de zinc mediante el método de recubrimiento electrolítico, obteniendo mejor resistencia ante las condiciones ambientales y un excelente brillo.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694665925/Productos/Productos/Argollas/Screenshot_2023-09-14_013151_mwvkqq.png",   
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694665925/Productos/Productos/Argollas/Screenshot_2023-09-14_013151_mwvkqq.png",
     columns: ["espesor x diametro interno"],
     rows: [
       {
@@ -902,7 +907,8 @@ export const subcategories = [
           "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694665978/Productos/Productos/Mosquetones/Tabla%20-%20seguridad.png",   
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694665978/Productos/Productos/Mosquetones/Tabla%20-%20seguridad.png",
     columns: ["n°", "largo", "giratorio - con destorcedor"],
     rows: [
       {
@@ -947,10 +953,11 @@ export const subcategories = [
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666023/Productos/Productos/Mosquetones/Tabla%20-%20Leng%C3%BCeta.png",
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666023/Productos/Productos/Mosquetones/Tabla%20-%20Leng%C3%BCeta.png",
     columns: ["n°", "largo", "giratorio - con destorcedor"],
     rows: [
       {
@@ -995,10 +1002,11 @@ export const subcategories = [
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666084/Productos/Productos/Mosquetones/Tabla%20-%20Gatillo.png",
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666084/Productos/Productos/Mosquetones/Tabla%20-%20Gatillo.png",
     columns: ["n°", "largo", "giratorio - con destorcedor"],
     rows: [
       {
@@ -1033,10 +1041,11 @@ export const subcategories = [
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666127/Productos/Productos/Mosquetones/Tabla%20-%20Traba%20de%20chapa.png", 
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666127/Productos/Productos/Mosquetones/Tabla%20-%20Traba%20de%20chapa.png",
     columns: ["largo", "giratorio - con destorcedor"],
     rows: [
       {
@@ -1060,10 +1069,11 @@ export const subcategories = [
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666175/Productos/Productos/Mosquetones/Tabla%20-%20Chato.png",
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666175/Productos/Productos/Mosquetones/Tabla%20-%20Chato.png",
     columns: ["largo", "giratorio - con destorcedor"],
     rows: [
       {
@@ -1087,10 +1097,11 @@ export const subcategories = [
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666227/Productos/Productos/Mosquetones/Tabla%20-%20Enganche.png", 
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666227/Productos/Productos/Mosquetones/Tabla%20-%20Enganche.png",
     columns: ["largo", "espesor"],
     rows: [
       {
@@ -1122,10 +1133,11 @@ export const subcategories = [
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666336/Productos/Productos/Mosquetones/Tabla%20-%20Destorcedor.png",
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666336/Productos/Productos/Mosquetones/Tabla%20-%20Destorcedor.png",
     columns: ["largo", "espesor"],
     rows: [
       {
@@ -1150,10 +1162,11 @@ export const subcategories = [
         title: "niquelado",
         img: "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
         description:
-        "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
+          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular.",
       },
     ],
-    imgTable: "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666423/Productos/Productos/Mosquetones/Tabla%20-%20Gancho%20Tuc.png", 
+    imgTable:
+      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666423/Productos/Productos/Mosquetones/Tabla%20-%20Gancho%20Tuc.png",
     columns: ["n°", "con eslabon"],
     rows: [
       {

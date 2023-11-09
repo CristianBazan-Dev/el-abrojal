@@ -5,7 +5,7 @@ import "./index.css";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Products from "./pages/Products";
+import Products from "./pages/Categories";
 import Product from "./pages/Product";
 import About from "./pages/About";
 import { DataProvider } from "./GlobalState";
@@ -22,15 +22,15 @@ const router = createHashRouter([
     element: <Home />,
   },
   {
-    path: "/products",
+    path: "/categories",
     element: <Products />,
   },
   {
-    path: "/category/:id",
+    path: "/categories/:id",
     element: <Category />,
   },
   {
-    path: "/products/:id",
+    path: "/product/:id",
     element: <Product />,
   },
   {

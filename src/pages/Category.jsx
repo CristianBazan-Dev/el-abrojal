@@ -10,21 +10,13 @@ import { useSEO } from "../hooks/useSEO";
 
 import { Helmet } from "react-helmet";
 import Categories from "../components/utils/categories-section/Categories";
-import SubcategoriresCards from "../components/utils/subcategories-cards/SubcategoriesCards";
+import SubcategoriesCards from "../components/utils/subcategories-cards/SubcategoriesCards";
 
 function Category(props) {
   const state = useContext(GlobalState);
-  const [productSelected, setProductSelected] =
-    state.categories.productSelected;
-
-  const [categorySelected, setCategorySelected] =
-    state.categories.categorySelected;
-
-  const [headerAlt, setHeaderAlt] = state.headerAlt;
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-    setHeaderAlt(true);
+ 
   }, []);
 
   return (
@@ -87,7 +79,7 @@ function Category(props) {
                 <Categories />
               </div>
               <div className="products">
-                <SubcategoriresCards />
+                <SubcategoriesCards />
               </div>
             </div>
           </section>

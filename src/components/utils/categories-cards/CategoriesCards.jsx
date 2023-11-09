@@ -1,45 +1,38 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { GlobalState } from "../../../GlobalState";
-import { categories } from "../../../api/Categories";
-import { subcategories } from "../../../api/Subcategories";
+import axios from "axios";
 
 import "./categoriesCards.css";
 import { Link } from "react-router-dom";
 
 function CategoriesCards(props) {
   const state = useContext(GlobalState);
+  const [categories, setCategories] = useState([])
 
-  const [categorySelected, setCategorySelected] =
-    state.categories.categorySelected;
-
-  const [subcategorySelected, setSubcategorySelected] =
-    state.categories.subcategorySelected;
-
-
-    
-  const firstCategorySelected = (cat) => {
-    setCategorySelected(cat.id);
-    setHaveSubcategory(cat.haveSubcat);
+  const getCategories = () => {
+    const res = axios.get("./categories.json").then((res) => {
+      setCategories(res.data)
+    });
   };
 
+  useEffect(() => {
+    getCategories();
+  }, []);
 
   return (
     <section className="category-selection-section">
       {categories.map((data, index) => {
-            return (
-              <Link to={`/products`} key={index}>
-                <div
-                  className="product-card"
-                  style={{ backgroundImage: `url(${data.categoryImg})` }}
-                  onClick={() => {
-                    firstCategorySelected(data);
-                  }}
-                >
-                  <h2>{data.category}</h2>
-                </div>
-              </Link>
-            );
-          })}
+        return (
+          <Link to={`/categories/${data.id}`} key={index}>
+            <div
+              className="product-card"
+              style={{ backgroundImage: `url(${data.categoryImg})` }}
+            >
+              <h2>{data.category}</h2>
+            </div>
+          </Link>
+        );
+      })}
     </section>
   );
 }

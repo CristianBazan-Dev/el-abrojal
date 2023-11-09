@@ -18,7 +18,6 @@ import { ReactComponent as Contact } from "../../assets/icons/contact/phone.svg"
 
 import { GlobalState } from "../../GlobalState";
 
-
 function Header(props) {
   const location = useLocation();
   const state = useContext(GlobalState);
@@ -35,8 +34,6 @@ function Header(props) {
   const [productSelected, setProductSelected] =
     state.categories.productSelected;
 
- 
-
   const ClearCategories = () => {
     setCategorySelected("");
     setSubcategorySelected("");
@@ -44,11 +41,8 @@ function Header(props) {
   };
 
   const RedirectToContact = () => {
-    window.scrollTo(0, document.body.scrollHeight)
-  }
-
-
-
+    window.scrollTo(0, document.body.scrollHeight);
+  };
 
   return (
     <header>
@@ -76,7 +70,7 @@ function Header(props) {
         to="/"
         onClick={() => {
           ClearCategories();
-          window.scrollTo(0,0); 
+          window.scrollTo(0, 0);
         }}
       >
         <img src={Logo} alt="logo de la empresa metalúrgica 'el abrojal' " />
@@ -87,7 +81,7 @@ function Header(props) {
           <li
             onClick={() => {
               ClearCategories();
-              window.scrollTo(0,0); 
+              window.scrollTo(0, 0);
             }}
             className={!headerAlt ? "" : "li-alt"}
           >
@@ -96,22 +90,26 @@ function Header(props) {
           <li
             onClick={() => {
               ClearCategories();
-          
             }}
             className={!headerAlt ? "" : "li-alt"}
           >
-            <Link to="/products">Productos</Link>
+            <Link to="/categories">Productos</Link>
           </li>
           <li
             onClick={() => {
               ClearCategories();
-              window.scrollTo(0,0); 
+              window.scrollTo(0, 0);
             }}
             className={!headerAlt ? "" : "li-alt"}
           >
             <Link to="/about">Sobre nosotros</Link>
           </li>
-          <li  className={!headerAlt ? "" : "li-alt"} onClick={() => {RedirectToContact()}}>
+          <li
+            className={!headerAlt ? "" : "li-alt"}
+            onClick={() => {
+              RedirectToContact();
+            }}
+          >
             Contacto
           </li>
         </ul>
@@ -140,7 +138,7 @@ function Header(props) {
               onClick={() => {
                 setHamburgerMenu(false);
                 ClearCategories();
-                window.scrollTo(0,0); 
+                window.scrollTo(0, 0);
               }}
             >
               Inicio
@@ -148,11 +146,11 @@ function Header(props) {
           </li>
           <li>
             <Link
-              to="/products"
+              to="/categories/"
               onClick={() => {
                 setHamburgerMenu(false);
                 ClearCategories();
-                window.scrollTo(0,0);   
+                window.scrollTo(0, 0);
               }}
             >
               Productos
@@ -164,7 +162,7 @@ function Header(props) {
               onClick={() => {
                 setHamburgerMenu(false);
                 ClearCategories();
-                window.scrollTo(0,0);  
+                window.scrollTo(0, 0);
               }}
             >
               Sobre nosotros
@@ -175,7 +173,7 @@ function Header(props) {
               href="#contact"
               onClick={() => {
                 setHamburgerMenu(false);
-                window.scrollTo(0,0);  
+                window.scrollTo(0, 0);
               }}
             >
               Contacto
@@ -223,11 +221,11 @@ function Header(props) {
 
         <div className="icons">
           <Link
-            to="/products"
+            to="/categories"
             onClick={() => {
               setHamburgerMenu(false);
               ClearCategories();
-              window.scrollTo(0,0);  
+              window.scrollTo(0, 0);
             }}
           >
             <div className="icon-item">
@@ -237,12 +235,10 @@ function Header(props) {
           </Link>
 
           <div
-            
             onClick={() => {
               setHamburgerMenu(false);
-              RedirectToContact(); 
+              RedirectToContact();
               ClearCategories();
-              
             }}
           >
             <div className="icon-item">
@@ -256,7 +252,7 @@ function Header(props) {
             onClick={() => {
               setHamburgerMenu(false);
               ClearCategories();
-              window.scrollTo(0,0);  
+              window.scrollTo(0, 0);
             }}
           >
             <div className="icon-item">

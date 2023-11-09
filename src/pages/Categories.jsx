@@ -9,23 +9,19 @@ import { GlobalState } from "../GlobalState";
 import { useSEO } from "../hooks/useSEO";
 
 import { Helmet } from "react-helmet";
+import CategoriesCards from "../components/utils/categories-cards/CategoriesCards";
+import CategoriesSection from "../components/utils/categories-section/Categories";
+import { useParams } from "react-router-dom";
 
-function Products(props) {
+import axios from "axios";
+
+function Categories(props) {
   const state = useContext(GlobalState);
-  const [productSelected, setProductSelected] =
-    state.categories.productSelected;
-
-  const [categorySelected, setCategorySelected] =
-    state.categories.categorySelected;
 
   const [headerAlt, setHeaderAlt] = state.headerAlt;
+  const params = useParams();
 
-  useEffect(() => {
-    setProductSelected("");
-    setCategorySelected("");
-    window.scrollTo(0, 0);
-    setHeaderAlt(true);
-  }, []);
+
 
   return (
     <>
@@ -41,7 +37,10 @@ function Products(props) {
 
         <meta property="og:locale" content="es_ES"></meta>
         <meta property="og:type" content="website"></meta>
-        <meta property="og:title" content="Metalúrgica El Abrojal | Productos"></meta>
+        <meta
+          property="og:title"
+          content="Metalúrgica El Abrojal | Productos"
+        ></meta>
         <meta
           property="og:description"
           content="Nuestros productos son fabricados con dedicación y materia prima de calidad."
@@ -78,7 +77,17 @@ function Products(props) {
         <Header />
 
         <main>
-          <ProductsSection />
+          <section>
+            <div className="products-page">
+              <div className="categories">
+                <CategoriesSection />
+              </div>
+
+              <div className="products">
+                <CategoriesCards />
+              </div>
+            </div>
+          </section>
         </main>
 
         <Contact id="contact" className="contact-section" />
@@ -89,4 +98,4 @@ function Products(props) {
   );
 }
 
-export default Products;
+export default Categories;
