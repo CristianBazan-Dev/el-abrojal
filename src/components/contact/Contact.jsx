@@ -21,7 +21,8 @@ function Contact(props) {
                 <Location />
                 <p>
                   Pres. Juan Domingo Perón 862, Morrison (X2568), Córdoba{" "}
-                  <li>Lunes a viernes - 9:00 am a 17:00 pm.</li>
+                  <li>Lunes a Jueves - 9:00 am a 18:00 pm.</li>
+                  <li>Viernes - 9:00 am a 17:00 pm.</li>
                 </p>
               </div>
             </Link>

@@ -7,7 +7,6 @@ import { ReactComponent as Variety } from "../../../assets/icons/banner/variety.
 function Banner(props) {
   return (
     <div className="banner-section">
-      
       <div className="banner-text">
         <h3>Garantía de calidad</h3>
 

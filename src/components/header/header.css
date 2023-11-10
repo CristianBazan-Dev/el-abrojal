@@ -1,14 +1,12 @@
-
 header {
   position: relative;
-
 }
 
 header::after {
   position: absolute;
-  bottom: -0.9em;
+  bottom: -10px;
   content: "";
-  height: 20%;
+  height: 10px;
   background: var(--green);
   width: 100%;
 }
@@ -31,7 +29,6 @@ header ul li {
   color: var(--light);
 }
 
-
 /* Responsive actions  */
 
 .hamburger-menu {
@@ -41,7 +38,7 @@ header ul li {
 }
 
 .hamburger-menu path {
-  stroke: black;
+  stroke: var(--green);
 }
 
 .hamburger-menu.alt path {
@@ -185,6 +182,15 @@ header ul li {
 
 /* Responsive */
 @media only screen and (max-width: 900px) {
+  header::after {
+    position: absolute;
+    bottom: -11px;
+    content: "";
+    height: 10px;
+    background: var(--green);
+    width: 100%;
+  }
+
   header img {
     display: flex;
     justify-content: center;

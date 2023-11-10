@@ -6,9 +6,9 @@
 .contact-section::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
-  height: 5%;
+  height: 10px;
   background: var(--green);
   width: 100%;
 }

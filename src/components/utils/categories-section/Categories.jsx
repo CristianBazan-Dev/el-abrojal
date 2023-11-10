@@ -14,7 +14,7 @@ function Categories(props) {
 
 
   useEffect(() => {
-    setCatIsActive("  ")
+    setCatIsActive("")
   }, [])
 
   return (

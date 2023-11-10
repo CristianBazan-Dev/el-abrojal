@@ -112,7 +112,7 @@ body {
 article {
   height: 100vh;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 5em;
+  grid-template-rows: 1fr 1fr 1fr 3em;
   grid-template-columns: 100%;
 }
 
@@ -140,7 +140,7 @@ main {
 
 footer {
   padding: 1rem;
-  max-height: 200px;
+  max-height: 170px;
 }
 
 /* Typography */
