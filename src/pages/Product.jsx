@@ -16,19 +16,14 @@ import Categories from "../components/utils/categories-section/Categories";
 
 function Product(props) {
   const state = useContext(GlobalState);
-  const [productSelected, setProductSelected] =
-    state.categories.productSelected;
 
-  const [categorySelected, setCategorySelected] =
-    state.categories.categorySelected;
 
   const [headerAlt, setHeaderAlt] = state.headerAlt;
 
   useEffect(() => {
-    setProductSelected("");
-    setCategorySelected("");
+
     window.scrollTo(0, 0);
-    setHeaderAlt(true);
+
   }, []);
 
   return (

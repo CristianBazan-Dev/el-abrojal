@@ -12,18 +12,10 @@ import { Helmet } from "react-helmet";
 
 function Home(props) {
   const state = useContext(GlobalState);
-  const [headerAlt, setHeaderAlt] = state.headerAlt;
 
   useEffect(() => {
-    setHeaderAlt(false);
     window.scrollTo(0, 0);
   }, []);
-
-  // useSEO({
-  //   description:
-  //     "",
-  //   title: "Fábrica de cadenas",
-  // });
 
   return (
     <>

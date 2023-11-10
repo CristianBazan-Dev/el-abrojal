@@ -5,27 +5,17 @@ import { subcategories } from "../../../api/Subcategories.js";
 import { GlobalState } from "../../../GlobalState";
 
 import "./categories.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function Categories(props) {
   const state = useContext(GlobalState);
-
-  const [productSelected, setProductSelected] =
-    state.categories.productSelected;
-
-  const [subcategorySelected, setSubcategorySelected] =
-    state.categories.subcategorySelected;
-
   const [catIsActive, setCatIsActive] = state.catIsActive;
-  const [categoryToggle, setCategoryToggle] = state.categoryToggle;
-  const [categoryNameToggle, setCategoryNameToggle] = state.categoryNameToggle;
+  const params = useParams()
 
-  const [categorySelected, setCategorySelected] =
-    state.categories.categorySelected;
 
-    const reload = () =>{
-     
-    }
+  useEffect(() => {
+    setCatIsActive("  ")
+  }, [])
 
   return (
     <div className="categories-selection">
@@ -46,7 +36,7 @@ function Categories(props) {
                   <img src={data.icon} className="cat-icon" />
                   <p
                     className={
-                      categorySelected == data.id
+                      catIsActive == data.id
                         ? "cat-title active"
                         : "cat-title"
                     }

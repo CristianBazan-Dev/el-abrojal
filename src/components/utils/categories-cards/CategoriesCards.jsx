@@ -17,8 +17,8 @@ function CategoriesCards(props) {
   };
 
   useEffect(() => {
-    getCategories();
-  }, []);
+    getCategories(); 
+  }, [])
 
   return (
     <section className="category-selection-section">

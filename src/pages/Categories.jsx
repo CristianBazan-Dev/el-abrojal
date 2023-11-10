@@ -22,6 +22,10 @@ function Categories(props) {
   const params = useParams();
 
 
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, []);
+
 
   return (
     <>

@@ -13,6 +13,7 @@ import axios from "axios";
 function SubcategoriesCards(props) {
   const state = useContext(GlobalState);
 
+  const [catIsActive, setCatIsActive] = state.catIsActive;
   const [showModal, setShowModal] = state.showModal;
   const [imgModal, setImgModal] = state.imgModal;
 
@@ -50,6 +51,7 @@ function SubcategoriesCards(props) {
       <div className="subcategories-grid">
         {subcategories.map((product, index) => {
           if (product.catId == params.id) {
+            setCatIsActive(product.catId);
             return <ProductCard item={product} index={index} key={index} />;
           }
         })}

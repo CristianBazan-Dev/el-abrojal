@@ -15,9 +15,11 @@ import SubcategoriesCards from "../components/utils/subcategories-cards/Subcateg
 function Category(props) {
   const state = useContext(GlobalState);
 
+
   useEffect(() => {
- 
+    window.scroll(-10, -10)
   }, []);
+
 
   return (
     <>
