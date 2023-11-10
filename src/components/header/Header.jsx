@@ -131,58 +131,59 @@ function Header(props) {
             setHamburgerMenu(false);
           }}
         />
-        <ul>
-          <li>
-            <Link
-              to="/"
-              onClick={() => {
-                setHamburgerMenu(false);
-                ClearCategories();
-                window.scrollTo(0, 0);
-              }}
-            >
-              Inicio
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/categories/"
-              onClick={() => {
-                setHamburgerMenu(false);
-                ClearCategories();
-                window.scrollTo(0, 0);
-              }}
-            >
-              Productos
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              onClick={() => {
-                setHamburgerMenu(false);
-                ClearCategories();
-                window.scrollTo(0, 0);
-              }}
-            >
-              Sobre nosotros
-            </Link>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              onClick={() => {
-                setHamburgerMenu(false);
-                window.scrollTo(0, 0);
-              }}
-            >
-              Contacto
-            </a>
-          </li>
-        </ul>
 
-        <div className="logo">
+        <div className="content">
           <img src={Logo} alt="" />
+
+          <ul>
+            <li>
+              <Link
+                to="/"
+                onClick={() => {
+                  setHamburgerMenu(false);
+                  ClearCategories();
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Inicio
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/categories/"
+                onClick={() => {
+                  setHamburgerMenu(false);
+                  ClearCategories();
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Productos
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                onClick={() => {
+                  setHamburgerMenu(false);
+                  ClearCategories();
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Sobre nosotros
+              </Link>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                onClick={() => {
+                  setHamburgerMenu(false);
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Contacto
+              </a>
+            </li>
+          </ul>
         </div>
 
         <div className="social-icons">

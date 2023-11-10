@@ -86,22 +86,26 @@
   }
 
   .hero-presentation {
-    display: flex;
-    flex-direction: column;
+   
   }
 
   .hero-presentation .text {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .7em 0;
   }
 
   .hero-presentation h1 {
-    font-size: 2em;
+    font-size: 1.2em;
+    justify-content: center;
     padding: 0 2em;
   }
 
   .hero-presentation h2 {
     font-size: 1em;
-    margin-top: 4em;
+    margin-top: 0;
+
   }
 
   .hero-presentation img {
