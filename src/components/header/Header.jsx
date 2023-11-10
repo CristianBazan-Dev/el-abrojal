@@ -7,10 +7,10 @@ import Logo from "../../assets/logoAlt.png";
 import { ReactComponent as Hamburger } from "../../assets/icons/utils/hamburger.svg";
 import { ReactComponent as Close } from "../../assets/icons/utils/close.svg";
 import { ReactComponent as Whatsapp } from "../../assets/icons/social/whatsapp.svg";
+import { ReactComponent as Whatsapp2 } from "../../assets/icons/social/whatsapp-2.svg";
 
 import { ReactComponent as Facebook } from "../../assets/icons/social/fb.svg";
 import { ReactComponent as LinkedIn } from "../../assets/icons/social/in.svg";
-import { ReactComponent as WhatsappIcon } from "../../assets/icons/social/wpp.svg";
 
 import { ReactComponent as Products } from "../../assets/icons/banner/variety.svg";
 import { ReactComponent as Us } from "../../assets/icons/whyUs/why-1.svg";
@@ -196,7 +196,7 @@ function Header(props) {
           </Link>
 
           <Link to="/">
-            <WhatsappIcon className="social-icon" />
+            <Whatsapp className="social-icon" />
           </Link>
         </div>
 
@@ -232,6 +232,20 @@ function Header(props) {
             <div className="icon-item">
               <Products className="icon" />
               <p>Productos</p>
+            </div>
+          </Link>
+
+          <Link
+            to="/categories"
+            onClick={() => {
+              setHamburgerMenu(false);
+              ClearCategories();
+              window.scrollTo(0, 0);
+            }}
+          >
+            <div className="icon-item">
+              <Whatsapp2 className="icon wpp" />
+              <p>Whatsapp</p>
             </div>
           </Link>
 

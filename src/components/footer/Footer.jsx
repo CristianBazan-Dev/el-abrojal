@@ -7,7 +7,7 @@ import Logo from "../../assets/logo.png";
 
 import { ReactComponent as Facebook } from "../../assets/icons/social/fb.svg";
 import { ReactComponent as LinkedIn } from "../../assets/icons/social/in.svg";
-import { ReactComponent as Whatsapp } from "../../assets/icons/social/wpp.svg";
+import { ReactComponent as Whatsapp } from "../../assets/icons/social/whatsapp.svg";
 
 import { ReactComponent as Phone } from "../../assets/icons/contact/phone.svg";
 import { ReactComponent as Mail } from "../../assets/icons/contact/mail.svg";

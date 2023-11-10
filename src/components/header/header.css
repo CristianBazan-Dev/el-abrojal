@@ -248,27 +248,38 @@ header ul li {
 
   .responsive-nav .icons {
     display: flex;
-    justify-content: space-between;
+   
     align-items: center;
-    text-align: center;
+
   }
 
   .responsive-nav .icons .icon {
     width: 20px;
+    height: 30px;
     fill: var(--light);
   }
+
+  .responsive-nav .icons .icon.wpp{
+    width: 30px;
+  }
+
+
+ 
 
   .responsive-nav .icons .icon-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 1em;
+    justify-content: space-between;
   }
 
-  .responsive-nav .icons p {
+
+  .responsive-nav .icons .icon-item p {
     color: var(--light);
     font-weight: bold;
     text-transform: uppercase;
+   
   }
 
   header {
