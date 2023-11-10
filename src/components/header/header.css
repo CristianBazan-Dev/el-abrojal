@@ -182,13 +182,18 @@ header ul li {
 
 /* Responsive */
 @media only screen and (max-width: 900px) {
+  header{
+    height: 80px;
+  }
+
   header::after {
     position: absolute;
-    bottom: -11px;
+    bottom: -10px;
     content: "";
     height: 10px;
     background: var(--green);
     width: 100%;
+    border-bottom: 1px solid var(--green);
   }
 
   header img {
