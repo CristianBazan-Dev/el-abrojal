@@ -126,7 +126,7 @@ header ul li {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 6em 0 0;
+  margin: 6em 0 0 0;
 }
 
 .responsive-menu.active {
@@ -171,7 +171,7 @@ header ul li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 2em;
 }
 
 .responsive-menu .social-icons a {

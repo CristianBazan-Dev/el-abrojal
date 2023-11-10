@@ -21,7 +21,6 @@
   grid-template-columns: repeat(3, 300px);
   grid-auto-rows: auto;
   gap: 3em 3em;
-
 }
 
 .categories-container .product-card {
@@ -37,7 +36,6 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .categories-container .product-card h2 {
@@ -82,8 +80,10 @@
     margin-bottom: 0em;
   }
 
-  .categories-container .product-card {
+  .productsCards-section .grid-container {
+  }
 
+  .categories-container .product-card {
     height: 500px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: var(--light);
@@ -94,21 +94,21 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-  
   }
 
   .categories-container {
     display: grid;
     grid-template-columns: repeat(2, 170px);
-    grid-template-rows: repeat(3, 300px);
-    gap: 0em 2em;
+    grid-auto-rows: auto;
+    gap: 2em 2em;
     place-items: center;
+    margin: 0;
   }
 
   .categories-container .product-card {
     max-width: 150px;
     max-height: 270px;
-    width: 150px; 
+    width: 150px;
     height: 270px;
   }
 

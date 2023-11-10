@@ -172,17 +172,17 @@ function Header(props) {
                 Sobre nosotros
               </Link>
             </li>
-            <li>
-              <a
-                href="#contact"
-                onClick={() => {
-                  setHamburgerMenu(false);
-                  window.scrollTo(0, 0);
-                }}
-              >
-                Contacto
-              </a>
-            </li>
+            {/* <li>
+                <a
+                  href="#contact"
+                  onClick={() => {
+                    setHamburgerMenu(false);
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  Contacto
+                </a>
+              </li> */}
           </ul>
         </div>
 
