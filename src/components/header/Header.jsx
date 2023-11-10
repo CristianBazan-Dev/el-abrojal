@@ -236,7 +236,7 @@ function Header(props) {
           </Link>
 
           <Link
-            to="/categories"
+            to="https://wa.link/2s3t1s"
             onClick={() => {
               setHamburgerMenu(false);
               ClearCategories();
