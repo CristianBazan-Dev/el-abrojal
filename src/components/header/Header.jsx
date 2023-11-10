@@ -237,6 +237,7 @@ function Header(props) {
 
           <Link
             to="https://wa.link/2s3t1s"
+            target="_blank"
             onClick={() => {
               setHamburgerMenu(false);
               ClearCategories();
