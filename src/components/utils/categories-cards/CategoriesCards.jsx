@@ -4,34 +4,32 @@ import axios from "axios";
 
 import "./categoriesCards.css";
 import { Link } from "react-router-dom";
-
+import Cards from "../cards/Cards";
 
 function CategoriesCards(props) {
   const state = useContext(GlobalState);
-  const [categories, setCategories] = useState([])
+  const [categories, setCategories] = useState([]);
 
   const getCategories = () => {
     const res = axios.get("./categories.json").then((res) => {
-      setCategories(res.data)
+      setCategories(res.data);
     });
   };
 
   useEffect(() => {
-    getCategories(); 
-  }, [])
+    getCategories();
+  }, []);
 
   return (
     <section className="category-selection-section">
       {categories.map((data, index) => {
         return (
-          <Link to={`/categories/${data.id}`} key={index}>
-            <div
-              className="product-card"
-              style={{ backgroundImage: `url(${data.categoryImg})` }}
-            >
-              <h2>{data.category}</h2>
-            </div>
-          </Link>
+          <Cards
+            link={`/categories/${data.id}`}
+            title={data.category}
+            img={data.categoryImg}
+            id={data.id}
+          />
         );
       })}
     </section>

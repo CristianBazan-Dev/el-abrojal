@@ -4,6 +4,7 @@ import { categories } from "../../../api/Categories";
 import { subcategories } from "../../../api/Subcategories";
 import { Link } from "react-router-dom";
 import { GlobalState } from "../../../GlobalState";
+import Cards from "../cards/Cards";
 
 function ProductsCards(props) {
   const state = useContext(GlobalState);
@@ -35,17 +36,12 @@ function ProductsCards(props) {
         <div className="categories-container">
           {categories.map((data, index) => {
             return (
-              <Link to={`/categories/${data.id}`} key={index}>
-                <div
-                  className="product-card"
-                  style={{ backgroundImage: `url(${data.categoryImg})` }}
-                  // onClick={() => {
-                  //   firstCategorySelected(data);
-                  // }}
-                >
-                  <h2>{data.category}</h2>
-                </div>
-              </Link>
+              <Cards
+                link={`/categories/${data.id}`}
+                title={data.category}
+                img={data.categoryImg}
+                key={data.id}
+              />
             );
           })}
         </div>

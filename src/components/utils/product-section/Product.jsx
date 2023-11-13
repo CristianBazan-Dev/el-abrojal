@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { GlobalState } from "../../../GlobalState";
 import "./product.css";
 import { subcategories } from "../../../api/Subcategories";
-import ProductCard from "../product-card/ProductCard";
 
 import { ReactComponent as Back } from "../../../assets/icons/utils/back.svg";
 import { saveAs } from "file-saver";
@@ -91,19 +90,22 @@ function Product(props) {
         <div className="galleries-imgs">
           {product.imgs &&
             product.imgs.map((imgs, index) => {
-              return (
-                <div
-                  className="card-img"
-                  style={{ backgroundImage: `url(${imgs})` }}
-                  key={index}
-                  onClick={() => {
-                    handleGallery(imgs);
-                  }}
-                  onMouseEnter={() => {
-                    handleMainImg(imgs);
-                  }}
-                ></div>
-              );
+              if (index < 4) {
+                return (
+                  <div
+                    className="card-img"
+                    style={{ backgroundImage: `url(${imgs})` }}
+                    key={index}
+                    onClick={() => {
+                      handleGallery(imgs);
+                    }}
+                    onMouseEnter={() => {
+                      handleMainImg(imgs);
+                    }}
+                  ></div>
+                );
+              }
+        
             })}
         </div>
       </div>

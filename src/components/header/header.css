@@ -178,6 +178,10 @@ header ul li {
   margin-left: 1em;
 }
 
+.responsive-menu .social-icons a svg{
+  fill: var(--base);
+}
+
 .responsive-menu .logo {
   display: flex;
   justify-content: center;

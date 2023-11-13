@@ -15,11 +15,9 @@ import SubcategoriesCards from "../components/utils/subcategories-cards/Subcateg
 function Category(props) {
   const state = useContext(GlobalState);
 
-
   useEffect(() => {
-    window.scroll(-10, -10)
+    window.scroll(-10, -10);
   }, []);
-
 
   return (
     <>
@@ -86,6 +84,7 @@ function Category(props) {
             </div>
           </section>
         </main>
+
 
         <Contact id="contact" className="contact-section" />
         <Footer />

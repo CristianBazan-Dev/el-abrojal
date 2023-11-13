@@ -33,6 +33,7 @@
 }
 
 .text ul .contact-element p {
+  text-align: left;
   color: var(--light);
 }
 
@@ -67,5 +68,11 @@
 
   .contact-info > div {
     margin-left: 0;
+  }
+
+  .contact-info  li {
+    color: var(--light);
+    font-size: .8em;
+    text-align: center;
   }
 }

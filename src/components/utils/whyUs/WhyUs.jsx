@@ -52,16 +52,19 @@ function WhyUs(props) {
 
   return (
     <section className="whyUs-section">
-      <h1>¿Por qué elegirnos?</h1>
-
-      <div className="third-section">
-        <h2>En Metalúrgica El Abrojal, somos más que una empresa</h2>
+      <div className="why-section">
         <img src={Logo} alt="" />
-        <h2 className="accent">
-          {" "}
-          Somos un legado de más de 30 años de excelencia en la industria
-          metalúrgica.
-        </h2>
+
+        <div className="text">
+          <h1>¿Por qué elegirnos?</h1>
+          <h2>En Metalúrgica El Abrojal, somos más que una empresa</h2>
+
+          <h2 className="accent">
+            {" "}
+            Somos un legado de más de 30 años de excelencia en la industria
+            metalúrgica.
+          </h2>
+        </div>
       </div>
 
       <div className="cards-why">

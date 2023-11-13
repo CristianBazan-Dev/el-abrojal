@@ -1,9 +1,10 @@
 import React from "react";
-import "./card.css";
-function Cards({ product, title, img }) {
+import "./cards.css";
+import { Link } from "react-router-dom";
+function Cards({ link, title, img, id }) {
   return (
-    <Link to={`/categories/${product.id}`} key={index}>
-      <div className="product-card" style={{ backgroundImage: `url(${img})` }}>
+    <Link to={link} key={id}>
+      <div style={{ backgroundImage: `url(${img})` }} className="product-card">
         <h2>{title}</h2>
       </div>
     </Link>

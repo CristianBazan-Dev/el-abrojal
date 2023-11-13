@@ -39,8 +39,14 @@ function About(props) {
 
         <meta property="og:locale" content="es_ES"></meta>
         <meta property="og:type" content="website"></meta>
-        <meta property="og:title" content="Metalúrgica El Abrojal | Sobre nosotros"></meta>
-        <meta property="og:description" content="Somos más que una empresa: somos un legado con más de 30 años de experiencia en la industria."></meta>
+        <meta
+          property="og:title"
+          content="Metalúrgica El Abrojal | Sobre nosotros"
+        ></meta>
+        <meta
+          property="og:description"
+          content="Somos más que una empresa: somos un legado con más de 30 años de experiencia en la industria."
+        ></meta>
         <meta property="og:url" content="https://elabrojal.com/#/about"></meta>
         <meta property="og:site_name" content="El Abrojal"></meta>
 

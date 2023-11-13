@@ -10,12 +10,11 @@ import { Link, useParams } from "react-router-dom";
 function Categories(props) {
   const state = useContext(GlobalState);
   const [catIsActive, setCatIsActive] = state.catIsActive;
-  const params = useParams()
-
+  const params = useParams();
 
   useEffect(() => {
-    setCatIsActive("")
-  }, [])
+    setCatIsActive("");
+  }, []);
 
   return (
     <div className="categories-selection">
@@ -24,7 +23,7 @@ function Categories(props) {
       <div className="cats-container">
         {categories.map((data, index) => {
           return (
-            <Link to={`/categories/${data.id}`} >
+            <Link to={`/categories/${data.id}`}>
               <div
                 className="cat-item"
                 key={index}
@@ -36,9 +35,7 @@ function Categories(props) {
                   <img src={data.icon} className="cat-icon" />
                   <p
                     className={
-                      catIsActive == data.id
-                        ? "cat-title active"
-                        : "cat-title"
+                      catIsActive == data.id ? "cat-title active" : "cat-title"
                     }
                   >
                     {data.category}

@@ -5,26 +5,33 @@
   align-items: center;
   margin: 1em;
   margin-bottom: 3em;
-
 }
 
-.whyUs-section h3 {
-  color: var(--dark);
+.whyUs-section .why-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5em;
+  padding: 0 6em;
 }
 
-.whyUs-section .third-section .accent{
-  font-family: 'Montserrat', sans-serif;
+.whyUs-section .why-section .text h1,
+.whyUs-section .why-section .text h2 {
+  margin: 0.5em 0;
+}
+
+.whyUs-section .why-section .text .accent {
+  font-family: "Montserrat", sans-serif;
+  color: var(--main);
 }
 
 .cards-why {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30em,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30em, 1fr));
   gap: 3em;
   margin: auto;
   margin-top: 5em;
 }
-
-
 
 .whyCard {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -32,17 +39,17 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  align-items: center;  
+  align-items: center;
   background: #ffffff;
 }
 
-.whyCard:nth-child(1){
+.whyCard:nth-child(1) {
   animation: entrance1 1s;
 }
-.whyCard:nth-child(2){
+.whyCard:nth-child(2) {
   animation: entrance2 1s;
 }
-.whyCard:nth-child(3){
+.whyCard:nth-child(3) {
   animation: entrance3 1s;
 }
 
@@ -90,33 +97,33 @@
 }
 
 @keyframes entrance1 {
-  0%{
+  0% {
     opacity: 0;
-    transform: translateX(-100%); 
+    transform: translateX(-100%);
   }
-  100%{
-    opacity: 1; 
-    transform: translateX(0%); 
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
   }
 }
 @keyframes entrance2 {
-  0%{
-    opacity: 0; 
-    transform: translateY(20%); 
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
   }
-  100%{
-    opacity: 1; 
-    transform: translateY(0%); 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 @keyframes entrance3 {
-  0%{
+  0% {
     opacity: 0;
-    transform: translateX(100%); 
+    transform: translateX(100%);
   }
-  100%{
-    opacity: 1; 
-    transform: translateX(0%); 
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
   }
 }
 
@@ -125,11 +132,10 @@
 }
 
 .whyCard p {
-  text-align: center ;
+  text-align: center;
   padding: 20px;
   margin-bottom: 0em;
 }
-
 
 /* Responsive  */
 @media only screen and (max-width: 900px) {
@@ -143,8 +149,5 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     margin-left: 1em;
-
   }
-
-
 }

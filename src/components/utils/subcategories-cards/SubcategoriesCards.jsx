@@ -5,10 +5,11 @@ import { GlobalState } from "../../../GlobalState";
 import Modal from "../../utils/modal/Modal";
 
 import { ReactComponent as Back } from "../../../assets/icons/utils/back.svg";
-import ProductCard from "../product-card/ProductCard";
+
 import { Link, useParams } from "react-router-dom";
 import {} from "../../../../products.json";
 import axios from "axios";
+import Cards from "../cards/Cards";
 
 function SubcategoriesCards(props) {
   const state = useContext(GlobalState);
@@ -52,7 +53,15 @@ function SubcategoriesCards(props) {
         {subcategories.map((product, index) => {
           if (product.catId == params.id) {
             setCatIsActive(product.catId);
-            return <ProductCard item={product} index={index} key={index} />;
+
+            return (
+              <Cards
+                link={`/product/${product.id}`}
+                img={product.imgs[0]}
+                title={product.title}
+                id={product.id}
+              />
+            );
           }
         })}
       </div>
