@@ -105,7 +105,6 @@ function Product(props) {
                   ></div>
                 );
               }
-        
             })}
         </div>
       </div>
