@@ -76,8 +76,6 @@ function Category(props) {
         <main>
           <ContactPage />
         </main>
-
-        <Contact id="contact" className="contact-section" />
         <Footer />
         <Modal />
       </article>

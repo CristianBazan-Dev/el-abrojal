@@ -1,0 +1,20 @@
+.contact-page-section .first-section .info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    color: #ffffff;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10rem;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.info svg {
+    fill: #ffffff;
+}
+
+.info .detailed-info p{
+   
+}
