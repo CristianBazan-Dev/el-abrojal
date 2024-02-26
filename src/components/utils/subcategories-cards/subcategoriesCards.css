@@ -26,14 +26,14 @@
 .subcategories-selection-section .subcategories-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
-  gap: 5em 1em;
-  margin-bottom: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 5em 5rem;
+  margin: 2rem
 }
 
 .subcategories-selection-section .subcategories-grid .product-card {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 200px;
+  max-height: 200px;
   background-size: 80%;
 }
 

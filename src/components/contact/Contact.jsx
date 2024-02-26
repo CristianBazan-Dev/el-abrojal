@@ -4,7 +4,8 @@ import "./contact.css";
 import { ReactComponent as Location } from "../../assets/icons/contact/location.svg";
 import { ReactComponent as Mail } from "../../assets/icons/contact/mail.svg";
 import { ReactComponent as Phone } from "../../assets/icons/contact/phone.svg";
-import { ReactComponent as Facebook } from "../../assets/icons/contact/fb-round.svg";
+import { ReactComponent as Facebook } from "../../assets/icons/social/fb.svg";
+import { ReactComponent as LinkedIn } from "../../assets/icons/social/in.svg";
 import { Link } from "react-router-dom";
 import Map from "../utils/map/Map";
 
@@ -12,8 +13,8 @@ function Contact(props) {
   return (
     <section className="contact-section" id="contact">
       <div className="contact-info">
-        <div className="text">
-          <h2>¿Dónde encontrarnos?</h2>
+        {/* <div className="text">
+          <h4>Metalúrgica El Abrojal</h4>
 
           <ul>
             <Link>
@@ -50,9 +51,49 @@ function Contact(props) {
               </div>
             </Link>
           </ul>
+        </div> */}
+
+        <h4>Metalúrgica El Abrojal</h4>
+
+        <div className="description">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            ducimus doloribus dignissimos sequi cupiditate
+          </p>
+
+          <div className="detailed-info">
+            <div className="items">
+              <div className="item">
+                <Phone />
+                +54 9 3537 494202
+              </div>
+              <div className="item">
+                <Location />
+                Morrison, Córdoba, Argentina
+              </div>
+              <div className="item">
+                <Mail />
+                metalurgicaelabrojal@gmail.com
+              </div>
+            </div>
+          </div>
+
+          <div className="social-icons">
+              <Link>
+              <Facebook/>
+              
+              </Link>
+
+              <Link>
+              <LinkedIn/>
+              
+              </Link>
+
+            </div>
         </div>
 
-        <Map />
+        {/* 
+        <Map /> */}
       </div>
     </section>
   );

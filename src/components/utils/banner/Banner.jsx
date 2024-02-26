@@ -2,27 +2,32 @@ import React from "react";
 import "./banner.css";
 
 import { ReactComponent as Truck } from "../../../assets/icons/banner/truck.svg";
-import { ReactComponent as Variety } from "../../../assets/icons/banner/variety.svg";
+import { ReactComponent as Stock } from "../../../assets/icons/banner/variety.svg";
 
 function Banner(props) {
   return (
     <div className="banner-section">
       <div className="banner-text">
-        <h3>Garantía de calidad</h3>
+        <div className="banner-item">
+        <Stock className="variety-icon" />
+          <h5>Stock permanente</h5>
+        </div>
+
+        <div className="banner-item">
+          <h5>Garantía de calidad</h5>
+        </div>
 
         <div className="banner-item">
           <Truck className="truck-icon" />
           <div className="text-item">
-            <h3>Envíos</h3>
-            <h3>a todo el país</h3>
+            <h5>Envíos a todo el país</h5>
           </div>
         </div>
 
         <div className="banner-item">
-          <Variety className="variety-icon" />
+
           <div className="text-item">
-            <h3>Variedad</h3>
-            <h3>de productos</h3>
+            <h5>Variedad de productos</h5>
           </div>
         </div>
       </div>

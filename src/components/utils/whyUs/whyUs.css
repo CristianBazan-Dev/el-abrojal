@@ -3,88 +3,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1em;
+  margin: var(--m);
   margin-bottom: 3em;
+  margin-top: 9rem;
 }
 
-.whyUs-section .why-section {
+.first-section {
   display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  margin: 0 5em;
-  padding: 0 6em;
+  margin: 0 var(--m);
 }
 
-.whyUs-section .why-section .text h1,
-.whyUs-section .why-section .text h2 {
-  margin: 0.5em 0;
+.first-section img{
+  max-width: 500px;
 }
 
-.whyUs-section .why-section .text .accent {
-  font-family: "Montserrat", sans-serif;
-  color: var(--main);
-}
-
-.cards-why {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30em, 1fr));
-  gap: 3em;
-  margin: auto;
-  margin-top: 5em;
-}
-
-.whyCard {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  align-items: center;
-  background: #ffffff;
-}
-
-.whyCard:nth-child(1) {
-  animation: entrance1 1s;
-}
-.whyCard:nth-child(2) {
-  animation: entrance2 1s;
-}
-.whyCard:nth-child(3) {
-  animation: entrance3 1s;
-}
-
-/* .whyCard:hover {
-
-  box-shadow: var(--main) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  transition: 0.5s;
-} */
-
-.whyCard img {
-  margin: 2em;
-}
-
-.whyCard .images img:nth-child(2) {
-  display: none;
-  opacity: 0;
-  max-width: 120px;
-  max-height: 100px;
-  width: 60px;
-  height: 50px;
-}
-
-.whyCard:hover > .images img:nth-child(1) {
-  display: none;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.whyCard:hover > .images img:nth-child(2) {
-  display: block;
-  opacity: 1;
-  transition: 0.5s;
-  transition: 0.3s;
+.first-section p {
+  text-align: justify;
+  padding: 10rem;
+  max-width: 900px;
 }
 
 @keyframes cardAnimation {
@@ -127,15 +66,6 @@
   }
 }
 
-.whyCard h4 {
-  margin-bottom: 1em;
-}
-
-.whyCard p {
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 0em;
-}
 
 /* Responsive  */
 @media only screen and (max-width: 900px) {

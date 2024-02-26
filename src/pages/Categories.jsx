@@ -14,6 +14,8 @@ import CategoriesSection from "../components/utils/categories-section/Categories
 import { useParams } from "react-router-dom";
 
 import axios from "axios";
+import SectionBanner from "../components/utils/section-banner/SectionBanner";
+import SecondaryBanner from "../components/utils/secondary-banner/SecondaryBanner";
 
 function Categories(props) {
   const state = useContext(GlobalState);
@@ -81,6 +83,7 @@ function Categories(props) {
         <Header />
 
         <main>
+        <SectionBanner title="Categorías" img="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571238/Productos/Categor%C3%ADas/Argollas_cfwvan_xx7sxa.png"/>
           <section>
             <div className="products-page">
               <div className="categories">
@@ -91,6 +94,8 @@ function Categories(props) {
                 <CategoriesCards />
               </div>
             </div>
+
+            <SecondaryBanner/>
           </section>
         </main>
 

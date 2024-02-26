@@ -9,28 +9,21 @@ import { GlobalState } from "../GlobalState";
 import { useSEO } from "../hooks/useSEO";
 
 import { Helmet } from "react-helmet";
-import Products from "../components/mainPages/Products/Products";
-
-import ProductSection from "../components/utils/product-section/Product";
 import Categories from "../components/utils/categories-section/Categories";
-import SectionBanner from "../components/utils/section-banner/SectionBanner";
+import SubcategoriesCards from "../components/utils/subcategories-cards/SubcategoriesCards";
+import ContactPage from "../components/mainPages/Contact/ContactPage";
 
-function Product(props) {
+function Category(props) {
   const state = useContext(GlobalState);
 
-
-  const [headerAlt, setHeaderAlt] = state.headerAlt;
-
   useEffect(() => {
-
-    window.scrollTo(0, 0);
-
+    window.scroll(-10, -10);
   }, []);
 
   return (
     <>
       <Helmet>
-        <title>Metalúrgica El Abrojal | Productos</title>
+        <title>Metalúrgica El Abrojal | Contacto</title>
         <meta
           name="description"
           content="Nuestros productos son fabricados con dedicación y materia prima de calidad. "
@@ -51,7 +44,7 @@ function Product(props) {
         ></meta>
         <meta
           property="og:url"
-          content="https://elabrojal.com/#/products"
+          content="https://elabrojal.com/#/contact"
         ></meta>
         <meta property="og:site_name" content="El Abrojal"></meta>
 
@@ -70,7 +63,7 @@ function Product(props) {
           name="thumbnail"
           content="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571060/Logos/logo_h2y6cy_ppunp1.png"
         />
-        <link rel="canonical" href="https://elabrojal.com/#/products" />
+        <link rel="canonical" href="https://elabrojal.com/#/contact" />
         <meta name="geo.region" content="AR-X" />
         <meta name="geo.placename" content="Morrison" />
         <meta name="geo.position" content="-34.996496;-64.967282" />
@@ -81,17 +74,7 @@ function Product(props) {
         <Header />
 
         <main>
-          <section>
-            <SectionBanner title="Productos"/>
-            <div className="products-page">
-              <div className="categories">
-                <Categories />
-              </div>
-              <div className="products">
-                <ProductSection />
-              </div>
-            </div>
-          </section>
+          <ContactPage />
         </main>
 
         <Contact id="contact" className="contact-section" />
@@ -102,4 +85,4 @@ function Product(props) {
   );
 }
 
-export default Product;
+export default Category;

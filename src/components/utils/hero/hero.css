@@ -2,11 +2,27 @@
   background-image: url("https://res.cloudinary.com/dz6lrvj7u/image/upload/v1696847659/Hero/Hero_-_Banner_cxr4lm.jpg");
   background-size: 120%;
   background-repeat: no-repeat;
-  background-position: 15% 40%;
-  max-height: 500px;
-  height: 650px;
+  background-position: 15% 43%;
+  max-height: var(--hero-sz);
+  height: var(--hero-sz);
   margin: -1em;
+  position: sticky;
+  top: 0;
   z-index: 0;
+}
+
+.hero-section::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: var(--hero-sz);
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  height: 650px;
+  background: #194051c0;
 }
 
 @keyframes in {
@@ -20,27 +36,71 @@
   }
 }
 
-.hero-presentation {
-  display: flex;
+.hero-section .hero-info {
+  display: none;
+  flex-direction: row;
+  margin: auto;
+  gap: var(--m);
   justify-content: center;
+  gap: 20rem;
+  align-items: flex-end;
+  position: relative;
+  z-index: 700;
+  padding: 15rem;
+}
+
+.hero-section .hero-info.alt {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: var(--m);
+  justify-content: center;
+  gap: 2rem;
   align-items: center;
+  position: relative;
+  z-index: 700;
+  padding: 12rem;
 }
 
-.hero-presentation .text {
-  margin-top: 3em;
-  margin-left: 5em;
+.hero-section .hero-info.alt img {
+  max-width: 25rem;
+  /* background: #ffffff; */
+  /* clip-path: circle(); */
+  filter: drop-shadow(0 2px 0 var(--light));
+  position: relative;
 }
 
-.hero-presentation h1 {
-  font-family: "Kameron", serif;
-  color: var(--main);
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
-    0px -4px 10px rgba(255, 255, 255, 0.3);
+
+.hero-section .hero-info img {
+  max-width: 30rem;
+  filter: drop-shadow(0 2px 0 var(--light));
 }
 
-.hero-presentation img {
-  padding-top: 1em;
-  max-width: 200px;
+.hero-section .hero-info .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section .hero-info .info p {
+  color: #ffffff;
+  z-index: 700;
+}
+
+.hero-section .hero-info .info a {
+  color: #ffffff;
+  padding: 1rem;
+  margin: 2rem;
+  background: var(--orange-lowOp);
+  z-index: 700;
+}
+
+.hero-section .hero-info .info a:hover {
+  color: #ffffff;
+  padding: 1rem;
+  margin: 2rem;
+  background: var(--green);
+  z-index: 700;
 }
 
 /* Responsive  */
@@ -86,14 +146,13 @@
   }
 
   .hero-presentation {
-   
   }
 
   .hero-presentation .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: .7em 0;
+    margin: 0.7em 0;
   }
 
   .hero-presentation h1 {
@@ -105,7 +164,6 @@
   .hero-presentation h2 {
     font-size: 1em;
     margin-top: 0;
-
   }
 
   .hero-presentation img {

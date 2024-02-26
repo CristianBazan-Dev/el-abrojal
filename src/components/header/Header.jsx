@@ -72,8 +72,10 @@ function Header(props) {
           ClearCategories();
           window.scrollTo(0, 0);
         }}
+        className="logo-container"
       >
         <img src={Logo} alt="logo de la empresa metalúrgica 'el abrojal' " />
+        <h3>Metalúrgica El Abrojal</h3>
       </Link>
 
       <nav>
@@ -106,11 +108,9 @@ function Header(props) {
           </li>
           <li
             className={!headerAlt ? "" : "li-alt"}
-            onClick={() => {
-              RedirectToContact();
-            }}
+  
           >
-            Contacto
+            <Link to="/contact">Contacto</Link>
           </li>
         </ul>
       </nav>
@@ -253,13 +253,12 @@ function Header(props) {
           <div
             onClick={() => {
               setHamburgerMenu(false);
-              RedirectToContact();
               ClearCategories();
             }}
           >
             <div className="icon-item">
               <Contact className="icon" />
-              <p>Contacto</p>
+              <Link to="/contact">Contacto</Link>
             </div>
           </div>
 

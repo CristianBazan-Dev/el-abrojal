@@ -18,7 +18,7 @@ function Categories(props) {
 
   return (
     <div className="categories-selection">
-      <h2>Categorías</h2>
+      {/* <h2>Categorías</h2> */}
 
       <div className="cats-container">
         {categories.map((data, index) => {

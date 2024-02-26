@@ -1,20 +1,40 @@
 header {
   position: relative;
+  /* display: none; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
 }
 
 header::after {
   position: absolute;
   bottom: -10px;
+  left: 0;
   content: "";
   height: 10px;
   background: var(--green);
   width: 100%;
 }
 
+header .logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: var(--m);
+  gap: 2rem;
+}
+
+header .logo-container h3{
+  color: var(--light);
+  font-weight: lighter;
+  white-space: nowrap;
+}
+
 header img {
   max-width: 100px;
   max-height: 75px;
-  margin-left: var(--m);
+
 }
 
 header ul {
@@ -27,6 +47,7 @@ header ul li {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   color: var(--light);
+    white-space: nowrap;
 }
 
 /* Responsive actions  */
@@ -51,14 +72,14 @@ header ul li {
   flex-direction: row-reverse;
   align-items: center;
   position: fixed;
-  bottom: 2em;
-  right: var(--m);
+  bottom: 1em;
+  right: 0;
 }
 
 .whatsapp-icon-container svg {
   fill: var(--wpp-green);
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   cursor: pointer;
   z-index: 300;
 }
@@ -81,23 +102,23 @@ header ul li {
   display: none;
   justify-content: center;
   align-items: center;
-  height: 65px;
-  z-index: 99999;
+  height: 55px;
+  z-index: 299;
   color: var(--light);
   padding: 10px;
   border-radius: 15px 0 0 15px;
-  margin-right: -0.8em;
+  margin-right: -1.2rem;
   outline: 0.3px solid var(--light);
 }
 
 @keyframes wpp-msg {
   0% {
-    margin-right: -3em;
+    margin-right: -2rem;
     opacity: 0;
   }
 
   100% {
-    margin-right: -0.8em;
+    margin-right: -1.2rem;
     opacity: 1;
   }
 }

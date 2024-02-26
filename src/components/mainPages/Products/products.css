@@ -1,8 +1,13 @@
 .products-page {
   display: flex;
-  justify-content: space-between;
   min-height: 40em;
-  margin-top: 1em;
+  width: 100%;
+  padding: 0 10%;
+  position: relative;
+  z-index: 500;
+  margin: 0;
+  padding: 0 30rem;
+  background: #ffffff;
 }
 
 .products-page.blurred {
@@ -11,11 +16,6 @@
 
 /* Products  */
 
-.products {
-  width: 100%;
-  margin-right: var(--m);
-  background: white;
-}
 
 /* Products title  */
 .products .title {

@@ -1,20 +1,20 @@
 .category-selection-section {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
-  gap: 5em 1em;
-  margin-bottom: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 5rem 5rem;
+  margin: 2rem;
 }
 
 .category-selection-section .product-card {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 200px;
+  max-height: 200px;
   /* transition: 1s; */
 }
 
 @media only screen and (max-width: 1473px) {
   .category-selection-section {
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
 }
 

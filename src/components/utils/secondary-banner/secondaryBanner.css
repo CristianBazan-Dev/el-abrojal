@@ -1,0 +1,26 @@
+.secondary-banner {
+    display: none;
+    background-image: url('https://www.pwc.com/gx/en/hero/hero-2020/im-hero-2020.jpg');
+    min-height: 14rem;
+    width: 100%;
+    background-position: 20% 86%;
+}
+
+.secondary-banner h2{
+    padding: 2rem;
+    color: var(--light);
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+.secondary-banner a {
+    background: var(--orange-lowOp);
+    color: var(--light);
+    padding: 2rem 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.secondary-banner a:hover {
+    background: var(--green);
+    transition: background 0.5s;
+}

@@ -7,6 +7,7 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Products from "./pages/Categories";
 import Product from "./pages/Product";
+import Contact from "./pages/Contact"
 import About from "./pages/About";
 import { DataProvider } from "./GlobalState";
 import Subcategory from "./pages/Category";
@@ -32,6 +33,10 @@ const router = createHashRouter([
   {
     path: "/product/:id",
     element: <Product />,
+  },
+  {
+    path: "/contact", 
+    element: <Contact/>
   },
   {
     path: "/about",

@@ -52,7 +52,17 @@ function WhyUs(props) {
 
   return (
     <section className="whyUs-section">
-      <div className="why-section">
+      <div className="first-section">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam porro, dolores minima eum quae iste molestiae maxime illo totam enim iure ex. Praesentium possimus harum accusantium eum, beatae fugiat!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam porro, dolores minima eum quae iste molestiae maxime illo totam enim iure ex. Praesentium possimus harum accusantium eum, beatae fugiat!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam porro, dolores minima eum quae iste molestiae maxime illo totam enim iure ex. Praesentium possimus harum accusantium eum, beatae fugiat!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam porro, dolores minima eum quae iste molestiae maxime illo totam enim iure ex. Praesentium possimus harum accusantium eum, beatae fugiat!
+        </p>
+        <img src="https://www.rssinc.com/wp-content/uploads/2022/10/factory-workers-needed-2023.jpg" alt="" />
+      </div>
+
+      {/* <div className="why-section">
         <img src={Logo} alt="" />
 
         <div className="text">
@@ -95,7 +105,7 @@ function WhyUs(props) {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </section>
   );
 }

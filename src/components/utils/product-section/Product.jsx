@@ -19,6 +19,7 @@ function Product(props) {
 
   const [isChangeMainImg, setIsChangeMainImg] = useState(false);
   const [mainImg, setMainImg] = state.mainImg;
+  const [maxIndexImg, setMaxIndexImg] = useState(4);
 
   const params = useParams();
 
@@ -90,19 +91,27 @@ function Product(props) {
         <div className="galleries-imgs">
           {product.imgs &&
             product.imgs.map((imgs, index) => {
-              if (index < 4) {
+              if (index <= maxIndexImg) {
                 return (
                   <div
-                    className="card-img"
+                    className={index == 4 ? "card-img extra" : "card-img"}
                     style={{ backgroundImage: `url(${imgs})` }}
                     key={index}
-                    onClick={() => {
-                      handleGallery(imgs);
-                    }}
+                    onClick={
+                      index < 4
+                        ? () => {
+                            handleGallery(imgs);
+                          }
+                        : () => {
+                            setMaxIndexImg(product.imgs.length);
+                          }
+                    }
                     onMouseEnter={() => {
                       handleMainImg(imgs);
                     }}
-                  ></div>
+                  >
+                    {index == 4 ? <span>+{product.imgs.length - 4}</span> : ""}
+                  </div>
                 );
               }
             })}

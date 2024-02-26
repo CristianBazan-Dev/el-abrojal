@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./footer.css";
@@ -14,39 +14,38 @@ import { ReactComponent as Mail } from "../../assets/icons/contact/mail.svg";
 import { ReactComponent as Location } from "../../assets/icons/contact/location.svg";
 
 function Footer(props) {
+  let [year, setYear] = useState(0);
+
+  const gettingYear = () => {
+    const date = new Date();
+    let year = date.getFullYear();
+    setYear(year);
+  };
+
+  useEffect(() => {
+    gettingYear();
+  }, []);
+
   return (
     <footer>
-      <div className="info">
-        <div className="logo-container">
-          <div className="logo">
-            <img
-              src={Logo}
-              alt="logo de la empresa metalúrgica 'el abrojal' "
-            />
-          </div>
+      <div className="logo">
+        <img src={Logo} alt="logo de la empresa metalúrgica 'el abrojal' " />
+      </div>
 
-          
-        </div>
+      <div className="copyright">
+        <p>Metalurgica El Abrojal @ {year} - Todos los derechos reservados.</p>
+      </div>
 
-        <div className="credits">
-        <div className="copyright">
-          <p>Metalurgica El Abrojal @ 2023 - Todos los derechos reservados.</p>
-        </div>
-
-        <div className="developer">
+      {/* <div className="developer">
           <p>
             Sitio web desarrollado por{" "}
-            <Link
-              to="https://cristianbazan-dev.github.io/CB/"
-              target="_blank"
-            >
+            <Link to="https://cristianbazan-dev.github.io/CB/" target="_blank">
               CB
             </Link>
           </p>
-        </div>
-      </div>
+        </div> */}
 
-        <div className="social-icons">
+      {/* <div className="social-icons">
             <Link to="/">
               <Facebook className="social-icon"/>
             </Link>
@@ -58,9 +57,9 @@ function Footer(props) {
             <Link to="/">
               <Whatsapp className="social-icon"/>
             </Link>
-        </div>
+        </div> */}
 
-        {/* <div className="sections">
+      {/* <div className="sections">
           <div className="section">
             <ul>
               <li>
@@ -151,9 +150,6 @@ function Footer(props) {
             </ul>
           </div>
         </div> */}
-      </div>
-
-
     </footer>
   );
 }
