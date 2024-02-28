@@ -10,7 +10,7 @@ import axios from "axios";
 
 function Product(props) {
   const state = useContext(GlobalState);
-  const [product, setProduct] = useState([]);
+  const [product, setProduct] = state.product;
   const [cat, setCat] = useState("");
   const [catIsActive, setCatIsActive] = state.catIsActive;
 
@@ -61,11 +61,11 @@ function Product(props) {
   return (
     <div className="products">
       <div className="title">
-        <div className="main-title">
+        {/* <div className="main-title">
           <h3> {product.category}</h3>
 
           <h3>{product.title}</h3>
-        </div>
+        </div> */}
 
         <div className="goBack-container">
           <Link to={`/categories/${catIsActive}`} className="goBack-button">

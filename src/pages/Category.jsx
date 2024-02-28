@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet";
 import Categories from "../components/utils/categories-section/Categories";
 import SubcategoriesCards from "../components/utils/subcategories-cards/SubcategoriesCards";
 import SectionBanner from "../components/utils/section-banner/SectionBanner";
+import SecondaryBanner from "../components/utils/secondary-banner/SecondaryBanner";
 
 function Category(props) {
   const state = useContext(GlobalState);
@@ -75,7 +76,10 @@ function Category(props) {
 
         <main>
           <section>
-          <SectionBanner title="Productos" img="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571238/Productos/Categor%C3%ADas/Argollas_cfwvan_xx7sxa.png"/>
+            <SectionBanner
+              title="Productos"
+              img="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571238/Productos/Categor%C3%ADas/Argollas_cfwvan_xx7sxa.png"
+            />
             <div className="products-page">
               <div className="categories">
                 <Categories />
@@ -85,10 +89,9 @@ function Category(props) {
               </div>
             </div>
           </section>
+          <SecondaryBanner/>
         </main>
-
-
-        <Contact id="contact" className="contact-section" />
+        <Contact/>
         <Footer />
         <Modal />
       </article>

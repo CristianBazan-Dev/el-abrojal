@@ -23,11 +23,9 @@ function Categories(props) {
   const [headerAlt, setHeaderAlt] = state.headerAlt;
   const params = useParams();
 
-
   useEffect(() => {
-    window.scroll(0, 0)
+    window.scroll(0, 0);
   }, []);
-
 
   return (
     <>
@@ -83,7 +81,10 @@ function Categories(props) {
         <Header />
 
         <main>
-        <SectionBanner title="Categorías" img="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571238/Productos/Categor%C3%ADas/Argollas_cfwvan_xx7sxa.png"/>
+          <SectionBanner
+            title="Categorías"
+            img="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571238/Productos/Categor%C3%ADas/Argollas_cfwvan_xx7sxa.png"
+          />
           <section>
             <div className="products-page">
               <div className="categories">
@@ -95,11 +96,11 @@ function Categories(props) {
               </div>
             </div>
 
-            <SecondaryBanner/>
+            <SecondaryBanner />
           </section>
         </main>
 
-        <Contact id="contact" className="contact-section" />
+        <Contact />
         <Footer />
         <Modal />
       </article>

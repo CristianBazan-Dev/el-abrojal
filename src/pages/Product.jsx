@@ -14,17 +14,17 @@ import Products from "../components/mainPages/Products/Products";
 import ProductSection from "../components/utils/product-section/Product";
 import Categories from "../components/utils/categories-section/Categories";
 import SectionBanner from "../components/utils/section-banner/SectionBanner";
+import SecondaryBanner from "../components/utils/secondary-banner/SecondaryBanner";
 
 function Product(props) {
   const state = useContext(GlobalState);
-
+  const [product, setProduct] = state.product;
 
   const [headerAlt, setHeaderAlt] = state.headerAlt;
+  console.log(product.imgs);
 
   useEffect(() => {
-
     window.scrollTo(0, 0);
-
   }, []);
 
   return (
@@ -82,7 +82,7 @@ function Product(props) {
 
         <main>
           <section>
-            <SectionBanner title="Productos"/>
+            <SectionBanner title={`${product.category} - ${product.title}`} />
             <div className="products-page">
               <div className="categories">
                 <Categories />
@@ -92,9 +92,11 @@ function Product(props) {
               </div>
             </div>
           </section>
+
+          <SecondaryBanner />
         </main>
 
-        <Contact id="contact" className="contact-section" />
+        <Contact/>
         <Footer />
         <Modal />
       </article>

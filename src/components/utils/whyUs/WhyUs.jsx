@@ -54,10 +54,7 @@ function WhyUs(props) {
     <section className="whyUs-section">
       <div className="first-section">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam porro, dolores minima eum quae iste molestiae maxime illo totam enim iure ex. Praesentium possimus harum accusantium eum, beatae fugiat!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam porro, dolores minima eum quae iste molestiae maxime illo totam enim iure ex. Praesentium possimus harum accusantium eum, beatae fugiat!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam porro, dolores minima eum quae iste molestiae maxime illo totam enim iure ex. Praesentium possimus harum accusantium eum, beatae fugiat!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quibusdam porro, dolores minima eum quae iste molestiae maxime illo totam enim iure ex. Praesentium possimus harum accusantium eum, beatae fugiat!
+        En Metalúrgica El Abrojal, la innovación está arraigada a nuestro ADN. Siempre buscamos formas de mejorar y ampliar nuestra oferta. Recientemente, hemos incorporado nuevos productos y servicios, como el corte y plegado de chapa, para satisfacer las demandas cambiantes del mercado. Nuestro compromiso con la evolución nos impulsa a mejorar constantemente nuestros procesos de fabricación y operaciones, permitiéndonos mantenernos a la vanguardia de la industria de manera eficiente y sostenible. No nos conformamos con ser solo expertos en cadenas; nuestra gama de productos incluye una variedad de accesorios metálicos, desde torniquetes hasta argollas, cadenas especiales, tranqueras, lanzas de seguridad y mosquetones, ofreciendo soluciones para diversas necesidades industriales y comerciales. A lo largo de los años, hemos sido un faro de calidad, compromiso y progreso desde nuestros primeros pasos. La especialización en la fabricación de cadenas es la columna vertebral de nuestro éxito, perfeccionando procesos e invirtiendo en tecnología de vanguardia para cumplir con los más altos estándares de calidad y durabilidad.
         </p>
         <img src="https://www.rssinc.com/wp-content/uploads/2022/10/factory-workers-needed-2023.jpg" alt="" />
       </div>

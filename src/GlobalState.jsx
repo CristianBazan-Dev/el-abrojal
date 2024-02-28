@@ -14,6 +14,7 @@ export const DataProvider = ({ children }) => {
     const [categoryToggle, setCategoryToggle] = useState("");
     const [categoryNameToggle, setCategoryNameToggle] = useState("");
     const [headerAlt, setHeaderAlt] = useState(false);
+    const [product,setProduct] = useState([]);
 
 
     const state = {
@@ -25,7 +26,8 @@ export const DataProvider = ({ children }) => {
         catIsActive: [catIsActive, setCatIsActive], 
         categoryToggle: [categoryToggle, setCategoryToggle],
         categoryNameToggle: [categoryNameToggle, setCategoryNameToggle],
-        headerAlt: [headerAlt, setHeaderAlt]
+        headerAlt: [headerAlt, setHeaderAlt],
+        product: [product, setProduct]
 
     }
 
