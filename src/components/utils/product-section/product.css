@@ -254,6 +254,7 @@
     margin-left: 0;
     margin-right: 0;
     background: var(--gray);
+    padding: 0;
     padding-top: 5rem;
   }
 

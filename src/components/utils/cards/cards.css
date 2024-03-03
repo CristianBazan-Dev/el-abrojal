@@ -40,7 +40,6 @@
     height: 500px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: var(--light);
-    border-radius: var(--card-br);
     display: flex;
     background-size: cover;
     cursor: pointer;
@@ -48,12 +47,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  .product-card {
-    max-width: 150px;
-    max-height: 270px;
-    width: 150px;
-    height: 270px;
-  }
+
 
   .product-card h2 {
     font-size: 1em;
