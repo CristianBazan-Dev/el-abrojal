@@ -5,7 +5,6 @@
   background-position: 15% 43%;
   max-height: var(--hero-sz);
   height: var(--hero-sz);
-  margin: -1em;
   position: sticky;
   top: 0;
   z-index: 0;
@@ -140,9 +139,14 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 590px) {
   .hero-section {
-    height: 195px;
+    height: 311px;
+    background-position: 8% 114%;
+  }
+
+  .hero-section::after {
+    height: 311px;
   }
 
   .hero-presentation {

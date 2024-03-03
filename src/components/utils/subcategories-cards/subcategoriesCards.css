@@ -48,6 +48,8 @@
   display: none;
 }
 
+
+
 @media only screen and (max-width: 1473px) {
   .subcategories-selection-section .subcategories-grid {
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
@@ -73,6 +75,15 @@
     grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
     grid-template-rows: repeat(3, 300px);
     gap: 10em 4em;
+  }
+}
+
+@media (max-width: 900px) {
+  .goBack-button {
+    position: absolute;
+    margin: 0;
+    left: 4rem;
+    top: 10rem;
   }
 }
 

@@ -41,3 +41,17 @@
   color: #ffffff;
   z-index: 700;
 }
+
+
+@media (max-width: 900px) {
+  .sections-banner {
+    max-height: 15rem;
+  }
+  
+  .sections-banner h2 {
+    margin-left: 0;
+    margin: auto;
+    padding-top: 9rem;
+  }
+
+}

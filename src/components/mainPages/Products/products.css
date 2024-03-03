@@ -16,7 +16,6 @@
 
 /* Products  */
 
-
 /* Products title  */
 .products .title {
   width: 100%;
@@ -82,8 +81,6 @@
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-@media only screen and (max-width: 1163px) {
-}
 
 @media only screen and (max-width: 900px) {
   .products-page {
@@ -91,6 +88,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0;
   }
 
   /* Products  */
@@ -99,9 +97,10 @@
 
   .products {
     width: 100%;
-    /* margin: ; */
     margin-right: 0;
     background: var(--gray);
+    padding: 0;
+    padding-top: 10rem;
   }
 
   /* Products title  */

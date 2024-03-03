@@ -8,7 +8,6 @@
   z-index: 500;
 }
 
-
 @keyframes inBanner {
   0% {
     opacity: 0;
@@ -27,8 +26,6 @@
   gap: 1rem;
   color: var(--main);
 }
-
-
 
 .banner-text h2,
 h3 {
@@ -50,7 +47,7 @@ h3 {
   background: var(--main);
 }
 
-.banner-item svg{
+.banner-item svg {
   max-width: 20px;
   margin: 0em 1em;
 }
@@ -58,7 +55,6 @@ h3 {
 .banner-item svg path {
   fill: var(--main);
 }
-
 
 @media only screen and (max-width: 723px) {
   .banner-section {
@@ -76,14 +72,12 @@ h3 {
     padding: 0;
   }
 
-
   .banner-item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-
 
   .text-item {
     display: flex;
@@ -102,6 +96,11 @@ h3 {
   .truck-icon,
   .variety-icon {
     width: 20px;
+  }
+}
 
+@media only screen and (max-width: 590px) {
+  .banner-section {
+    display: none;
   }
 }

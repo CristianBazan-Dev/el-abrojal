@@ -230,11 +230,18 @@ header ul li {
     border-bottom: 1px solid var(--green);
   }
 
-  header img {
+  header .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: auto;
+    gap: 2px;
+    padding-top: 1rem;
+  }
+
+  header .logo-container img{
+    max-width: 60px;
   }
 
   header nav {
@@ -251,7 +258,8 @@ header ul li {
     bottom: 3em;
     width: 80%;
     height: 60px;
-    background: var(--main);
+    background: var(--main-lowOp);
+    backdrop-filter: blur(5px);
     justify-content: center;
     align-items: center;
     border-radius: 15px;
@@ -300,8 +308,8 @@ header ul li {
   }
 
 
-  .responsive-nav .icons .icon-item p {
-    color: var(--light);
+  .responsive-nav .icons .icon-item p, .responsive-nav .icons .icon-item a{
+    color: var(--light) !important;
     font-weight: bold;
     text-transform: uppercase;
    
@@ -339,6 +347,21 @@ header ul li {
     display: none;
   }
 }
+
+@media only screen and (max-width: 590px) {
+  header .logo-container {
+    padding-top: 0;
+  }
+
+  header .logo-container img{
+    max-width: 100px;
+  }
+
+  header .logo-container h3{
+    display: none;
+  }
+}
+
 
 /* Dark mode  */
 
