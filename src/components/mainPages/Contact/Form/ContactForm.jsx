@@ -26,7 +26,7 @@ function ContactForm(props) {
           toast.error(
             "Hubo un error al enviar el e-mail. Espere un momento o contactese mediante teléfono. ¡Gracias por su paciencia!"
           );
-          console.log(error.text);
+
         }
       );
   };

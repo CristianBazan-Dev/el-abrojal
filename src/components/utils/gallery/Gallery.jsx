@@ -18,8 +18,6 @@ function Gallery(props) {
     "https://www.perfectionchain.com/wp-content/uploads/2019/03/Plant_01_web1.jpg",
   ];
 
-
-  console.log(imgModal)
   const handleImg = (img) => {
     setShowModal(!showModal);
     setImgModal(img);

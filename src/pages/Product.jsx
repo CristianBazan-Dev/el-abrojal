@@ -21,7 +21,6 @@ function Product(props) {
   const [product, setProduct] = state.product;
 
   const [headerAlt, setHeaderAlt] = state.headerAlt;
-  console.log(product.imgs);
 
   useEffect(() => {
     window.scrollTo(0, 0);
