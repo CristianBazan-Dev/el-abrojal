@@ -4,6 +4,7 @@
     align-items: center;
     padding: 5rem;
     padding-top: 0;
+    overflow: hidden;
 }
 
 .products-slider .product-card {
@@ -15,6 +16,7 @@
     margin-bottom: 5rem;
     background-size: 80%;
 }
+
 
 
 .products-slider .product-card .product-card-title {
