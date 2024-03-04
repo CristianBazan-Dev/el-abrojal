@@ -5,6 +5,7 @@ import { subcategories } from "../../../api/Subcategories";
 import { Link } from "react-router-dom";
 import { GlobalState } from "../../../GlobalState";
 import Cards from "../cards/Cards";
+import ProductsCarousel from "../productsCarousel/ProductsCarousel";
 
 function ProductsCards(props) {
   const state = useContext(GlobalState);
@@ -26,6 +27,9 @@ function ProductsCards(props) {
   //   });
   // }, []);
 
+
+
+
   return (
     <div className="productsCards-section">
       <div className="title">
@@ -46,6 +50,11 @@ function ProductsCards(props) {
           })}
         </div>
       </div>
+
+      <ProductsCarousel/>
+      
+
+   
     </div>
   );
 }

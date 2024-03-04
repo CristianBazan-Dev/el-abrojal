@@ -14,13 +14,14 @@
 }
 
 .grid-container {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   margin: auto;
   margin: 0 5em;
   position: relative;
   z-index: 500;
+  padding-bottom: 10rem;
 }
 
 /* grid  */
@@ -50,6 +51,12 @@
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .grid-container {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 650px) {
     .categories-container {
       display: flex;
@@ -68,7 +75,7 @@
 
 @media only screen and (max-width: 480px) {
   .productsCards-section {
-    margin-bottom: 0em;
+    margin-bottom: 0;
   }
 
 }

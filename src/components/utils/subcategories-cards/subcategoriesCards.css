@@ -79,6 +79,14 @@
 }
 
 @media (max-width: 900px) {
+  .subcategories-selection-section .subcategories-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+  }
+
   .goBack-button {
     position: absolute;
     margin: 0;
@@ -88,13 +96,6 @@
 }
 
 @media only screen and (max-width: 430px) {
-  .subcategories-selection-section .subcategories-grid {
-    width: 100%;
-    display: grid;
-    gap: 2em 2em;
-    margin: auto;
-    place-items: center;
-  }
 
   @keyframes entrance {
     0% {

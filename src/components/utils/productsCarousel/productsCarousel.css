@@ -1,0 +1,41 @@
+.products-slider{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    padding-top: 0;
+}
+
+.products-slider .product-card {
+    margin: auto;
+    margin-bottom: 2rem;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    margin-bottom: 5rem;
+    background-size: 80%;
+}
+
+
+.products-slider .product-card .product-card-title {
+    background: none;
+    color: var(--main);
+    bottom: -3rem;
+}
+
+.products-slider .product-card .product-card-title h3{
+    background: none;
+    color: var(--main);
+    text-shadow: none;
+    font-size: 2.5rem;
+}
+.slick-slider.products-slider.slick-initialized  .slick-dots {
+    bottom: 3rem;
+}
+
+
+@media(max-width: 900px){
+    .products-slider{
+        display: flex;
+    }
+}

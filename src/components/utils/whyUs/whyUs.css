@@ -16,7 +16,7 @@
   margin: 0 var(--m);
 }
 
-.first-section img{
+.first-section img {
   max-width: 500px;
 }
 
@@ -66,18 +66,23 @@
   }
 }
 
-
 /* Responsive  */
 @media only screen and (max-width: 900px) {
-  .cards-why {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3em;
+  .whyUs-section {
+    max-width: 100%;
+    width: 100%;
   }
 
-  .whyCard {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    margin-left: 1em;
+  .whyUs-section .first-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .whyUs-section .first-section img {
+    max-width: 390px;
+  }
+
+  .whyUs-section .first-section p{
+    padding: 3rem;
   }
 }
