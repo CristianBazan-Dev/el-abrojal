@@ -47,7 +47,7 @@ function Header(props) {
   return (
     <header>
       <Link
-        to="https://wa.link/2s3t1s"
+        to="https://walink.co/ebf22c"
         target="_blank"
         className="whatsapp-icon-container"
       >

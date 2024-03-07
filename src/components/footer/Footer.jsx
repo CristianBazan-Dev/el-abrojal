@@ -132,7 +132,7 @@ function Footer(props) {
 
               <div className="contact-element">
                 <Phone className="contact-element-icon" />
-                <p>+54 9 3537 494202</p>
+                <p>+54 9 3537 519583</p>
               </div>
 
               <div className="contact-element">

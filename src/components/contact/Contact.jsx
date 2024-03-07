@@ -65,7 +65,7 @@ function Contact(props) {
             <div className="items">
               <div className="item">
                 <Phone />
-                +54 9 3537 494202
+                +54 9 3537 519583
               </div>
               <div className="item">
                 <Location />
