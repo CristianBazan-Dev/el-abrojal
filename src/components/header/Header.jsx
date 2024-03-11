@@ -47,7 +47,7 @@ function Header(props) {
   return (
     <header>
       <Link
-        to="https://walink.co/ebf22c"
+        to="https://walink.co/5f6a74"
         target="_blank"
         className="whatsapp-icon-container"
       >
@@ -106,10 +106,7 @@ function Header(props) {
           >
             <Link to="/about">Sobre nosotros</Link>
           </li>
-          <li
-            className={!headerAlt ? "" : "li-alt"}
-  
-          >
+          <li className={!headerAlt ? "" : "li-alt"}>
             <Link to="/contact">Contacto</Link>
           </li>
         </ul>
@@ -195,7 +192,7 @@ function Header(props) {
             <LinkedIn className="social-icon" />
           </Link>
 
-          <Link to="/">
+          <Link to="https://walink.co/5f6a74">
             <Whatsapp className="social-icon" />
           </Link>
         </div>
@@ -236,7 +233,7 @@ function Header(props) {
           </Link>
 
           <Link
-            to="https://wa.link/2s3t1s"
+            to="https://walink.co/5f6a74"
             target="_blank"
             onClick={() => {
               setHamburgerMenu(false);
@@ -251,7 +248,7 @@ function Header(props) {
           </Link>
 
           <Link
-          to="/contact"
+            to="/contact"
             onClick={() => {
               setHamburgerMenu(false);
               ClearCategories();
@@ -259,7 +256,7 @@ function Header(props) {
           >
             <div className="icon-item">
               <Contact className="icon" />
-              <p >Contacto</p>
+              <p>Contacto</p>
             </div>
           </Link>
 

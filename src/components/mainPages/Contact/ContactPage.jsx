@@ -37,7 +37,13 @@ function ContactPage(props) {
               Para mayores detalles sobre cómo llegar, puede comunicarse con
               nosotros{" "}
             </h3>
-            <Link className="button">Haciendo click aquí</Link>
+            <Link
+              to="https://walink.co/5f6a74"
+              target="_blank"
+              className="button"
+            >
+              Haciendo click aquí
+            </Link>
           </div>
         </div>
       </div>
