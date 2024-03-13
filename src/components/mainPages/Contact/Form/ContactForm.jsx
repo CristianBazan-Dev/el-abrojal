@@ -6,6 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactForm(props) {
   const form = useRef();
+  const refCaptcha = useRef();
   const [isCaptcha, setIsCaptcha] = useState();
 
   // console.log(import.meta.env.VITE_RECAPTCHA_SITE_KEY);
@@ -17,13 +18,15 @@ function ContactForm(props) {
   const sendEmail = (e) => {
     e.preventDefault();
 
+
+
     if (isCaptcha) {
       emailjs
         .sendForm(
           import.meta.env.VITE_EMAIL_SERVICE_ID,
           import.meta.env.VITE_EMAIL_TEMPLATE_ID,
           form.current,
-          import.meta.env.VITE_EMAIL_USER_ID
+          import.meta.env.VITE_EMAIL_USER_ID,
         )
         .then(
           (result) => {
@@ -32,13 +35,14 @@ function ContactForm(props) {
             }
           },
           (error) => {
+            console.log(error)
             toast.error(
               "Hubo un error al enviar el e-mail. Espere un momento o contactese mediante teléfono. ¡Gracias por su paciencia!"
             );
           }
         );
     } else {
-      toast.error("Valide que es un humano, por favor.");
+      toast.error("Valide que es un humano, por favor. En caso de no ver el captcha, recargue la página.");
     }
   };
 
@@ -71,7 +75,7 @@ function ContactForm(props) {
         <ReCAPTCHA
           sitekey={`${import.meta.env.VITE_RECAPTCHA_SITE_KEY}`}
           onChange={captchaHandler}
-          required
+          ref={refCaptcha}
         />
         <input class="btn" type="submit" value="Enviar" />
       </form>
