@@ -2,12 +2,21 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contactForm.css";
 import toast, { Toaster } from "react-hot-toast";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactForm(props) {
   const form = useRef();
 
+  console.log(import.meta.env.VITE_RECAPTCHA_SITE_KEY);
+
+  const captchaHandler = (value) => {
+    console.log("Captcha value: ", value);
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
+
+    console.log(grecaptcha.getResponse());
 
     emailjs
       .sendForm(
@@ -26,7 +35,6 @@ function ContactForm(props) {
           toast.error(
             "Hubo un error al enviar el e-mail. Espere un momento o contactese mediante teléfono. ¡Gracias por su paciencia!"
           );
-
         }
       );
   };
@@ -36,8 +44,18 @@ function ContactForm(props) {
       <Toaster position="top-center" reverseOrder={false} />
 
       <form action="" className="contact-form" ref={form} onSubmit={sendEmail}>
-        <input type="text" placeholder="Nombre completo" name="user_name" />
-        <input type="text" placeholder="Mail de contacto" name="user_email" />
+        <input
+          type="text"
+          placeholder="Nombre completo"
+          name="user_name"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Mail de contacto"
+          name="user_email"
+          required
+        />
         <input type="text" placeholder="Asunto" name="user_subject" />
         <textarea
           name="message"
@@ -45,8 +63,13 @@ function ContactForm(props) {
           cols="30"
           rows="10"
           placeholder="Escriba su mensaje..."
+          required
         ></textarea>
-        <button>Enviar</button>
+        <ReCAPTCHA
+          sitekey={`${import.meta.env.VITE_RECAPTCHA_SITE_KEY}`}
+          onChange={captchaHandler}
+        />
+        <input class="btn" type="submit" value="Enviar" />
       </form>
     </div>
   );

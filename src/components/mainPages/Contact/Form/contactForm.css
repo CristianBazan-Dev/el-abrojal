@@ -39,7 +39,7 @@
   outline: 2px solid var(--green);
 }
 
-.contact-form button {
+.contact-form .btn {
   background: var(--orange-lowOp);
   padding: 1rem;
   margin: 1rem;
