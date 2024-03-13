@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contactForm.css";
 import toast, { Toaster } from "react-hot-toast";
@@ -6,37 +6,40 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactForm(props) {
   const form = useRef();
+  const [isCaptcha, setIsCaptcha] = useState();
 
-  console.log(import.meta.env.VITE_RECAPTCHA_SITE_KEY);
+  // console.log(import.meta.env.VITE_RECAPTCHA_SITE_KEY);
 
   const captchaHandler = (value) => {
-    console.log("Captcha value: ", value);
+    value ? setIsCaptcha(true) : setIsCaptcha(false);
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    console.log(grecaptcha.getResponse());
-
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAIL_SERVICE_ID,
-        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
-        form.current,
-        import.meta.env.VITE_EMAIL_USER_ID
-      )
-      .then(
-        (result) => {
-          if ((result.status = 200)) {
-            toast.success("E-mail enviado. ¡Gracias por contactarse!");
+    if (isCaptcha) {
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_EMAIL_SERVICE_ID,
+          import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+          form.current,
+          import.meta.env.VITE_EMAIL_USER_ID
+        )
+        .then(
+          (result) => {
+            if ((result.status = 200)) {
+              toast.success("E-mail enviado. ¡Gracias por contactarse!");
+            }
+          },
+          (error) => {
+            toast.error(
+              "Hubo un error al enviar el e-mail. Espere un momento o contactese mediante teléfono. ¡Gracias por su paciencia!"
+            );
           }
-        },
-        (error) => {
-          toast.error(
-            "Hubo un error al enviar el e-mail. Espere un momento o contactese mediante teléfono. ¡Gracias por su paciencia!"
-          );
-        }
-      );
+        );
+    } else {
+      toast.error("Valide que es un humano, por favor.");
+    }
   };
 
   return (
@@ -68,6 +71,7 @@ function ContactForm(props) {
         <ReCAPTCHA
           sitekey={`${import.meta.env.VITE_RECAPTCHA_SITE_KEY}`}
           onChange={captchaHandler}
+          required
         />
         <input class="btn" type="submit" value="Enviar" />
       </form>
