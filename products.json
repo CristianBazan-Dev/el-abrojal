@@ -706,27 +706,27 @@
     "columns": ["espesor", "largo"],
     "rows": [
       {
-        "espesor": "S/16",
+        "espesor": "5/16",
         "largo": 150
       },
       {
-        "espesor": "S/16",
+        "espesor": "5/16",
         "largo": 175
       },
       {
-        "espesor": "S/16",
+        "espesor": "5/16",
         "largo": 200
       },
       {
-        "espesor": "S/16",
+        "espesor": "5/16",
         "largo": 225
       },
       {
-        "espesor": "S/16",
+        "espesor": "5/16",
         "largo": 250
       },
       {
-        "espesor": "S/16",
+        "espesor": "5/16",
         "largo": 300
       }
     ]
