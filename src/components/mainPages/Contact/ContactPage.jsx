@@ -25,11 +25,11 @@ function ContactPage(props) {
           <br />
           <ul>
             <h3>Horarios de atención</h3>
-            <li>Lunes: </li>
-            <li>Martes: </li>
-            <li>Miercoles: </li>
-            <li>Jueves: </li>
-            <li>Viernes: </li>
+            <li>Lunes: 7am - 12:30pm / 14:30pm - 18pm</li>
+            <li>Martes: 7am - 12:30pm / 14:30pm - 18pm</li>
+            <li>Miercoles: 7am - 12:30pm / 14:30pm - 18pm</li>
+            <li>Jueves: 7am - 12:30pm / 14:30pm - 18pm</li>
+            <li>Viernes: 7:30am - 12:30pm / 14:30pm - 17pm</li>
           </ul>
 
           <div className="action">

@@ -56,10 +56,10 @@ function Contact(props) {
         <h4>Metalúrgica El Abrojal</h4>
 
         <div className="description">
-          <p>
+          {/* <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
             ducimus doloribus dignissimos sequi cupiditate
-          </p>
+          </p> */}
 
           <div className="detailed-info">
             <div className="items">
