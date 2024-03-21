@@ -12,13 +12,14 @@
 .form-section {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   z-index: 1000;
 }
 
 .form-section h2{
   color: var(--light);
   align-self: center;
+  display: none;
 }
 
 .contact-form {
@@ -51,4 +52,10 @@
   padding: 1rem;
   margin: 1rem;
   color: #ffffff;
+}
+
+@media(max-width: 900px) {
+  .form-section h2{
+    display: flex;
+  }
 }

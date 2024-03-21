@@ -169,6 +169,18 @@ function Header(props) {
                 Sobre nosotros
               </Link>
             </li>
+            <li>
+              <Link
+                to="/contact"
+                onClick={() => {
+                  setHamburgerMenu(false);
+                  ClearCategories();
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Contacto
+              </Link>
+            </li>
             {/* <li>
                 <a
                   href="#contact"
