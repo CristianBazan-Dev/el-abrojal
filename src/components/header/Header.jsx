@@ -192,12 +192,12 @@ function Header(props) {
             <LinkedIn className="social-icon" />
           </Link>
 
-          <Link to="https://walink.co/5f6a74">
+          {/* <Link to="https://walink.co/5f6a74">
             <Whatsapp className="social-icon" />
-          </Link>
+          </Link> */}
         </div>
 
-        <div className="credits">
+        {/* <div className="credits">
           <div className="copyright">
             <p>
               Página web desarrollada por{" "}
@@ -209,7 +209,7 @@ function Header(props) {
               </Link>
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="responsive-nav">

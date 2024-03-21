@@ -137,17 +137,26 @@ header ul li {
   left: 0;
   width: 100%;
   height: 50%;
-  background: var(--main);
+  background: var(--main-lowOp);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
   z-index: 2000;
   box-shadow: var(--hard-b-sw);
   animation: menu 1s;
+  gap: 5rem;
 }
 
 .responsive-menu.active .content {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 6em 0 0 0;
+  /* margin: 6em 0 0 0; */
+}
+
+
+.responsive-menu.active .content ul li {
+  font-size: 1.5rem
 }
 
 .responsive-menu.active {
@@ -167,6 +176,8 @@ header ul li {
 
 .responsive-menu.active .content img {
   margin-left: 5em;
+  max-width: 151px;
+  max-height: 105px;
 }
 
 .responsive-menu ul {
@@ -176,6 +187,7 @@ header ul li {
   text-align: left;
   border-left: 1px solid var(--light);
   margin-right: 5em;
+  gap: 1rem;
 }
 
 .responsive-menu ul li {
