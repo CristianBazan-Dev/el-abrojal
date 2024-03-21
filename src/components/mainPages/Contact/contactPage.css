@@ -53,11 +53,12 @@
   align-items: center;
   justify-content: space-between;
   gap: 5rem;
-  padding: 10rem;
+  padding: 15rem;
 }
 
-.contact-page-section .second-section .info h2 {
+.contact-page-section .second-section .info h4 {
   align-items: flex-start;
+  font-size: 1.5rem;
 }
 
 

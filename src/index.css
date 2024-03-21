@@ -262,12 +262,13 @@ td {
 
 table {
   width: 100%;
-  border-collapse: collapse;
+
 }
 
 th {
   margin: 1em;
   padding: 0.5em;
+  border: 1px solid;
 }
 
 /* Responsive  */

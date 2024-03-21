@@ -612,7 +612,7 @@
     ],
     "description": "Argollas redondas de hierro soldadas y zincadas.",
     "imgTable": "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694665925/Productos/Productos/Argollas/Screenshot_2023-09-14_013151_mwvkqq.png",
-    "columns": ["espesor x diametro interno"],
+    "columns": ["nombre", "espesor de alambre", "diámetro interno" ],
     "rows": [
       {
         "espesor": 4,
@@ -841,7 +841,7 @@
     "imgs": [
       "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019788/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_chat_-_1-removebg-preview_uwoye0.png"
     ],
-    "description": "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+    "description": "-",
     "imgTable": "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666175/Productos/Productos/Mosquetones/Tabla%20-%20Chato.png",
     "columns": ["largo", "giratorio - con destorcedor"],
     "rows": [
@@ -859,7 +859,7 @@
     "imgs": [
       "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571117/Productos/Productos/Mosquetones/mosq_-_eng_-_1-removebg-preview_vharcj_efqt1q.png"
     ],
-    "description": "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
+    "description": "-",
     "imgTable": "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666227/Productos/Productos/Mosquetones/Tabla%20-%20Enganche.png",
     "columns": ["largo", "espesor"],
     "rows": [
@@ -892,28 +892,6 @@
       {
         "largo": 90,
         "espesor": 6
-      }
-    ]
-  },
-  {
-    "id": "mosq08",
-    "catId": "mosq",
-    "category": "Mosquetones",
-    "title": "Gancho tucumano",
-    "imgs": [
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019788/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_ganc_Tuc_-_1-removebg-preview_yp3wbc.png"
-    ],
-    "description": "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
-    "imgTable": "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666423/Productos/Productos/Mosquetones/Tabla%20-%20Gancho%20Tuc.png",
-    "columns": ["n°", "con eslabon"],
-    "rows": [
-      {
-        "n": 10,
-        "eslabon": true
-      },
-      {
-        "n": 11,
-        "eslabon": true
       }
     ]
   }

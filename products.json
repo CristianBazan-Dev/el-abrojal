@@ -1104,37 +1104,5 @@
         "espesor": 6
       }
     ]
-  },
-  {
-    "id": "mosq08",
-    "catId": "mosq",
-    "category": "Mosquetones",
-    "title": "Gancho tucumano",
-    "imgs": [
-      "https://res.cloudinary.com/dhbvri4ni/image/upload/v1692019788/test-el-abrojal/Productos/Productos/Mosquetones/mosq_-_ganc_Tuc_-_1-removebg-preview_yp3wbc.png"
-    ],
-    "description":
-      "Lorem ipsum dolor sit amet consectetur. Adipiscing sed posuere arcu nec viverra massa. Nullam a augue porta tortor facilisis potenti. Morbi eget id in lorem et. Ullamcorper diam risus sollicitudin nulla.",
-    "treatments": [
-      {
-        "title": "niquelado",
-        "img": "https://royisal.com/wp-content/uploads/2021/07/RoyiSal_Production_Polishing_IMG_8148-min-scaled.jpg",
-        "description":
-          "Proceso que consiste en la aplicación de una capa de niquel en la superficie de un objeto. De esta manera, se mejora la Resistencia a la corrosion y se obtiene un brillo particular."
-      }
-    ],
-    "imgTable":
-      "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694666423/Productos/Productos/Mosquetones/Tabla%20-%20Gancho%20Tuc.png",
-    "columns": ["n°", "con eslabon"],
-    "rows": [
-      {
-        "n": 10,
-        "eslabon": true
-      },
-      {
-        "n": 11,
-        "eslabon": true
-      }
-    ]
   }
 ]

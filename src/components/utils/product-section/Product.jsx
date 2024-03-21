@@ -230,6 +230,12 @@ function Product(props) {
                           <td>
                             {row.espesor}x{row.diametroInt}
                           </td>
+                          <td>
+                            {row.espesor}
+                          </td>
+                          <td>
+                            {row.diametroInt}
+                          </td>
                         </tr>
                       );
                     } else if (product.id == "arg01") {

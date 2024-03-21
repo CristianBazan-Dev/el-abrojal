@@ -191,6 +191,7 @@
 .measures td {
   font-weight: bold;
   white-space: nowrap;
+  font-size: 1.3rem;
 }
 
 .measures button{

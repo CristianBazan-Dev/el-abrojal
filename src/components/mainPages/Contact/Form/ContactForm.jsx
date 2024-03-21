@@ -48,7 +48,7 @@ function ContactForm(props) {
 
   return (
     <div className="form-section">
-      <Toaster position="top-center" reverseOrder={false} />
+
 
       <form action="" className="contact-form" ref={form} onSubmit={sendEmail}>
         <input
@@ -78,6 +78,7 @@ function ContactForm(props) {
           ref={refCaptcha}
         />
         <input class="btn" type="submit" value="Enviar" />
+        <Toaster position="bottom-center" reverseOrder={false} />
       </form>
     </div>
   );
