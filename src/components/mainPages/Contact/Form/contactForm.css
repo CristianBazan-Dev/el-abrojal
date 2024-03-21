@@ -10,8 +10,15 @@
 } */
 
 .form-section {
-
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   z-index: 1000;
+}
+
+.form-section h2{
+  color: var(--light);
+  align-self: center;
 }
 
 .contact-form {

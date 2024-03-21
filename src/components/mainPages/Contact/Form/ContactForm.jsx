@@ -48,7 +48,7 @@ function ContactForm(props) {
 
   return (
     <div className="form-section">
-
+      <h2>Envienos un mail</h2>
 
       <form action="" className="contact-form" ref={form} onSubmit={sendEmail}>
         <input
