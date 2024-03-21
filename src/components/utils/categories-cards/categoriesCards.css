@@ -42,14 +42,14 @@
     align-items: center;
     gap: 2rem;
     margin: auto;
-    gap: 0
+    gap: 1rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
 
   .category-selection-section .product-card {
-    background-size: 100%;
+    background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
   }

@@ -85,6 +85,7 @@
     align-items: center;
     margin: auto;
     flex-direction: column;
+    gap: 1rem;
   }
 
   .goBack-button {
