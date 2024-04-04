@@ -42,17 +42,17 @@ function Home(props) {
           content="Fábrica de cadenas con más de 30 años en el rubro. Cadenas. Clavos. Torniquetes. Ganchos. Y muchos productos más. ¡Envíenos su consulta!"
         ></meta>
         <meta property="og:url" content="https://elabrojal.com"></meta>
-        <meta property="og:site_name" content="El Abrojal"></meta>
+        <meta property="og:site_name" content="Fábrica de cadenas | Metalúrgica El Abrojal"></meta>
 
         <meta name="generator" content="react"></meta>
 
         <meta
           name="subject"
-          content="Landing page of Metalúrgica El Abrojal chains factory"
+          content="Landing page of Metalúrgica El Abrojal chains and nails steel factory"
         />
         <meta
           name="subject"
-          content="Página web de la fábrica de cadenas El Abrojal"
+          content="Página web de la fábrica de cadenas y clavos Metalúrgica El Abrojal"
         />
         <meta name="referrer" content="no-referrer" />
 

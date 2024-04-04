@@ -26,7 +26,7 @@ function Category(props) {
         <title>Metalúrgica El Abrojal | Contacto</title>
         <meta
           name="description"
-          content="Nuestros productos son fabricados con dedicación y materia prima de calidad. "
+          content="Consultas personalizadas para responder cualquier duda. ¡Contáctenos!"
         />
         <meta name="robots" content="index, follow"></meta>
         <meta name="googlebot" content="index, follow"></meta>
@@ -40,22 +40,22 @@ function Category(props) {
         ></meta>
         <meta
           property="og:description"
-          content="Nuestros productos son fabricados con dedicación y materia prima de calidad."
+          content="Consultas personalizadas para responder cualquier duda. ¡Contáctenos!"
         ></meta>
         <meta
           property="og:url"
           content="https://elabrojal.com/#/contact"
         ></meta>
-        <meta property="og:site_name" content="El Abrojal"></meta>
+        <meta property="og:site_name" content="Fábrica de cadenas | Metalúrgica El Abrojal"></meta>
 
         <meta name="generator" content="react"></meta>
         <meta
           name="subject"
-          content="Landing page of Metalúrgica El Abrojal chains factory"
+          content="Landing page of Metalúrgica El Abrojal chains and steel nails factory"
         />
         <meta
           name="subject"
-          content="Página web de la fábrica de cadenas El Abrojal"
+          content="Página web de la fábrica de cadenas y clavos Metalúrgica El Abrojal"
         />
         <meta name="referrer" content="no-referrer" />
 
