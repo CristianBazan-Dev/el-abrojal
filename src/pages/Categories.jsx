@@ -33,7 +33,7 @@ function Categories(props) {
         <title>Metalúrgica El Abrojal | Productos</title>
         <meta
           name="description"
-          content="Nuestros productos son fabricados con dedicación y materia prima de calidad. "
+          content="Dedicados a expandir nuestra oferta de manera constante"
         />
         <meta name="robots" content="index, follow"></meta>
         <meta name="googlebot" content="index, follow"></meta>
@@ -47,7 +47,7 @@ function Categories(props) {
         ></meta>
         <meta
           property="og:description"
-          content="Nuestros productos son fabricados con dedicación y materia prima de calidad."
+          content="Dedicados a expandir nuestra oferta de manera constante"
         ></meta>
         <meta
           property="og:url"
