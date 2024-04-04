@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Allow: /#/products
+Allow: /#/contact
 Allow: /#/about
 
 Sitemap: https://elabrojal.com/sitemap.xml
