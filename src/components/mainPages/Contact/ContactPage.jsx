@@ -29,7 +29,7 @@ function ContactPage(props) {
             <li>Martes: 7am - 12:30pm / 14:30pm - 18pm</li>
             <li>Miercoles: 7am - 12:30pm / 14:30pm - 18pm</li>
             <li>Jueves: 7am - 12:30pm / 14:30pm - 18pm</li>
-            <li>Viernes: 7:30am - 12:30pm / 14:30pm - 17pm</li>
+            <li>Viernes: 7am - 12:30pm / 14:30pm - 17pm</li>
           </ul>
 
           <div className="action">

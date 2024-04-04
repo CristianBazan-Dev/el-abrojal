@@ -16,14 +16,11 @@ import { ReactComponent as Location } from "../../assets/icons/contact/location.
 function Footer(props) {
   let [year, setYear] = useState(0);
 
-  const gettingYear = () => {
+
+  useEffect(() => {
     const date = new Date();
     let year = date.getFullYear();
     setYear(year);
-  };
-
-  useEffect(() => {
-    gettingYear();
   }, []);
 
   return (
