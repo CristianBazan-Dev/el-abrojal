@@ -1,6 +1,7 @@
 import React from "react";
 import "./cards.css";
 import { Link } from "react-router-dom";
+
 function Cards({ link, title, img, id }) {
   return (
     <Link

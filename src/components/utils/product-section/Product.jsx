@@ -6,6 +6,10 @@ import { subcategories } from "../../../api/Subcategories";
 import { ReactComponent as Back } from "../../../assets/icons/utils/back.svg";
 import { saveAs } from "file-saver";
 import { Link, useParams } from "react-router-dom";
+import Slider from 'react-slick';
+import Cards from "../cards/Cards";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import axios from "axios";
 
 function Product(props) {
@@ -58,6 +62,15 @@ function Product(props) {
     getProducts();
   }, []);
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    fade: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  }
+
   return (
     <div className="products">
       <div className="title">
@@ -75,7 +88,21 @@ function Product(props) {
         </div>
       </div>
 
+      <Slider {...settings} className='mobile-slider'>
+          {product.imgs &&
+            product.imgs.map((img, index) => {
+            return (
+              <img src={img} onClick={() => {
+                handleGallery(product.imgs[index]);
+              }}></img>
+            );
+          })}
+        </Slider>
+
+      
+
       <div className="gallery">
+
         <div className="main-img">
           {product.imgs && (
             <img
@@ -99,10 +126,11 @@ function Product(props) {
                     key={index}
                     onClick={
                       index < 4
-                        ? () => {
+                        ? (e) => {
                             handleGallery(imgs);
                           }
-                        : () => {
+                        : (e) => {
+                            e.target.parentNode.classList.remove('extra')
                             setMaxIndexImg(product.imgs.length);
                           }
                     }
