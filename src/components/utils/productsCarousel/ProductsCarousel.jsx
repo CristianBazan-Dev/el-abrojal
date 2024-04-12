@@ -17,7 +17,7 @@ function ProductsCarousel(props) {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoPlay: true,
+        autoplay: true,
         autoPlaySpeed: 2000
       }
 
