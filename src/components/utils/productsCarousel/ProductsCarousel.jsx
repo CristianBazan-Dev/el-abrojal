@@ -11,30 +11,18 @@ function ProductsCarousel(props) {
   let sliderRef = useRef(null);
     
     const settings = {
-        dots: true,
-        infinite: true,
-        fade: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoPlaySpeed: 2000
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000
       }
 
-      function AutoPlayMethods() {
-        let sliderRef = useRef(null);
-        const play = () => {
-          sliderRef.slickPlay();
-        };
-        const pause = () => {
-          sliderRef.slickPause();
-        };
-
-      }
 
     return (
        
-        <Slider ref={slider => (sliderRef = slider)} {...settings} className='products-slider'>
+        <Slider {...settings} className='products-slider'>
           {categories.map((data, index) => {
             return (
               <Cards

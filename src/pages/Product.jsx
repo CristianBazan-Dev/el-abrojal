@@ -81,7 +81,7 @@ function Product(props) {
 
         <main>
           <section>
-            <SectionBanner title={`${product.category} - ${product.title}`} />
+            <SectionBanner title={`${product.category} - ${product.title}`}  img={product && product.imgs && product.imgs[0]}/>
             <div className="products-page">
               <div className="categories">
                 <Categories />
