@@ -1,14 +1,19 @@
 .hero-banner {
-    margin-top: 100px;
+
     width: 100%;
 }
 
 .hero-banner .slick-slider {
     display: flex;
+    max-width: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
+    overflow: hidden;
+
 }
+
+
 
 .hero-banner .slick-slide .slick-list {
     width: 100%;

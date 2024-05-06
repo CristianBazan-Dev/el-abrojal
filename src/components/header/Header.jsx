@@ -23,8 +23,11 @@ function Header(props) {
   const state = useContext(GlobalState);
 
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
-  const [headerAlt, setHeaderAlt] = state.headerAlt;
 
+  const [isHome, setIsHome] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 600);
+
+  const [headerAlt, setHeaderAlt] = state.headerAlt;
   const [categorySelected, setCategorySelected] =
     state.categories.categorySelected;
 
@@ -40,12 +43,30 @@ function Header(props) {
     setProductSelected("");
   };
 
-  const RedirectToContact = () => {
-    window.scrollTo(0, document.body.scrollHeight);
-  };
+  useEffect(() => {
+    const location = window.location.hash;
+    console.log(location);
+
+    if (location == "#/") {
+      setIsHome(true);
+    } else {
+      setIsHome(false);
+    }
+
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+
+  }, [location]);
 
   return (
-    <header>
+    <header className={isHome ? "home" : ""}>
       <Link
         to="https://walink.co/5f6a74"
         target="_blank"

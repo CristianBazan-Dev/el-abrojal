@@ -8,6 +8,24 @@ header {
   padding: 2rem;
 }
 
+header.home{
+  background: transparent !important;
+}
+
+header.home::after {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  header.home{
+    background: var(--main) !important;
+  }
+  
+  header.home::after {
+    display: flex;
+  }
+}
+
 header::after {
   position: absolute;
   bottom: -10px;
