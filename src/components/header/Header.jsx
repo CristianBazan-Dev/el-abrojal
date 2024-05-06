@@ -47,7 +47,7 @@ function Header(props) {
     const location = window.location.hash;
     console.log(location);
 
-    if (location == "#/") {
+    if (location == "#/" || location == '') {
       setIsHome(true);
     } else {
       setIsHome(false);
