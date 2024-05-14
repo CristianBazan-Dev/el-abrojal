@@ -43,7 +43,7 @@ function HeroBanner(props) {
     autoPlaySpeed: 1000,
   };
 
-  const imgs = ["https://res.cloudinary.com/dz6lrvj7u/image/upload/v1715606408/Hero/banner/hero-1.avif", "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1715607314/Hero/banner/hero-2.avif", "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1715606647/Hero/banner/hero-3.avif", "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1715606786/Hero/banner/hero-4.avif"];
+  const imgs = ["https://res.cloudinary.com/dz6lrvj7u/image/upload/v1715606408/Hero/banner/hero-1.avif", "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1715691004/Hero/banner/hero-2.avif", "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1715606647/Hero/banner/hero-3.avif", "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1715606786/Hero/banner/hero-4.avif"];
 
   const localUrl = '/assets/banner/';
 
