@@ -18,18 +18,22 @@ function HeroBanner(props) {
     autoPlaySpeed: 1000,
   };
 
-  const imgs = ["https://res.cloudinary.com/dz6lrvj7u/image/upload/v1713532248/Hero/banner/em8ycrsi7gcjg52f9ymt.png", "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1713532240/Hero/banner/nk2dcxezo9kcsjo7vryy.png", "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1713532236/Hero/banner/vkmwlpidp5uvbtxb6umq.png", "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1713532232/Hero/banner/nnbpnmv04bke44ufgxut.png" ]
+  const imgs = ["https://res.cloudinary.com/dz6lrvj7u/image/upload/v1715606408/Hero/banner/hero-1.avif", "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1715607314/Hero/banner/hero-2.avif", "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1715606647/Hero/banner/hero-3.avif", "https://res.cloudinary.com/dz6lrvj7u/image/upload/v1715606786/Hero/banner/hero-4.avif"]
 
+  const localUrl = '/assets/banner/'
+
+  const localImgs = [`${localUrl}/hero-1.avif`, `${localUrl}/hero-2.avif`, `${localUrl}/hero-3.avif`, `${localUrl}/hero-4.avif` ]
+console.log(localImgs)
+  
   return (
     <section className="hero-banner">
-      
       <Slider
 
         {...settings}
 
       >
         {imgs.map((img) => {
-            return <img src={img}></img>
+          return <img src={img} />
         })}
       
       </Slider>

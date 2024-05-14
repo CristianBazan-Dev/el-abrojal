@@ -10,8 +10,8 @@ import HeroBanner from '../../utils/hero/HeroBanner';
 function Home(props) {
     return (
         <section className='home'>
-            <Hero/>
-            {/* <HeroBanner /> */}
+            {/* <Hero/> */}
+            <HeroBanner />
             <Banner/>
             <ProductsCards/>
  
