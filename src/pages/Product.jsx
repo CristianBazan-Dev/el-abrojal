@@ -65,10 +65,7 @@ function Product(props) {
         />
         <meta name="referrer" content="no-referrer" />
 
-        <meta
-          name="thumbnail"
-          content="https://res.cloudinary.com/dz6lrvj7u/image/upload/v1694571060/Logos/logo_h2y6cy_ppunp1.png"
-        />
+        <meta name="thumbnail" content="./logo.jpg" />
         <link rel="canonical" href="https://elabrojal.com/#/products" />
         <meta name="geo.region" content="AR-X" />
         <meta name="geo.placename" content="Morrison" />
